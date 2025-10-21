@@ -561,8 +561,7 @@ export class WeaponCatalog {
 
         switch (page) {
             case "weaponSelection":
-                // Show weapon selection UI
-                // Maybe this is where we reset selected weapon and attachment slot
+                // TODO: Consider if resetting just gets handled on weapon selection
                 this.state.selectedWeapon = null;
                 this.state.selectedAttachmentSlot = null;
                 this.#selectedAttachments = {};
@@ -596,8 +595,6 @@ export class WeaponCatalog {
 
         // Give Base Weapon
         mod.AddEquipment(this.#playerState.player, weapon.weapon, weaponPackage);
-
-
         mod.ForceSwitchInventory(this.#playerState.player, mod.InventorySlots.PrimaryWeapon);
     }
 
@@ -605,46 +602,18 @@ export class WeaponCatalog {
         const weapon = getWeaponById(weapon_id);
         if (!weapon) return;
 
+        if(this.state.selectedWeapon && this.state.selectedWeapon.id !== weapon.id) {
+            this.#selectedAttachments = {}; // Reset selected attachments on weapon change
+        }
+
         this.state.selectedWeapon = {
             category: weapon.category,
             name: weapon.name,
             id: weapon.id
         };
+        
         this.#giveWeaponToPlayer();
         this.#setPage("attachmentSlotSelection");
-
-        // Update Header Title - TODO: Maybe wrap this in a updateHeader() method
-        /*if (!this.#uiMainCatalogAreaHeaderTitle) return; // Can't update if there's no header
-        const categoryName = weaponCategoryNames[weapon.category];
-        mod.SetUITextLabel(this.#uiMainCatalogAreaHeaderTitle, mod.Message(s`{} / {}`, categoryName, weapon.name));
-        this.#showBackButton(true);*/
-
-        /*
-            TODO: Update necessary states and create methods to dynamically generate attachment selection UI
-
-            Step 1: Update State i.e.
-                this.#selectedWeaponId = weapon_id;
-                this.selectedAttachmentSlot = null;
-                this.#selectedAttachments = {};
-
-            Step 2: Generate Attachment Slot Selection UI i.e.
-                this.#generateAttachmentSlotSelectionUI(weapon); // Wouldn't need to pass weapon id again since we have it in state
-
-            Step 3: Once an attachment slot is chosen, update state and generate attachment selection UI i.e.
-                this.selectedAttachmentSlot = chosenSlot;
-                this.#generateAttachmentSelectionUI(weapon, attachmentSlot); // Would use weapon id and slot from state
-
-            Step 4: Once an attachment is chosen, update state i.e.
-                this.#selectedAttachments[attachmentSlot] = chosenAttachment;
-
-            Step 5: Create method to finalize and give weapon package to player i.e.
-                this.#finalizeWeaponPackage();
-
-            Step 6: Update UI accordingly at each step. Also consider adding a "Back" button to go back to previous steps.
-
-            Step 7: Ensure we have functions to reset selections and UI when needed (e.g., changing category, closing catalog, etc.) i.e.
-                this.#resetSelectionsAndUI();
-        */
     }
 
     #handleAttachmentSlotSelection(slot: WeaponAttachmentSlot) {
