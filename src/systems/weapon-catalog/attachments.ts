@@ -81,6 +81,42 @@ export const attachmentRegistry: Record<string, WeaponAttachment> = {
         attachment: mod.WeaponAttachments.Barrel_165_Fluted, 
         slot: "barrel" 
     },
+    "attachment_Barrel_480mm_Factory": {
+        id: "attachment_Barrel_480mm_Factory",
+        name: s`480MM FACTORY`,
+        attachment: mod.WeaponAttachments.Barrel_480mm_Factory,
+        slot: "barrel"
+    },
+    "attachment_Barrel_480mm_MG": {
+        id: "attachment_Barrel_480mm_MG",
+        name: s`480MM MG`,
+        attachment: mod.WeaponAttachments.Barrel_480mm_MG,
+        slot: "barrel"
+    },
+    "attachment_Barrel_510mm_Fluted": {
+        id: "attachment_Barrel_510mm_Fluted",
+        name: s`510MM FLUTED`,
+        attachment: mod.WeaponAttachments.Barrel_510mm_Fluted,
+        slot: "barrel"
+    },
+    "attachment_Barrel_480mm_Fluted": {
+        id: "attachment_Barrel_480mm_Fluted",
+        name: s`480MM FLUTED`,
+        attachment: mod.WeaponAttachments.Barrel_480mm_Fluted,
+        slot: "barrel"
+    },
+    "attachment_Barrel_510mm_DMR": {
+        id: "attachment_Barrel_510mm_DMR",
+        name: s`510MM DMR`,
+        attachment: mod.WeaponAttachments.Barrel_510mm_DMR,
+        slot: "barrel"
+    },
+    "attachment_Barrel_391mm_CQB": {
+        id: "attachment_Barrel_391mm_CQB",
+        name: s`391MM CQB`,
+        attachment: mod.WeaponAttachments.Barrel_391mm_CQB,
+        slot: "barrel"
+    },
 
     // Scope attachments
     "attachment_Scope_Iron_Sights": { 
@@ -387,7 +423,7 @@ export const attachmentRegistry: Record<string, WeaponAttachment> = {
     },
     "attachment_Scope_Piggyback_Reflex": {
         id: "Scope_Piggyback_Reflex",
-        name: s`CANTED REFLEX`,
+        name: s`PIGGYBACK REFLEX`,
         attachment: mod.WeaponAttachments.Scope_Piggyback_Reflex,
         slot: "optic_accessory" 
     },
@@ -449,6 +485,18 @@ export const attachmentRegistry: Record<string, WeaponAttachment> = {
         attachment: mod.WeaponAttachments.Magazine_40rnd_Fast_Mag,
         slot: "magazine" 
     },
+    "attachment_Magazine_45rnd_Magazine": {
+        id: "attachment_Magazine_45rnd_Magazine",
+        name: s`45RND MAGAZINE`,
+        attachment: mod.WeaponAttachments.Magazine_45rnd_Magazine,
+        slot: "magazine" 
+    },
+    "attachment_Magazine_45rnd_Fast_Mag": {
+        id: "attachment_Magazine_45rnd_Fast_Mag",
+        name: s`45RND FAST MAG`,
+        attachment: mod.WeaponAttachments.Magazine_45rnd_Fast_Mag,
+        slot: "magazine" 
+    },
 
     // Ammunition attachments
     "attachment_Ammo_FMJ": {
@@ -481,6 +529,12 @@ export const attachmentRegistry: Record<string, WeaponAttachment> = {
         attachment: mod.WeaponAttachments.Ammo_Frangible,
         slot: "ammunition" 
     },
+    "attachment_Ammo_Synthetic_Tip": {
+        id: "attachment_Ammo_Synthetic_Tip",
+        name: s`SYNTHETIC TIP`,
+        attachment: mod.WeaponAttachments.Ammo_Synthetic_Tip,
+        slot: "ammunition" 
+    },
 };
 
 // Helper function to get attachments by their IDs
@@ -493,11 +547,11 @@ export const attachmentGroups = {
     "AssaultRifle_M433": [
         "attachment_Muzzle_Flash_Hider",
         "attachment_Muzzle_Double_port_Brake",
+        "attachment_Muzzle_Compensated_Brake",
         "attachment_Muzzle_Linear_Comp",
         "attachment_Muzzle_Standard_Suppressor",
         "attachment_Muzzle_Long_Suppressor",
         "attachment_Muzzle_CQB_Suppressor",
-        "attachment_Muzzle_Compensated_Brake",
         "attachment_Muzzle_Lightened_Suppressor",
         "attachment_Barrel_165_Rifle",
         "attachment_Barrel_189_Prototype",
@@ -568,5 +622,88 @@ export const attachmentGroups = {
         "attachment_Ammo_Polymer_Case",
         "attachment_Ammo_Frangible",
     ],
+    // Muzzles same, barrels different
+    "AssaultRifle_B36A4": [
+        "attachment_Muzzle_Flash_Hider",
+        "attachment_Muzzle_Double_port_Brake",
+        "attachment_Muzzle_Compensated_Brake",
+        "attachment_Muzzle_Linear_Comp",
+        "attachment_Muzzle_Standard_Suppressor",
+        "attachment_Muzzle_Long_Suppressor",
+        "attachment_Muzzle_CQB_Suppressor",
+        "attachment_Muzzle_Lightened_Suppressor",
+        "attachment_Barrel_391mm_CQB",
+        "attachment_Barrel_480mm_Factory",
+        "attachment_Barrel_480mm_MG",
+        "attachment_Barrel_480mm_Fluted",
+        "attachment_Barrel_510mm_Fluted",
+        "attachment_Barrel_510mm_DMR",
+        "attachment_Right_Flashlight",
+        "attachment_Right_Flashlight",
+        "attachment_Top_5_mW_Red",
+        "attachment_Top_5_mW_Green",
+        "attachment_Top_50_mW_Green",
+        "attachment_Top_50_mW_Blue",
+        "attachment_Top_120_mW_Blue",
+        "attachment_Scope_Iron_Sights",
+        "attachment_Scope_Mini_Flex_100x",
+        "attachment_Scope_R_MR_100x",
+        "attachment_Scope_Osa_7_100x",
+        "attachment_Scope_CQ_RDS_125x",
+        "attachment_Scope_2PRO_125x",
+        "attachment_Scope_RO_S_125x",
+        "attachment_Scope_ROX_150x",
+        "attachment_Scope_GRIM_150x",
+        "attachment_Scope_SU_123_150x",
+        "attachment_Scope_1p87_150x",
+        "attachment_Scope_RO_M_175x",
+        "attachment_Scope_3VZR_175x",
+        "attachment_Scope_A_P2_175x",
+        "attachment_Scope_CCO_200x",
+        "attachment_Scope_R4T_200x",
+        "attachment_Scope_BF_2M_250x",
+        "attachment_Scope_Baker_300x",
+        "attachment_Scope_PAS_35_300x",
+        "attachment_Scope_SDO_350x",
+        "attachment_Scope_PVQ_31_400x",
+        "attachment_Scope_LDS_450x",
+        "attachment_Scope_ST_Prisim_500x",
+        "attachment_Scope_SF_G2_500x",
+        "attachment_Scope_Mars_F_LPVO",
+        "attachment_Scope_DVO_LPVO",
+        "attachment_Scope_MC_CO_LPVO",
+        "attachment_Scope_Canted_Iron_Sights",
+        "attachment_Ergonomic_Match_Trigger",
+        "attachment_Ammo_FMJ",
+        "attachment_Ammo_Tungsten_Core",
+        "attachment_Ammo_Hollow_Point",
+        "attachment_Ammo_Polymer_Case",
+        "attachment_Ammo_Frangible",
+        "attachment_Ammo_Synthetic_Tip",
+        "attachment_Magazine_20rnd_Magazine",
+        "attachment_Magazine_20rnd_Fast_Mag",
+        "attachment_Magazine_30rnd_Magazine",
+        "attachment_Magazine_30rnd_Fast_Mag",
+        "attachment_Magazine_36rnd_Magazine",
+        "attachment_Magazine_40rnd_Magazine",
+        "attachment_Magazine_40rnd_Fast_Mag",
+        "attachment_Magazine_45rnd_Magazine",
+        "attachment_Magazine_45rnd_Fast_Mag",
+        "attachment_Bottom_Folding_Vertical",
+        "attachment_Bottom_Alloy_Vertical",
+        "attachment_Bottom_Ribbed_Vertical",
+        "attachment_Bottom_6H64_Vertical",
+        "attachment_Bottom_Classic_Vertical",
+        "attachment_Bottom_Underslung_Mount",
+        "attachment_Bottom_Folding_Stubby",
+        "attachment_Bottom_Ribbed_Stubby",
+        "attachment_Bottom_Canted_Stubby",
+        "attachment_Bottom_Stippled_Stubby",
+        "attachment_Bottom_Full_Angled",
+        "attachment_Bottom_PTT_Grip_Pod",
+        "attachment_Bottom_Bipod",
+        "attachment_Bottom_QD_Grip_Pod",
+        "attachment_Bottom_Classic_Grip_Pod",
+    ]
 
 };

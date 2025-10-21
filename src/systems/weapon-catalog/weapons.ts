@@ -51,13 +51,23 @@ export function getCategoriesWithAvailableWeapons(): WeaponCategory[] {
 
 export const weapons: WeaponDefinition[] = [
     {
-        id: 'gun_M433',
+        id: 'gun_AssaultRifle_M433',
         weapon: mod.Weapons.AssaultRifle_M433,
         name: s`M433`,
         category: "assault",
         attachmentSlots: ["muzzle", "barrel", "scope", "underbarrel", "right_accessory", "top_accessory", "optic_accessory", "ergonomics", "magazine", "ammunition"],
         attachments: [
             ...getAttachments(attachmentGroups.AssaultRifle_M433),
+        ]
+    },
+    {
+        id: 'gun_AssaultRifle_B36A4',
+        weapon: mod.Weapons.AssaultRifle_B36A4,
+        name: s`B36A4`,
+        category: "assault",
+        attachmentSlots: ["muzzle", "barrel", "scope", "underbarrel", "right_accessory", "top_accessory", "optic_accessory", "ergonomics", "magazine", "ammunition"],
+        attachments: [
+            ...getAttachments(attachmentGroups.AssaultRifle_B36A4),
         ]
     }
 ];
