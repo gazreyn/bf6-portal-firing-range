@@ -1,4 +1,4 @@
-import { s } from "../lib/string-macro";
+import { s } from "../../lib/string-macro";
 
 export const weaponCategories = ['assault', 'carbine', 'sniper', 'smg', 'lmg', 'shotgun', 'pistol', 'dmr'] as const;
 export const weaponAttachmentSlots = ['muzzle', 'barrel', 'scope', 'right_accessory', 'top_accessory', 'optic_accessory', 'ergonomics', 'underbarrel', 'magazine', 'ammunition'] as const;

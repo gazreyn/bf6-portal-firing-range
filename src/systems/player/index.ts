@@ -1,4 +1,4 @@
-import { WeaponCatalog } from "./weapon-catalog";
+import { WeaponCatalog } from "../weapon-catalog";
 
 export class PlayerState {
     player: mod.Player;

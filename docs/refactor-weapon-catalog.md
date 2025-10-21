@@ -1,4 +1,9 @@
-# Refactor Plan: `src/weapon-catalog.ts`
+# Refactor Plan: Weapon Catalog System
+
+**Current Structure:** `src/systems/weapon-catalog/`
+- `index.ts` - Main WeaponCatalog class (orchestrator) 
+- `weapon-catalog.view.ts` - UI constants and view helpers
+- `weapons.ts` - Data access layer
 
 Focus: maintainability, separation of concerns, readability. Keep behavior identical at each step. Small, verifiable deltas.
 
@@ -21,12 +26,17 @@ Focus: maintainability, separation of concerns, readability. Keep behavior ident
 - ✅ Centralized header logic (single source of truth)
 - ✅ Type-safe state management with single state object
 - ✅ Clean separation between view constants and business logic
+- ✅ **Modular systems architecture** - Organized into logical system boundaries
+- ✅ **Shared UI utilities** - UIRegistry available to other systems
 
 ### 🔧 **Architecture Improvements:**
 - Clean boundaries established between view and logic
-- Constants properly organized and exported
+- Constants properly organized and exported  
 - State properly typed and accessible to view components
 - Header updates consolidated and predictable
+- **Systems-based organization** - Weapon catalog is self-contained system
+- **Shared utilities** - UIRegistry pattern available for other UI systems
+- **Import path clarity** - Clear system boundaries with proper module structure
 
 ---
 
@@ -37,13 +47,14 @@ Focus: maintainability, separation of concerns, readability. Keep behavior ident
 - ✅ easy cleanup; no UI leaks
 - ⏳ simpler event handling; less string parsing *(next priority)*
 
-## Target architecture (condensed modules)
-- `weapon-catalog.ts` (orchestrator + public API: open/close/onUIButtonEvent)
-- `weapon-catalog.state.ts` (state model + router/back stack + pure transitions)
-- `weapon-catalog.view.ts` (UI registry + constants (LAYOUT/THEME) + header + sidebar + pages + event id helpers)
-- (reuse) `src/weapons.ts` for data access
+## Target architecture (modular systems approach)
+- `src/systems/weapon-catalog/index.ts` (orchestrator + public API: open/close/onUIButtonEvent)
+- `src/systems/weapon-catalog/weapon-catalog.state.ts` (state model + router/back stack + pure transitions) *(future)*
+- `src/systems/weapon-catalog/weapon-catalog.view.ts` (UI registry + constants (LAYOUT/THEME) + header + sidebar + pages + event id helpers)
+- `src/systems/weapon-catalog/weapons.ts` (data access layer)
+- `src/systems/ui/index.ts` (shared UIRegistry utility)
 
-Note: 3 files total (plus existing weapons.ts). Keeps boundaries without fragmentation.
+Note: Modular systems approach with proper boundaries. Current: 3 files + shared UI utilities.
 
 ## Step-by-step
 
@@ -55,6 +66,7 @@ Note: 3 files total (plus existing weapons.ts). Keeps boundaries without fragmen
 - Add `UIRegistry` (map name->widget) + helpers: add(name,w), get(name), safeVisible(name,bool), remove(name)
 - Add `destroy()` on catalog: delete all created widgets, clear handlers, reset state
 - Wire `PlayerState.destroyUI()` to call `weaponCatalog.destroy()`
+- **BONUS**: Extracted UIRegistry to `src/systems/ui/index.ts` for reuse across systems
 - Acceptance: open/close/destroy leaves no stray widgets; reopen works.
 
 3) Centralize header control — **DONE** ✅
@@ -68,6 +80,13 @@ Note: 3 files total (plus existing weapons.ts). Keeps boundaries without fragmen
 - Consolidated all state into `public state` property for clean view access
 - Eliminated state duplication between WeaponCatalog and HeaderManager
 - Acceptance: all state centralized; properly typed; easy view access
+
+**IMPLEMENTED BONUS: Systems architecture** — **DONE** ✅
+- Organized into `src/systems/weapon-catalog/` directory structure
+- Clear separation: `index.ts` (orchestrator), `weapon-catalog.view.ts` (UI), `weapons.ts` (data)
+- UIRegistry extracted to `src/systems/ui/` for reuse
+- Import paths reflect system boundaries
+- Acceptance: Modular, self-contained system with clear dependencies
 
 4) Routing (state machine + back stack) — **NEXT PRIORITY**
 - Replace ad-hoc `#pageState` mutations with router: `push(page,payload)`, `pop()`, `current()`
@@ -138,17 +157,18 @@ Note: 3 files total (plus existing weapons.ts). Keeps boundaries without fragmen
 - no regressions in open/close, category change, header updates, selection flows
 - memory stable across open/close cycles; no duplicate widgets after reopen
 
-## Proposed working order for PRs (condensed)
+## Proposed working order for PRs (systems-based)
 - ~~PR1: UI registry + constants in view + destroy (view skeleton)~~ — **COMPLETED** ✅
-- ~~PR2: state model + router/back stack + header updates (wire view to state)~~ — **PARTIALLY COMPLETED** ⚠️ 
-  - ✅ State model consolidated into single `state` object
-  - ✅ Header updates working
-  - ❌ Router/back stack still needs implementation
-- PR3: Event dispatch map + routing (back stack) — **NEXT PRIORITY** 🎯
-- PR4: sidebar + category pages (lazy) + weapon tile builder
-- PR5: slot page + attachment page builders
-- PR6: types hardening + naming helpers + debug flag
-- PR7: perf pass + docs tidy
+- ~~PR2: state model + header updates (wire view to state)~~ — **COMPLETED** ✅ 
+- ~~PR3: Systems architecture reorganization~~ — **COMPLETED** ✅
+  - ✅ Moved to `src/systems/weapon-catalog/` structure
+  - ✅ UIRegistry extracted to `src/systems/ui/`
+  - ✅ Clear module boundaries and dependencies
+- PR4: Event dispatch map + routing (back stack) — **NEXT PRIORITY** 🎯
+- PR5: sidebar + category pages (lazy) + weapon tile builder
+- PR6: slot page + attachment page builders  
+- PR7: types hardening + naming helpers + debug flag
+- PR8: perf pass + docs tidy
 
 ## Open questions
 - auto-equip weapon on select vs only after finalize?
@@ -161,7 +181,7 @@ Note: 3 files total (plus existing weapons.ts). Keeps boundaries without fragmen
 
 ---
 
-## Constants naming conventions (for `weapon-catalog.view.ts`)
+## Constants naming conventions (for `src/systems/weapon-catalog/weapon-catalog.view.ts`)
 
 - Groups UPPER_SNAKE: `LAYOUT`, `THEME`, `IDS`, `TEXT`.
 - Sections PascalCase: `Catalog`, `Sidebar`, `Header`, `Grid`, `Slots`, `Attachments`.

@@ -1,9 +1,8 @@
-// View-related constants for Weapon Catalog (layout + theme)
-// Keep simple numeric and array values to avoid coupling to engine types
-
-import { s } from "../lib/string-macro";
-import { weaponCategoryNames, weaponAttachmentSlotNames, type WeaponAttachmentSlot, weaponCategories } from "./weapons";
-import { ParseUI } from "./ui";
+import { s } from "../../lib/string-macro";
+import { weaponCategoryNames, weaponAttachmentSlotNames } from "./weapons";
+import { ParseUI } from "../../lib/ui";
+import { type UIRegistry } from "../ui";
+import { type WeaponCatalogState } from "./index";
 
 export const LAYOUT = {
   Catalog: { width: 1200, height: 600, padding: 16 },
@@ -73,62 +72,6 @@ export function idSlot(slot: string): string {
 
 export function idAttachment(id: string): string { 
   return IDS.buttons.attachmentPrefix + id; 
-}
-
-/**
- * UI Registry for tracking and managing widget lifecycle
- */
-export class UIRegistry {
-  private widgets = new Map<string, mod.UIWidget>();
-
-  add(name: string, widget: mod.UIWidget): void {
-    this.widgets.set(name, widget);
-  }
-
-  get(name: string): mod.UIWidget | undefined {
-    return this.widgets.get(name);
-  }
-
-  safeVisible(name: string, visible: boolean): void {
-    const widget = this.widgets.get(name);
-    if (widget) {
-      mod.SetUIWidgetVisible(widget, visible);
-    }
-  }
-
-  remove(name: string): void {
-    const widget = this.widgets.get(name);
-    if (widget) {
-      mod.DeleteUIWidget(widget);
-      this.widgets.delete(name);
-    }
-  }
-
-  removeAll(): void {
-    for (const [_name, widget] of this.widgets) {
-      mod.DeleteUIWidget(widget);
-    }
-    this.widgets.clear();
-  }
-
-  has(name: string): boolean {
-    return this.widgets.has(name);
-  }
-
-  size(): number {
-    return this.widgets.size;
-  }
-}
-
-/**
- * Complete state interface for the weapon catalog
- */
-export interface WeaponCatalogState {
-  pageState: "weaponSelection" | "attachmentSlotSelection" | "attachmentSelection";
-  selectedCategoryIndex: number;
-  selectedWeapon: { category: string; name: string; id: string } | null;
-  selectedAttachmentSlot: WeaponAttachmentSlot | null;
-  weaponCategories: typeof weaponCategories;
 }
 
 /**

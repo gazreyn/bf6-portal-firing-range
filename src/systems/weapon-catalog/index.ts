@@ -1,13 +1,21 @@
-import { s } from "../lib/string-macro";
-import type { PlayerState } from "./player-state";
-import { ParseUI } from "./ui";
+import { s } from "../../lib/string-macro";
+import type { PlayerState } from "../player";
+import { ParseUI } from "../../lib/ui";
 import { getWeaponById, getWeaponsByCategory, weaponCategories, weaponCategoryNames, weaponAttachmentSlotNames, type WeaponAttachmentSlot, type WeaponDefinition, getAvailableAttachmentSlots, getWeaponAttachmentsBySlot, getWeaponAttachment } from "./weapons";
-import { LAYOUT, THEME, IDS, TEXT, idCategory, idWeapon, idSlot, idAttachment, UIRegistry, HeaderManager, type WeaponCatalogState } from "./weapon-catalog.view";
+import { LAYOUT, THEME, IDS, idCategory, idSlot, idAttachment, HeaderManager } from "./weapon-catalog.view";
+import { UIRegistry } from "../ui";
+
+export interface WeaponCatalogState {
+  pageState: "weaponSelection" | "attachmentSlotSelection" | "attachmentSelection";
+  selectedCategoryIndex: number;
+  selectedWeapon: { category: string; name: string; id: string } | null;
+  selectedAttachmentSlot: WeaponAttachmentSlot | null;
+  weaponCategories: typeof weaponCategories;
+}
 
 export class WeaponCatalog {
-    // State - consolidated into a single public state object for view components access
     #playerState: PlayerState;
-    #isOpen: boolean = false; // Whether the catalog UI is currently open
+    #isOpen: boolean = false;
     public state: WeaponCatalogState = {
         pageState: "weaponSelection",
         selectedCategoryIndex: 0,
@@ -19,6 +27,8 @@ export class WeaponCatalog {
 
     // UI Registry for tracking widgets
     #uiRegistry: UIRegistry = new UIRegistry();
+
+    // Main Header Area
     #headerManager: HeaderManager = new HeaderManager(this.#uiRegistry);
 
     // UI Related Properties
@@ -34,7 +44,6 @@ export class WeaponCatalog {
     // Sidebar Area
     #catalogSidebarButtons: mod.UIWidget[] = [];
 
-    // Main Header Area
     #uiMainCatalogAreaHeaderBackButton: mod.UIWidget | undefined;
     #uiMainCatalogAreaHeader: mod.UIWidget | undefined;
     #uiMainCatalogAreaHeaderTitle: mod.UIWidget | undefined;
