@@ -41,6 +41,7 @@ export class PlayerState {
     }
 
     destroyUI() {
-        this.weaponCatalog?.close();
+        this.weaponCatalog?.destroy();
+        this.weaponCatalog = undefined;
     }
 }
