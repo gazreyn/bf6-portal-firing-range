@@ -1,7 +1,7 @@
-import { s } from "../../lib/string-macro";
 import type { PlayerState } from "../player";
 import { ParseUI } from "../../lib/ui";
-import { getWeaponById, getWeaponsByCategory, weaponCategories, weaponCategoryNames, weaponAttachmentSlotNames, type WeaponAttachmentSlot, type WeaponDefinition, getAvailableAttachmentSlots, getWeaponAttachmentsBySlot, getWeaponAttachment } from "./weapons";
+import { getWeaponById, getWeaponsByCategory, weaponCategories, weaponCategoryNames, weaponAttachmentSlotNames, type WeaponDefinition, getAvailableAttachmentSlots, getWeaponAttachmentsBySlot, getWeaponAttachment } from "./weapons";
+import { type WeaponAttachmentSlot } from "./attachments";
 import { LAYOUT, THEME, IDS, idCategory, idSlot, idAttachment, HeaderManager } from "./weapon-catalog.view";
 import { UIRegistry } from "../ui";
 
