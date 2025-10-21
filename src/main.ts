@@ -1,5 +1,4 @@
-import { PlayerState } from "./player-state";
-import { s } from "../lib/string-macro";
+import { PlayerState } from "./systems/player";
 
 const vendingMachineID: number = 100;
 

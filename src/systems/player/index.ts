@@ -1,4 +1,4 @@
-import { WeaponCatalog } from "./weapon-catalog";
+import { WeaponCatalog } from "../weapon-catalog";
 
 export class PlayerState {
     player: mod.Player;
@@ -41,6 +41,7 @@ export class PlayerState {
     }
 
     destroyUI() {
-        this.weaponCatalog?.close();
+        this.weaponCatalog?.destroy();
+        this.weaponCatalog = undefined;
     }
 }

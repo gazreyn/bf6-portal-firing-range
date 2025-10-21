@@ -12,7 +12,7 @@ const EXTERNALS = new Set<string>([]);
 
 // Files to exclude from the bundle (like utility files that shouldn't be included)
 const EXCLUDE_FILES = new Set<string>([
-  "lib/string-macro.ts"
+  "src/lib/string-macro.ts"
 ]);
 
 // String extraction functionality
