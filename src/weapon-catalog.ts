@@ -2,6 +2,7 @@ import { s } from "../lib/string-macro";
 import type { PlayerState } from "./player-state";
 import { ParseUI } from "./ui";
 import { getWeaponById, getWeaponsByCategory, weaponCategories, weaponCategoryNames, weaponAttachmentSlotNames, type WeaponAttachmentSlot, type WeaponDefinition, getAvailableAttachmentSlots, getWeaponAttachmentsBySlot, getWeaponAttachment } from "./weapons";
+import { LAYOUT, THEME } from "./weapon-catalog.view";
 
 export class WeaponCatalog {
     // State
@@ -25,15 +26,15 @@ export class WeaponCatalog {
     #catalogAttachmentSelectionPage: mod.UIWidget | undefined;
 
     // Main Catalog
-    #catalogWidth: number = 1200;
-    #catalogHeight: number = 600;
+    #catalogWidth: number = LAYOUT.Catalog.width;
+    #catalogHeight: number = LAYOUT.Catalog.height;
 
     // Sidebar Area
     #categorySidebarButtonPrefix: string = "__categoryBtn_";
-    #catalogSidebarWidth: number = 250;
-    #catalogSidebarButtonHeight: number = 50;
-    #catalogSidebarButtonTextSize: number = 24;
-    #catalogSidebarButtonSpacing: number = 4;
+    #catalogSidebarWidth: number = LAYOUT.Sidebar.width;
+    #catalogSidebarButtonHeight: number = LAYOUT.Sidebar.button.height;
+    #catalogSidebarButtonTextSize: number = LAYOUT.Sidebar.button.textSize;
+    #catalogSidebarButtonSpacing: number = LAYOUT.Sidebar.button.spacing;
     #catalogSidebarButtons: mod.UIWidget[] = [];
 
     // Main Header Area
@@ -43,22 +44,22 @@ export class WeaponCatalog {
     #catalogMainHeaderTitleName: string = "__mainHeaderTitle";
     #uiMainCatalogAreaHeader: mod.UIWidget | undefined;
     #uiMainCatalogAreaHeaderTitle: mod.UIWidget | undefined;
-    #catalogMainHeaderHeight: number = 60;
-    #catalogMainHeaderPadding: number = 8;
+    #catalogMainHeaderHeight: number = LAYOUT.Header.height;
+    #catalogMainHeaderPadding: number = LAYOUT.Header.padding;
 
     // Weapon Items Layout
-    #weaponItemTextWidth: number = 250;
-    #weaponItemWidth: number = 250;
-    #weaponItemHeight: number = 166;
-    #weaponItemSpacingHorizontal: number = 16;
-    #weaponItemSpacingVertical: number = 16;
+    #weaponItemTextWidth: number = LAYOUT.Grid.item.textWidth;
+    #weaponItemWidth: number = LAYOUT.Grid.item.width;
+    #weaponItemHeight: number = LAYOUT.Grid.item.height;
+    #weaponItemSpacingHorizontal: number = LAYOUT.Grid.gap.x;
+    #weaponItemSpacingVertical: number = LAYOUT.Grid.gap.y;
     #weaponButtons: { [key: string]: { widget: mod.UIWidget, weapon: WeaponDefinition } } = {};
 
     // 
 
     // UI Colors
-    #surfaceColor: number[] = [0, 0, 0]; // Black
-    #elementColor: number[] = [0.05, 0.05, 0.05]; // Dark Gray
+    #surfaceColor: number[] = THEME.colors.surfaceBg; // Black
+    #elementColor: number[] = THEME.colors.elementBg; // Dark Gray
 
     constructor(player: PlayerState) {
         this.#playerState = player;
@@ -74,7 +75,7 @@ export class WeaponCatalog {
             anchor: mod.UIAnchor.Center,
             bgFill: mod.UIBgFill.Solid,
             bgColor: this.#surfaceColor,
-            bgAlpha: 0.75,
+            bgAlpha: THEME.alpha.surface,
             depth: mod.UIDepth.AboveGameUI,
             playerId: this.#playerState.player,
             visible: false
@@ -94,7 +95,7 @@ export class WeaponCatalog {
             anchor: mod.UIAnchor.TopLeft,
             bgFill: mod.UIBgFill.Solid,
             bgColor: this.#surfaceColor,
-            bgAlpha: 0.5,
+            bgAlpha: THEME.alpha.sidebar,
         });
 
         // Sidebar Buttons
@@ -122,7 +123,7 @@ export class WeaponCatalog {
                 textLabel: mod.Message(weaponCategoryNames[category]),
                 textSize: this.#catalogSidebarButtonTextSize,
                 textAnchor: mod.UIAnchor.CenterLeft,
-                textColor: index === 0 ? [1, 0.98, 0.65] : [1, 1, 1]
+                textColor: index === 0 ? THEME.colors.textAccent : THEME.colors.textPrimary
             });
 
             if (!buttonText) return;
@@ -170,13 +171,13 @@ export class WeaponCatalog {
                     textLabel: mod.Message(weaponCategoryNames[this.#weaponCategories[0]]), // Defaults to first category
                     textSize: 24,
                     textAnchor: mod.UIAnchor.CenterLeft,
-                    textColor: [1, 1, 1]
+                    textColor: THEME.colors.textPrimary
                 },
                 // Close Button
                 {
                     type: "Button",
                     name: this.#closeButtonName,
-                    size: [40, 40],
+                    size: [LAYOUT.Header.close.size, LAYOUT.Header.close.size],
                     anchor: mod.UIAnchor.CenterRight,
                     bgFill: mod.UIBgFill.Solid,
                     bgColor: [1, 0.3, 0.3],
@@ -184,7 +185,7 @@ export class WeaponCatalog {
                 },
                 {
                     type: "Text",
-                    size: [40, 40],
+                    size: [LAYOUT.Header.close.size, LAYOUT.Header.close.size],
                     anchor: mod.UIAnchor.CenterRight,
                     bgFill: mod.UIBgFill.None,
                     textLabel: mod.Message(s`X`),
@@ -199,7 +200,7 @@ export class WeaponCatalog {
         this.#uiMainCatalogAreaHeaderBackButton = ParseUI({
             type: "Container",
             parent: this.#uiMainCatalogAreaHeader,
-            size: [40, 40],
+            size: [LAYOUT.Header.back.size, LAYOUT.Header.back.size],
             anchor: mod.UIAnchor.CenterLeft,
             bgFill: mod.UIBgFill.None,
             visible: false,
@@ -207,7 +208,7 @@ export class WeaponCatalog {
                 {
                     type: "Button",
                     name: this.#backButtonName,
-                    size: [40, 40],
+                    size: [LAYOUT.Header.back.size, LAYOUT.Header.back.size],
                     anchor: mod.UIAnchor.TopLeft,
                     bgFill: mod.UIBgFill.Solid,
                     bgColor: this.#surfaceColor,
@@ -215,7 +216,7 @@ export class WeaponCatalog {
                 },
                 {
                     type: "Text",
-                    size: [40, 40],
+                    size: [LAYOUT.Header.back.size, LAYOUT.Header.back.size],
                     anchor: mod.UIAnchor.TopLeft,
                     bgFill: mod.UIBgFill.None,
                     textLabel: mod.Message(s`<`),
@@ -236,7 +237,7 @@ export class WeaponCatalog {
             const categoryPage = ParseUI({
                 type: "Container",
                 parent: this.#uiMainCatalogArea,
-                padding: 16,
+                padding: LAYOUT.Grid.pagePadding,
                 visible: index === 0,
                 size: [pageWidth, pageHeight],
                 position: [0, this.#catalogMainHeaderHeight],
@@ -294,7 +295,14 @@ export class WeaponCatalog {
 
             if (!widget) return;
 
-            mod.AddUIWeaponImage(weapon.name, mod.CreateVector(16, 0, 0), mod.CreateVector(this.#weaponItemWidth - 32, this.#weaponItemHeight, 1), mod.UIAnchor.TopLeft, weapon.weapon, widget);
+            mod.AddUIWeaponImage(
+                weapon.name,
+                mod.CreateVector(LAYOUT.Grid.item.imagePaddingX, 0, 0),
+                mod.CreateVector(this.#weaponItemWidth - (LAYOUT.Grid.item.imagePaddingX * 2), this.#weaponItemHeight, 1),
+                mod.UIAnchor.TopLeft,
+                weapon.weapon,
+                widget
+            );
             this.#weaponButtons[weapon.id] = {
                 widget,
                 weapon
@@ -309,11 +317,11 @@ export class WeaponCatalog {
 
         // Set previous button color back to normal
         mod.SetUIWidgetVisible(this.#catalogWeaponCategoryPages[this.#selectedCategoryIndex], false);
-        mod.SetUITextColor(this.#catalogSidebarButtons[this.#selectedCategoryIndex], mod.CreateVector(1, 1, 1));
+    mod.SetUITextColor(this.#catalogSidebarButtons[this.#selectedCategoryIndex], mod.CreateVector(THEME.colors.textPrimary[0], THEME.colors.textPrimary[1], THEME.colors.textPrimary[2]));
 
         this.#selectedCategoryIndex = index;
         mod.SetUIWidgetVisible(this.#catalogWeaponCategoryPages[this.#selectedCategoryIndex], true);
-        mod.SetUITextColor(this.#catalogSidebarButtons[this.#selectedCategoryIndex], mod.CreateVector(1, 0.98, 0.65));
+    mod.SetUITextColor(this.#catalogSidebarButtons[this.#selectedCategoryIndex], mod.CreateVector(THEME.colors.textAccent[0], THEME.colors.textAccent[1], THEME.colors.textAccent[2]));
 
         if(this.#pageState !== "weaponSelection") {
             this.#setPage("weaponSelection");
@@ -333,20 +341,20 @@ export class WeaponCatalog {
         this.#catalogAttachmentSlotSelectionPage = ParseUI({
             type: "Container",
             parent: this.#uiMainCatalogArea,
-            padding: 16,
+            padding: LAYOUT.Grid.pagePadding,
             position: [0, this.#catalogMainHeaderHeight],
             size: [this.#catalogWidth, this.#catalogHeight],
             bgFill: mod.UIBgFill.None,
         });
 
         const availableSlots = getAvailableAttachmentSlots(this.#selectedWeapon.id);
-        const attachmentSlotsPerRow = this.#calculateItemsPerRow(200, 16);      
+    const attachmentSlotsPerRow = this.#calculateItemsPerRow(LAYOUT.Slots.item.width, LAYOUT.Slots.gap.x);     
 
         availableSlots.forEach((slot, index) => {
             const xColNum = Math.floor(index % attachmentSlotsPerRow);
             const yRowNum = Math.floor(index / attachmentSlotsPerRow);
-            const x = xColNum * (200 + 16);
-            const y = yRowNum * (50 + 16);
+            const x = xColNum * (LAYOUT.Slots.item.width + LAYOUT.Slots.gap.x);
+            const y = yRowNum * (LAYOUT.Slots.item.height + LAYOUT.Slots.gap.y);
             const itemPos = [x, y];
 
             ParseUI({
@@ -354,7 +362,7 @@ export class WeaponCatalog {
                 parent: this.#catalogAttachmentSlotSelectionPage,
                 position: itemPos,
                 padding: 0,
-                size: [200, 50],
+                size: [LAYOUT.Slots.item.width, LAYOUT.Slots.item.height],
                 bgFill: mod.UIBgFill.None,
                 children: [
                     {
@@ -363,14 +371,14 @@ export class WeaponCatalog {
                         padding: 0,
                         position: [0, 0],
                         anchor: mod.UIAnchor.TopLeft,
-                        size: [200, 50],
+                        size: [LAYOUT.Slots.item.width, LAYOUT.Slots.item.height],
                         bgFill: mod.UIBgFill.Solid,
                         bgColor: this.#elementColor,
                         bgAlpha: 1
                     },
                     {
                         type: "Text",
-                        size: [200, 50],
+                        size: [LAYOUT.Slots.item.width, LAYOUT.Slots.item.height],
                         anchor: mod.UIAnchor.TopLeft,
                         position: [0, 0],
                         bgFill: mod.UIBgFill.None,
@@ -389,20 +397,20 @@ export class WeaponCatalog {
         this.#catalogAttachmentSelectionPage = ParseUI({
             type: "Container",
             parent: this.#uiMainCatalogArea,
-            padding: 16,
+            padding: LAYOUT.Grid.pagePadding,
             position: [0, this.#catalogMainHeaderHeight],
             size: [this.#catalogWidth, this.#catalogHeight],
             bgFill: mod.UIBgFill.None,
         });
 
         const availableAttachments = getWeaponAttachmentsBySlot(this.#selectedWeapon.id, this.#selectedAttachmentSlot);
-        const attachmentsPerRow = this.#calculateItemsPerRow(200, 16);
+    const attachmentsPerRow = this.#calculateItemsPerRow(LAYOUT.Attachments.item.width, LAYOUT.Attachments.gap.x);
 
         availableAttachments.forEach((attachment, index) => {
             const xColNum = Math.floor(index % attachmentsPerRow);
             const yRowNum = Math.floor(index / attachmentsPerRow);
-            const x = xColNum * (200 + 16);
-            const y = yRowNum * (50 + 16);
+            const x = xColNum * (LAYOUT.Attachments.item.width + LAYOUT.Attachments.gap.x);
+            const y = yRowNum * (LAYOUT.Attachments.item.height + LAYOUT.Attachments.gap.y);
             const itemPos = [x, y];
 
             ParseUI({
@@ -410,7 +418,7 @@ export class WeaponCatalog {
                 parent: this.#catalogAttachmentSelectionPage,
                 position: itemPos,
                 padding: 0,
-                size: [200, 50],
+                size: [LAYOUT.Attachments.item.width, LAYOUT.Attachments.item.height],
                 bgFill: mod.UIBgFill.None,
                 children: [
                     {
@@ -419,14 +427,14 @@ export class WeaponCatalog {
                         padding: 0,
                         position: [0, 0],
                         anchor: mod.UIAnchor.TopLeft,
-                        size: [200, 50],
+                        size: [LAYOUT.Attachments.item.width, LAYOUT.Attachments.item.height],
                         bgFill: mod.UIBgFill.Solid,
                         bgColor: this.#elementColor,
                         bgAlpha: 1
                     },
                     {
                         type: "Text",
-                        size: [200, 50],
+                        size: [LAYOUT.Attachments.item.width, LAYOUT.Attachments.item.height],
                         anchor: mod.UIAnchor.TopLeft,
                         position: [0, 0],
                         bgFill: mod.UIBgFill.None,
@@ -502,13 +510,13 @@ export class WeaponCatalog {
     #showBackButton(show: boolean) {
         if(!this.#uiMainCatalogAreaHeaderBackButton || !this.#uiMainCatalogAreaHeaderTitle) return; // Can't update if there's no header elements
 
-        const initialHeaderTitleWidth = this.#catalogWidth - this.#catalogSidebarWidth - this.#catalogMainHeaderPadding * 2 - 40;
+    const initialHeaderTitleWidth = this.#catalogWidth - this.#catalogSidebarWidth - this.#catalogMainHeaderPadding * 2 - LAYOUT.Header.back.size;
         const initialHeaderTitleHeight = this.#catalogMainHeaderHeight - this.#catalogMainHeaderPadding * 2;
 
         if(show) {
             mod.SetUIWidgetVisible(this.#uiMainCatalogAreaHeaderBackButton, true);
-            mod.SetUIWidgetPosition(this.#uiMainCatalogAreaHeaderTitle, mod.CreateVector(40 + this.#catalogMainHeaderPadding, 0, 0));
-            mod.SetUIWidgetSize(this.#uiMainCatalogAreaHeaderTitle, mod.CreateVector((initialHeaderTitleWidth - this.#catalogMainHeaderPadding - 40), (initialHeaderTitleHeight), 0)); // Adjust width to account for back button
+            mod.SetUIWidgetPosition(this.#uiMainCatalogAreaHeaderTitle, mod.CreateVector(LAYOUT.Header.back.size + this.#catalogMainHeaderPadding, 0, 0));
+            mod.SetUIWidgetSize(this.#uiMainCatalogAreaHeaderTitle, mod.CreateVector((initialHeaderTitleWidth - this.#catalogMainHeaderPadding - LAYOUT.Header.back.size), (initialHeaderTitleHeight), 0)); // Adjust width to account for back button
         } else {
             mod.SetUIWidgetVisible(this.#uiMainCatalogAreaHeaderBackButton, false);
             mod.SetUIWidgetPosition(this.#uiMainCatalogAreaHeaderTitle, mod.CreateVector(0, 0, 0));
@@ -673,7 +681,7 @@ export class WeaponCatalog {
     }
 
     #calculateItemsPerRow(itemWidth: number, horizontalSpacing: number): number {
-        const pageWidth = this.#catalogWidth - this.#catalogSidebarWidth - 32; // 32 for padding (16 on each side)
+    const pageWidth = this.#catalogWidth - this.#catalogSidebarWidth - (LAYOUT.Grid.pagePadding * 2); // padding on each side
         const itemsPerRow = Math.floor(pageWidth / (itemWidth + horizontalSpacing));
         return itemsPerRow;
     }
