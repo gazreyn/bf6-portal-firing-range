@@ -1,19 +1,22 @@
+import { s } from "../../lib/string-macro";
 import { WeaponCatalog } from "../weapon-catalog";
 
 export class PlayerState {
     player: mod.Player;
     weaponCatalog: WeaponCatalog | undefined;
+    recentHitDamage: number;
 
     static playerInstances: mod.Player[] = [];
     static #allPlayerStates: { [key: number]: PlayerState } = {};
     
     constructor(player: mod.Player) {
         this.player = player;
+        this.recentHitDamage = 0;
         PlayerState.playerInstances.push(this.player);
 
         // Create and assign any relevant UI's here
         // Never create UI elements for AI soldiers, because late joining players will inherit their Object IDs, and thus their UI
-        if (mod.GetSoldierState(this.player, mod.SoldierStateBool.IsAISoldier)) return;
+        if (mod.GetSoldierState(player, mod.SoldierStateBool.IsAISoldier)) return;
 
         this.weaponCatalog = new WeaponCatalog(this);
     }
@@ -38,6 +41,15 @@ export class PlayerState {
         // Destroy any UI's and remove from allPlayerStates
         PlayerState.#allPlayerStates[playerId]?.destroyUI();
         delete PlayerState.#allPlayerStates[playerId];
+    }
+
+    updateRecentHitDamage(damage: number) {
+        this.recentHitDamage = damage;
+        this.showRecentHitDamage();
+    }
+
+    showRecentHitDamage() {
+        mod.DisplayHighlightedWorldLogMessage(mod.Message(s`Recent Hit Damage: {}`, this.recentHitDamage), this.player);
     }
 
     destroyUI() {

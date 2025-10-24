@@ -1,43 +1,36 @@
-type BotTargetBehavior = {
+import { PlayerState } from "../player";
+
+type TargetBehavior = {
     onSpawn: (player: mod.Player, enemy: BotTarget) => void | Promise<void>;
     onDeath: (player: mod.Player, enemy: BotTarget) => void | Promise<void>;
     onHit: (player: mod.Player, enemy: BotTarget) => void | Promise<void>;
 };
 
-class SpawnLocation {
-    position: ReturnType<typeof mod.CreateVector>;
-    behavior: BotTargetBehavior;
-
-    constructor(position: { x: number; y: number; z: number }, behavior: BotTargetBehavior) {
-        this.position = mod.CreateVector(position.x, position.y, position.z);
-        this.behavior = behavior;
-    }
-
-    getPosition(): ReturnType<typeof mod.CreateVector> {
-        return this.position;
-    }
-}
+type TargetSpawnPoint = {
+    id: number;
+    behaviour: TargetBehavior;
+};
 
 class BotTarget {
     public isAlive: boolean = false;
     public isActive: boolean = false;
-    public spawnPointID: number;
-    #behavior: BotTargetBehavior;
+    #behavior: TargetBehavior;
     #player: mod.Player;
+    spawnerID: number;
+    spawnPoint: TargetSpawnPoint;
+    health: number = 1000;
+    lastHit: number = 0;
 
-    constructor(player: mod.Player, spawnPointID: number, behavior: BotTargetBehavior = defaultBehavior) {
+    constructor(player: mod.Player, spawnerID: number, behavior: TargetBehavior = defaultBehavior) {
         this.#player = player;
-        this.spawnPointID = spawnPointID;
         this.#behavior = behavior;
+        this.spawnerID = spawnerID; // Probably don't need this as we store in the spawnPoint
+        this.spawnPoint = this.getSpawnPoint(spawnerID);
     }
 
     initialize() {
-        console.log(`Initializing BotTarget at spawn point ${this.spawnPointID}`);
+        console.log(`Initializing BotTarget with spawn id ${this.spawnPoint.id}`);
         this.onSpawn();
-    }
-
-    getSpawnPointID(): number {
-        return this.spawnPointID;
     }
 
     getPlayer(): mod.Player {
@@ -45,7 +38,7 @@ class BotTarget {
     }
 
     onSpawn() {
-        console.log(`BotTarget onSpawn (${this.spawnPointID})`);
+        console.log(`BotTarget onSpawn (Spawn Point ${this.spawnPoint.id})`);
         this.#behavior.onSpawn(this.#player, this);
     }
 
@@ -55,122 +48,160 @@ class BotTarget {
 
     onHit() {
         this.#behavior.onHit(this.#player, this);
+
+        // General Logic
+        const currentHealth = mod.GetSoldierState(this.#player, mod.SoldierStateNumber.CurrentHealth);
+        const damageTaken = this.health - currentHealth;
+        this.health = currentHealth;
+        this.lastHit = damageTaken;
+
+        this.heal();
+    }
+
+    heal() {
+        this.health = 1000;
+        mod.Heal(this.#player, 1000);
+    }
+
+    getSpawnPoint(spawnerID: number): TargetSpawnPoint {
+        console.log("Getting spawn point for bot + name for bot");
+        return SPAWNS.find(spawn => spawn.id === spawnerID) || SPAWNS[0];
     }
 }
 
 export class BotTargetManager {
 
-    static reservedSpawnPoints: Map<number, BotTarget> = new Map();
-    static spawnedTargets: Map<number, BotTarget> = new Map();
+    static targets: Map<number, BotTarget> = new Map(); // Player ID to BotTarget
+    static spawnerTargets: Map<number, number> = new Map(); // Spawner ID to Player ID
 
-    static assignAsTarget(player: mod.Player) {
-        const botId = mod.GetObjId(player);
+    static assignAsTarget(player: mod.Player, spawnerID: number) {
 
-        if (this.spawnedTargets.has(botId)) return; // Already assigned, maybe better handling
+        // First check if the spawner already has a target assigned
+        const playerId = mod.GetObjId(player);
+        const existingTargetID = BotTargetManager.spawnerTargets.get(spawnerID);
+        const target = BotTargetManager.targets.get(playerId);
 
-        // Find an available spawn point
-        const availableSpawnId = this.getValidSpawnPoint();
-
-        if (availableSpawnId === null) {
-            console.log("No available spawn points for new target");
-            mod.Kill(player);
+        if(existingTargetID || target) {
+            console.log(`BotTargetManager: Spawner with id ${spawnerID} already has target assigned with id ${existingTargetID}.`);
+            mod.Kill(player); // Prevent duplicate bots with the same name in the same position
             return;
         }
 
-        // Create target with the assigned spawn point
-        const target = new BotTarget(player, availableSpawnId);
-        
-        this.spawnedTargets.set(botId, target);
-        this.reservedSpawnPoints.set(availableSpawnId, target);
-        
-        console.log(`Assigned target to spawn point ${availableSpawnId}`);
-        target.initialize();
+        console.log(`BotTargetManager: Assigning Player ${mod.GetObjId(player)} as BotTarget.`);;
+
+        const spawnBehavior = SPAWNS.find(spawn => spawn.id === spawnerID)?.behaviour || defaultBehavior;
+
+        const botTarget = new BotTarget(player, spawnerID, spawnBehavior);
+
+        console.log(`BotTargetManager: Created BotTarget for Player ${mod.GetObjId(player)} with spawn point ${botTarget.spawnPoint.id}.`);
+
+        BotTargetManager.targets.set(playerId, botTarget);
+        BotTargetManager.spawnerTargets.set(spawnerID, playerId);
+        botTarget.initialize();
+
+        console.log(`BotTargetManager: Assigned Player ${mod.GetObjId(player)} as BotTarget with id ${botTarget.spawnPoint.id}.`);
     }
 
-    static removeTarget(playerId: number) {
-        const target = BotTargetManager.spawnedTargets.get(playerId);
-        if (!target) return;
-        
-        // Remove from spawn points map using the target's spawn point ID
-        BotTargetManager.reservedSpawnPoints.delete(target.spawnPointID);
-        BotTargetManager.spawnedTargets.delete(playerId); // Test this
-        console.log(`Freed spawn point ${target.spawnPointID}`);
-        console.log(`Removed target with player ID ${playerId}`);
-    }
+    static removeTarget(player: mod.Player) {
+        const playerId = mod.GetObjId(player);
+        const target = BotTargetManager.targets.get(playerId);
 
-    static getValidSpawnPoint(): number | null {
-        // Check each possible spawn point (9, 10, 11) to see if it's available
-        const possibleSpawnIds = Object.keys(spawnLocations).map(Number);
-        
-        for (const spawnId of possibleSpawnIds) {
-            if (!this.reservedSpawnPoints.has(spawnId)) {
-                return spawnId; // Found an available spawn point
-            }
+        if (!target) {
+            console.log(`BotTargetManager: No target found for Player ID ${playerId} on removal.`);
+            return;
         }
-        
-        return null; // No available spawn points
+
+        BotTargetManager.targets.delete(playerId);
+        BotTargetManager.spawnerTargets.delete(target.spawnPoint.id);
+        console.log(`Freed spawn point ${target.spawnPoint.id}`);
+        console.log(`Removed target spawn id ${target.spawnPoint.id}`);
     }
 
-    static isValidSpawnPoint(spawnPointID: number): boolean {
-        return !this.reservedSpawnPoints.has(spawnPointID);
+    static spawnTarget(spawnPoint: TargetSpawnPoint) {
+        mod.SpawnAIFromAISpawner(mod.GetSpawner(spawnPoint.id), mod.SoldierClass.Assault, mod.GetTeam(2));
     }
 
-    static spawnBot(spawnPointID: number) {
-        mod.SpawnAIFromAISpawner(mod.GetSpawner(spawnPointID), mod.SoldierClass.Assault, mod.GetTeam(2));
+    static spawnTargets() {
+        SPAWNS.forEach(spawnPoint => {
+            BotTargetManager.spawnTarget(spawnPoint);
+        });
     }
 
-    static async spawnBots() {
-        for (const key of Object.keys(spawnLocations)) {
-            BotTargetManager.spawnBot(Number(key));
-        }
-    }
-
-    static async respawnBotAfterTime(spawnPointID: number, timeSeconds: number) {
+    static async respawnTargetAfterTime(spawnPoint: TargetSpawnPoint, timeSeconds: number) {
         await mod.Wait(timeSeconds);
-        BotTargetManager.spawnBot(spawnPointID);
+        BotTargetManager.spawnTarget(spawnPoint);
     }
 
     // Event Handlers
-    static onBotTargetSpawned(player: mod.Player) {
-        BotTargetManager.assignAsTarget(player);
-    }
-
     static onBotTargetDied(player: mod.Player) {
-        const botId = mod.GetObjId(player);
-        const target = BotTargetManager.spawnedTargets.get(botId);
-        if (!target)  return;
+
+        const playerId = mod.GetObjId(player);
+        const target = BotTargetManager.targets.get(playerId);
+
+        if(!target) {
+            console.log(`BotTargetManager: No target found for Player ID ${playerId} on death.`);
+            return;
+        }
 
         target.onDeath();
-        BotTargetManager.removeTarget(botId);
-        BotTargetManager.respawnBotAfterTime(target.spawnPointID, 2);
+        BotTargetManager.removeTarget(player);
+        BotTargetManager.respawnTargetAfterTime(target.spawnPoint, 2);
     }
 
     static onBotTargetHit(player: mod.Player, attacker: mod.Player, dmgType: mod.DamageType) {
-        const botId = mod.GetObjId(player);
-        const target = BotTargetManager.spawnedTargets.get(botId);
+        const playerId = mod.GetObjId(player);
+        const target = BotTargetManager.targets.get(playerId);
         if (!target) return;
+
         target.onHit();
+
+        // Temp: Do some logic here but maybe it goes in to behavior in the future? maybe not
+        const attackerState = PlayerState.get(attacker);
+        if(!attackerState) return;
+
+        attackerState.updateRecentHitDamage(target.lastHit);
+
     }
 }
 
-const defaultBehavior: BotTargetBehavior = {
-    onSpawn: async (player, botTarget) => {
+const defaultBehavior: TargetBehavior = {
+    onSpawn: async (player, target) => {
         mod.AIEnableShooting(player, false);
         mod.AIEnableTargeting(player, false);
         mod.RemoveEquipment(player, mod.InventorySlots.SecondaryWeapon);
         mod.RemoveEquipment(player, mod.InventorySlots.Throwable);
-        console.log(`[Default Behavior][onSpawn] Applying BotTarget behavior. (${botTarget.spawnPointID})`);
+        mod.AIIdleBehavior(player);
+        mod.SetPlayerMaxHealth(player, 1000);
+        console.log(`[Default Behavior][onSpawn] Applying BotTarget behavior. (${target.spawnPoint.id})`);
     },
-    onDeath: async (_player, botTarget) => {
-        console.log(`[Default Behavior][onDeath] BotTarget has died.(${botTarget.spawnPointID})`);
+    onDeath: async (_player, target) => {
+        console.log(`[Default Behavior][onDeath] BotTarget has died.(${target.spawnPoint.id})`);
     },
-    onHit: async (_player, botTarget) => {
-        console.log(`[Default Behavior][onHit] BotTarget has been hit.(${botTarget.spawnPointID})`);
+    onHit: async (_player, target) => {
+        console.log(`[Default Behavior][onHit] BotTarget has been hit.(${target.spawnPoint.id})`);
     }
 };
 
-const spawnLocations: Record<number, SpawnLocation> = {
-    9: new SpawnLocation({ x: -0.159, y: 0.413, z: 4.992 }, defaultBehavior), // Front target
-    10: new SpawnLocation({ x: 0.316, y: -0.72, z: -9.945 }, defaultBehavior), // Middle target
-    11: new SpawnLocation({ x: 1.153, y: -2.064, z: -36.263 }, defaultBehavior), // Back target
+const crouchBehavior: TargetBehavior = {
+    onSpawn: async (player, target) => {
+        mod.AIEnableShooting(player, false);
+        mod.AIEnableTargeting(player, false);
+        mod.RemoveEquipment(player, mod.InventorySlots.SecondaryWeapon);
+        mod.RemoveEquipment(player, mod.InventorySlots.Throwable);
+        mod.AISetStance(player, mod.Stance.Crouch);
+        mod.SetPlayerMaxHealth(player, 1000);
+        console.log(`[Alternative Behavior][onSpawn] Applying BotTarget behavior. (${target.spawnPoint.id})`);
+    },
+    onDeath: async (_player, target) => {
+        console.log(`[Default Behavior][onDeath] BotTarget has died.(${target.spawnPoint.id})`);
+    },
+    onHit: async (_player, target) => {
+        console.log(`[Default Behavior][onHit] BotTarget has been hit.(${target.spawnPoint.id})`);
+    }
 };
+
+const SPAWNS: TargetSpawnPoint[] = [
+    {id: 9, behaviour: defaultBehavior},
+    {id: 10, behaviour: crouchBehavior},
+    {id: 11, behaviour: defaultBehavior}
+];

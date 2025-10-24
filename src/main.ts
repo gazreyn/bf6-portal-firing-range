@@ -3,11 +3,11 @@ import { BotTargetManager } from "./systems/targets";
 
 const vendingMachineID: number = 100;
 
-export async function OnGameModeStarted(): Promise<void> {
-    BotTargetManager.spawnBots();
+export async function OnGameModeStarted() {
+    BotTargetManager.spawnTargets();
 }
 
-export async function OnPlayerJoinGame(eventPlayer: mod.Player): Promise<void> {
+export async function OnPlayerJoinGame(eventPlayer: mod.Player) {
     if(isValidAI(eventPlayer)) {
         console.log(`(AI) Player ${mod.GetObjId(eventPlayer)} joined the game`);
         return;
@@ -15,7 +15,7 @@ export async function OnPlayerJoinGame(eventPlayer: mod.Player): Promise<void> {
     PlayerState.get(eventPlayer);
 }
 
-export function OnPlayerInteract(eventPlayer: mod.Player, interactPoint: mod.InteractPoint): void {
+export function OnPlayerInteract(eventPlayer: mod.Player, interactPoint: mod.InteractPoint) {
     let playerState = PlayerState.get(eventPlayer);
     let interactionId = mod.GetObjId(interactPoint);
 
@@ -29,9 +29,15 @@ export function OnPlayerInteract(eventPlayer: mod.Player, interactPoint: mod.Int
 export async function OnPlayerDeployed(eventPlayer: mod.Player): Promise<void> {
     if(isValidAI(eventPlayer)) {
         console.log(`(AI) Player ${mod.GetObjId(eventPlayer)} deployed`);
-        BotTargetManager.assignAsTarget(eventPlayer);
-        // BotTargetManager.botTargetSpawned(eventPlayer);
+        // BotTargetManager.assignAsTarget(eventPlayer);
     }
+}
+
+export async function OnSpawnerSpawned(eventPlayer: mod.Player, eventSpawner: mod.Spawner) {
+    await mod.Wait(1); // Wait a tick to ensure the AI is fully spawned
+    const spawnerID = mod.GetObjId(eventSpawner);
+    console.log(`Spawner with id ${spawnerID} has spawned Player ${mod.GetObjId(eventPlayer)}`);
+    BotTargetManager.assignAsTarget(eventPlayer, spawnerID);
 }
 
 export function OnPlayerDied(eventPlayer: mod.Player, attacker: mod.Player, _type: mod.DeathType, _evWepUnlock: mod.WeaponUnlock): void {
@@ -40,9 +46,9 @@ export function OnPlayerDied(eventPlayer: mod.Player, attacker: mod.Player, _typ
     }
 }
 
-export function OnPlayerDamaged(eventPlayer: mod.Player, attacker: mod.Player, _dmgType: mod.DamageType, _evWepUnlock: mod.WeaponUnlock): void {
+export function OnPlayerDamaged(eventPlayer: mod.Player, attacker: mod.Player, dmgType: mod.DamageType, _evWepUnlock: mod.WeaponUnlock): void {
     if(isValidAI(eventPlayer)) {
-        BotTargetManager.onBotTargetHit(eventPlayer, attacker, _dmgType);
+        BotTargetManager.onBotTargetHit(eventPlayer, attacker, dmgType);
     }
 }
 
@@ -68,3 +74,4 @@ function isValidAI(player: mod.Player): boolean {
 function isAI(player: mod.Player): boolean {
     return mod.GetSoldierState(player, mod.SoldierStateBool.IsAISoldier);
 }
+
