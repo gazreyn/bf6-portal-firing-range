@@ -113,7 +113,7 @@ export class HeaderManager {
           textLabel: mod.Message(s`{}`, initialCategory),
           textSize: 24,
           textAnchor: mod.UIAnchor.CenterLeft,
-          textColor: THEME.colors.textPrimary
+          textColor: THEME.colors.textPrimary,
         },
         // Close Button
         {
