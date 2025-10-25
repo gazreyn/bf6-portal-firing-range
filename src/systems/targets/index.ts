@@ -127,16 +127,16 @@ const defaultBehavior: TargetBehavior = {
         mod.RemoveEquipment(player, mod.InventorySlots.SecondaryWeapon);
         mod.RemoveEquipment(player, mod.InventorySlots.Throwable);
         mod.AIIdleBehavior(player);
-        mod.SetPlayerMaxHealth(player, 1000);
-
+        mod.AISetFocusPoint(player, facingPoint, false);
+        mod.SetPlayerMaxHealth(player, 100);
         console.log(`BotTarget onSpawn (Spawn Point ${target.spawnPoint.id})`);
         console.log(`[Default Behavior][onSpawn] Applying BotTarget behavior. (${target.spawnPoint.id})`);
     },
     onDeath: async (_player, target) => {
         console.log(`[Default Behavior][onDeath] BotTarget has died.(${target.spawnPoint.id})`);
     },
-    onHit: async (player, _target) => {
-        mod.Heal(player, 1000); // Infinite health for testing
+    onHit: async (_player, _target) => {
+        return; // No action on hit
     }
 };
 
@@ -158,6 +158,8 @@ const crouchBehavior: TargetBehavior = {
         console.log(`[Default Behavior][onHit] BotTarget has been hit.(${target.spawnPoint.id})`);
     }
 };
+
+const facingPoint = mod.CreateVector(-0.26, 4.397, 19.589);
 
 const SPAWNS: TargetSpawnPoint[] = [
     {id: 9, behaviour: defaultBehavior},
