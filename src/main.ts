@@ -1,5 +1,6 @@
 import { PlayerState } from "./systems/player";
 import { BotTargetManager } from "./systems/targets";
+import { isValidAI } from "./lib/helpers";
 
 const vendingMachineID: number = 100;
 
@@ -12,24 +13,17 @@ export async function OnPlayerJoinGame(eventPlayer: mod.Player) {
         console.log(`(AI) Player ${mod.GetObjId(eventPlayer)} joined the game`);
         return;
     }
-    PlayerState.get(eventPlayer);
+    PlayerState.findOrCreate(eventPlayer);
 }
 
 export function OnPlayerInteract(eventPlayer: mod.Player, interactPoint: mod.InteractPoint) {
-    let playerState = PlayerState.get(eventPlayer);
+    let playerState = PlayerState.findOrCreate(eventPlayer);
     let interactionId = mod.GetObjId(interactPoint);
 
     if(!playerState) return;
 
     if (interactionId === vendingMachineID) {
         playerState.weaponCatalog?.open();
-    }
-}
-
-export async function OnPlayerDeployed(eventPlayer: mod.Player): Promise<void> {
-    if(isValidAI(eventPlayer)) {
-        console.log(`(AI) Player ${mod.GetObjId(eventPlayer)} deployed`);
-        // BotTargetManager.assignAsTarget(eventPlayer);
     }
 }
 
@@ -57,8 +51,10 @@ export function OnPlayerUIButtonEvent(
     eventUIWidget: mod.UIWidget,
     eventUIButtonEvent: mod.UIButtonEvent
 ): void {
-    const player = PlayerState.get(eventPlayer);
-    if(!player) return;
+    const player = PlayerState.findOrCreate(eventPlayer);
+
+    if(!player) return; // Can happen if eventPlayer id is invalid or an AI
+
     player.weaponCatalog?.onUIButtonEvent(eventUIWidget, eventUIButtonEvent);
 }
 
@@ -66,12 +62,3 @@ export function OnPlayerLeaveGame(playerId: number): void {
     console.log(`Player ${playerId} left the game`);
     PlayerState.remove(playerId);
 }
-
-function isValidAI(player: mod.Player): boolean {
-    return mod.IsPlayerValid(player) && isAI(player);
-}
-
-function isAI(player: mod.Player): boolean {
-    return mod.GetSoldierState(player, mod.SoldierStateBool.IsAISoldier);
-}
-
