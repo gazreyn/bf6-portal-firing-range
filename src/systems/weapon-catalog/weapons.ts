@@ -1,5 +1,5 @@
 import { s } from "../../lib/string-macro";
-import { getAttachments, type WeaponAttachmentSlot, type WeaponAttachment, attachmentGroups } from "./attachments";
+import { getAttachments, type WeaponAttachmentSlot, type WeaponAttachment, weaponAttachments } from "./attachments";
 
 export const weaponCategories = ['assault', 'carbine', 'sniper', 'smg', 'lmg', 'shotgun', 'pistol', 'dmr'] as const;
 export type WeaponCategory = typeof weaponCategories[number];
@@ -57,7 +57,7 @@ export const weapons: WeaponDefinition[] = [
         category: "assault",
         attachmentSlots: ["muzzle", "barrel", "scope", "underbarrel", "right_accessory", "top_accessory", "optic_accessory", "ergonomics", "magazine", "ammunition"],
         attachments: [
-            ...getAttachments(attachmentGroups.AssaultRifle_M433),
+            ...getAttachments(weaponAttachments.AssaultRifle_M433),
         ]
     },
     {
@@ -67,7 +67,17 @@ export const weapons: WeaponDefinition[] = [
         category: "assault",
         attachmentSlots: ["muzzle", "barrel", "scope", "underbarrel", "right_accessory", "top_accessory", "optic_accessory", "ergonomics", "magazine", "ammunition"],
         attachments: [
-            ...getAttachments(attachmentGroups.AssaultRifle_B36A4),
+            ...getAttachments(weaponAttachments.AssaultRifle_B36A4),
+        ],
+    },
+    {
+        id: 'gun_AssaultRifle_SOR_556_Mk2',
+        weapon: mod.Weapons.AssaultRifle_SOR_556_Mk2,
+        name: s`SOR-556 Mk2`,
+        category: "assault",
+        attachmentSlots: ["muzzle", "barrel", "scope", "underbarrel", "right_accessory", "top_accessory", "optic_accessory", "ergonomics", "magazine", "ammunition"],
+        attachments: [
+            ...getAttachments(weaponAttachments.AssaultRifle_SOR_556_Mk2),
         ]
     }
 ];

@@ -55,12 +55,55 @@ export const attachmentRegistry: Record<string, WeaponAttachment> = {
         attachment: mod.WeaponAttachments.Muzzle_Lightened_Suppressor, 
         slot: "muzzle" 
     },
+    "attachment_Muzzle_Single_port_Brake": { 
+        id: "attachment_Muzzle_Single_port_Brake", 
+        name: s`SINGLE-PORT BRAKE`, 
+        attachment: mod.WeaponAttachments.Muzzle_Single_port_Brake, 
+        slot: "muzzle" 
+    },
+
 
     // Barrel attachments
+    "attachment_Barrel_145_Standard": { 
+        id: "attachment_Barrel_145_Standard", 
+        name: s`14.5" STANDARD`, 
+        attachment: mod.WeaponAttachments.Barrel_145_Standard, 
+        slot: "barrel" 
+    },
+    "attachment_Barrel_145_Factory": { 
+        id: "attachment_Barrel_145_Factory", 
+        name: s`14.5" FACTORY`, 
+        attachment: mod.WeaponAttachments.Barrel_145_Factory, 
+        slot: "barrel" 
+    },
+    "attachment_Barrel_16_US": { 
+        id: "attachment_Barrel_16_US", 
+        name: s`16" US`, 
+        attachment: mod.WeaponAttachments.Barrel_16_US, 
+        slot: "barrel" 
+    },
     "attachment_Barrel_165_Rifle": { 
         id: "attachment_Barrel_165_Rifle", 
         name: s`16.5" RIFLE`, 
         attachment: mod.WeaponAttachments.Barrel_165_Rifle, 
+        slot: "barrel" 
+    },
+    "attachment_Barrel_165_Fluted": { 
+        id: "attachment_Barrel_165_Fluted", 
+        name: s`16.5" FLUTED`, 
+        attachment: mod.WeaponAttachments.Barrel_165_Fluted, 
+        slot: "barrel" 
+    },
+    "attachment_Barrel_18_Custom": { 
+        id: "attachment_Barrel_18_Custom", 
+        name: s`18" CUSTOM`, 
+        attachment: mod.WeaponAttachments.Barrel_18_Custom, 
+        slot: "barrel" 
+    },
+    "attachment_Barrel_18_US_LB": { 
+        id: "attachment_Barrel_18_US_LB", 
+        name: s`18" US-LB`, 
+        attachment: mod.WeaponAttachments.Barrel_18_US_LB, 
         slot: "barrel" 
     },
     "attachment_Barrel_189_Prototype": { 
@@ -69,17 +112,11 @@ export const attachmentRegistry: Record<string, WeaponAttachment> = {
         attachment: mod.WeaponAttachments.Barrel_189_Prototype, 
         slot: "barrel" 
     },
-    "attachment_Barrel_145_Standard": { 
-        id: "attachment_Barrel_145_Standard", 
-        name: s`14.5" STANDARD`, 
-        attachment: mod.WeaponAttachments.Barrel_145_Standard, 
-        slot: "barrel" 
-    },
-    "attachment_Barrel_165_Fluted": { 
-        id: "attachment_Barrel_165_Fluted", 
-        name: s`16.5" FLUTED`, 
-        attachment: mod.WeaponAttachments.Barrel_165_Fluted, 
-        slot: "barrel" 
+    "attachment_Barrel_391mm_CQB": {
+        id: "attachment_Barrel_391mm_CQB",
+        name: s`391MM CQB`,
+        attachment: mod.WeaponAttachments.Barrel_391mm_CQB,
+        slot: "barrel"
     },
     "attachment_Barrel_480mm_Factory": {
         id: "attachment_Barrel_480mm_Factory",
@@ -93,16 +130,16 @@ export const attachmentRegistry: Record<string, WeaponAttachment> = {
         attachment: mod.WeaponAttachments.Barrel_480mm_MG,
         slot: "barrel"
     },
-    "attachment_Barrel_510mm_Fluted": {
-        id: "attachment_Barrel_510mm_Fluted",
-        name: s`510MM FLUTED`,
-        attachment: mod.WeaponAttachments.Barrel_510mm_Fluted,
-        slot: "barrel"
-    },
     "attachment_Barrel_480mm_Fluted": {
         id: "attachment_Barrel_480mm_Fluted",
         name: s`480MM FLUTED`,
         attachment: mod.WeaponAttachments.Barrel_480mm_Fluted,
+        slot: "barrel"
+    },
+    "attachment_Barrel_510mm_Fluted": {
+        id: "attachment_Barrel_510mm_Fluted",
+        name: s`510MM FLUTED`,
+        attachment: mod.WeaponAttachments.Barrel_510mm_Fluted,
         slot: "barrel"
     },
     "attachment_Barrel_510mm_DMR": {
@@ -111,12 +148,13 @@ export const attachmentRegistry: Record<string, WeaponAttachment> = {
         attachment: mod.WeaponAttachments.Barrel_510mm_DMR,
         slot: "barrel"
     },
-    "attachment_Barrel_391mm_CQB": {
-        id: "attachment_Barrel_391mm_CQB",
-        name: s`391MM CQB`,
-        attachment: mod.WeaponAttachments.Barrel_391mm_CQB,
+    "attachment_Barrel_IAR_Heavy": { 
+        id: "attachment_Barrel_IAR_Heavy",
+        name: s`IAR HEAVY`,
+        attachment: mod.WeaponAttachments.Barrel_IAR_Heavy,
         slot: "barrel"
     },
+    
 
     // Scope attachments
     "attachment_Scope_Iron_Sights": { 
@@ -343,6 +381,24 @@ export const attachmentRegistry: Record<string, WeaponAttachment> = {
         attachment: mod.WeaponAttachments.Bottom_Stippled_Stubby, 
         slot: "underbarrel" 
     },
+    "attachment_Bottom_Low_Profile_Stubby": { 
+        id: "attachment_Bottom_Low_Profile_Stubby", 
+        name: s`LOW PROFILE STUBBY`, 
+        attachment: mod.WeaponAttachments.Bottom_Low_Profile_Stubby, 
+        slot: "underbarrel" 
+    },
+    "attachment_Bottom_Adjustable_Angled": { 
+        id: "attachment_Bottom_Adjustable_Angled", 
+        name: s`ADJUSTABLE ANGLED`, 
+        attachment: mod.WeaponAttachments.Bottom_Adjustable_Angled, 
+        slot: "underbarrel" 
+    },
+    "attachment_Bottom_Slim_Angled": { 
+        id: "attachment_Bottom_Slim_Angled", 
+        name: s`SLIM ANGLED`, 
+        attachment: mod.WeaponAttachments.Bottom_Slim_Angled, 
+        slot: "underbarrel" 
+    },
     "attachment_Bottom_Full_Angled": { 
         id: "attachment_Bottom_Full_Angled", 
         name: s`FULL ANGLED`, 
@@ -542,21 +598,8 @@ export function getAttachments(ids: string[]): WeaponAttachment[] {
     return ids.map(id => attachmentRegistry[id]).filter(Boolean);
 }
 
-// Common attachment groups for different weapon types
-export const attachmentGroups = {
-    "AssaultRifle_M433": [
-        "attachment_Muzzle_Flash_Hider",
-        "attachment_Muzzle_Double_port_Brake",
-        "attachment_Muzzle_Compensated_Brake",
-        "attachment_Muzzle_Linear_Comp",
-        "attachment_Muzzle_Standard_Suppressor",
-        "attachment_Muzzle_Long_Suppressor",
-        "attachment_Muzzle_CQB_Suppressor",
-        "attachment_Muzzle_Lightened_Suppressor",
-        "attachment_Barrel_165_Rifle",
-        "attachment_Barrel_189_Prototype",
-        "attachment_Barrel_145_Standard",
-        "attachment_Barrel_165_Fluted",
+export const commonAttachmentGroups = {
+    "AssaultRifle_Scopes": [
         "attachment_Scope_Iron_Sights",
         "attachment_Scope_Mini_Flex_100x",
         "attachment_Scope_R_MR_100x",
@@ -584,6 +627,28 @@ export const attachmentGroups = {
         "attachment_Scope_Mars_F_LPVO",
         "attachment_Scope_DVO_LPVO",
         "attachment_Scope_MC_CO_LPVO",
+    ],
+    "AssaultRifle_Muzzles": [
+        "attachment_Muzzle_Flash_Hider",
+        "attachment_Muzzle_Double_port_Brake",
+        "attachment_Muzzle_Compensated_Brake",
+        "attachment_Muzzle_Linear_Comp",
+        "attachment_Muzzle_Standard_Suppressor",
+        "attachment_Muzzle_Long_Suppressor",
+        "attachment_Muzzle_CQB_Suppressor",
+        "attachment_Muzzle_Lightened_Suppressor",
+    ],
+    "AssaultRifles_Right_Accessories": [
+        "attachment_Right_Flashlight",
+    ],
+    "AssaultRifles_Top_Accessories": [
+        "attachment_Top_5_mW_Red",
+        "attachment_Top_5_mW_Green",
+        "attachment_Top_50_mW_Green",
+        "attachment_Top_50_mW_Blue",
+        "attachment_Top_120_mW_Blue",
+    ],
+    "AssaultRifles_Underbarrels": [
         "attachment_Bottom_Folding_Vertical",
         "attachment_Bottom_Alloy_Vertical",
         "attachment_Bottom_Ribbed_Vertical",
@@ -599,12 +664,28 @@ export const attachmentGroups = {
         "attachment_Bottom_Bipod",
         "attachment_Bottom_QD_Grip_Pod",
         "attachment_Bottom_Classic_Grip_Pod",
-        "attachment_Right_Flashlight",
-        "attachment_Top_5_mW_Red",
-        "attachment_Top_5_mW_Green",
-        "attachment_Top_50_mW_Green",
-        "attachment_Top_50_mW_Blue",
-        "attachment_Top_120_mW_Blue",
+    ],
+    "AssaultRifles_Ammo": [
+        "attachment_Ammo_FMJ",
+        "attachment_Ammo_Tungsten_Core",
+        "attachment_Ammo_Hollow_Point",
+        "attachment_Ammo_Polymer_Case",
+        "attachment_Ammo_Frangible",
+    ],
+}
+
+// Common attachment groups for different weapon types
+export const weaponAttachments = {
+    "AssaultRifle_M433": [
+        ...commonAttachmentGroups.AssaultRifle_Muzzles,
+        ...commonAttachmentGroups.AssaultRifles_Right_Accessories,
+        ...commonAttachmentGroups.AssaultRifles_Top_Accessories,
+        ...commonAttachmentGroups.AssaultRifle_Scopes,
+        ...commonAttachmentGroups.AssaultRifles_Underbarrels,
+        "attachment_Barrel_165_Rifle",
+        "attachment_Barrel_189_Prototype",
+        "attachment_Barrel_145_Standard",
+        "attachment_Barrel_165_Fluted",
         "attachment_Scope_Canted_Iron_Sights",
         "attachment_Scope_Piggyback_Reflex",
         "attachment_Ergonomic_Magwell_Flare",
@@ -616,69 +697,23 @@ export const attachmentGroups = {
         "attachment_Magazine_36rnd_Magazine",
         "attachment_Magazine_40rnd_Magazine",
         "attachment_Magazine_40rnd_Fast_Mag",
-        "attachment_Ammo_FMJ",
-        "attachment_Ammo_Tungsten_Core",
-        "attachment_Ammo_Hollow_Point",
-        "attachment_Ammo_Polymer_Case",
-        "attachment_Ammo_Frangible",
+        ...commonAttachmentGroups.AssaultRifles_Ammo
     ],
     // Muzzles same, barrels different
     "AssaultRifle_B36A4": [
-        "attachment_Muzzle_Flash_Hider",
-        "attachment_Muzzle_Double_port_Brake",
-        "attachment_Muzzle_Compensated_Brake",
-        "attachment_Muzzle_Linear_Comp",
-        "attachment_Muzzle_Standard_Suppressor",
-        "attachment_Muzzle_Long_Suppressor",
-        "attachment_Muzzle_CQB_Suppressor",
-        "attachment_Muzzle_Lightened_Suppressor",
+        ...commonAttachmentGroups.AssaultRifle_Scopes,
+        ...commonAttachmentGroups.AssaultRifle_Muzzles,
+        ...commonAttachmentGroups.AssaultRifles_Right_Accessories,
+        ...commonAttachmentGroups.AssaultRifles_Top_Accessories,
         "attachment_Barrel_391mm_CQB",
         "attachment_Barrel_480mm_Factory",
         "attachment_Barrel_480mm_MG",
         "attachment_Barrel_480mm_Fluted",
         "attachment_Barrel_510mm_Fluted",
         "attachment_Barrel_510mm_DMR",
-        "attachment_Right_Flashlight",
-        "attachment_Right_Flashlight",
-        "attachment_Top_5_mW_Red",
-        "attachment_Top_5_mW_Green",
-        "attachment_Top_50_mW_Green",
-        "attachment_Top_50_mW_Blue",
-        "attachment_Top_120_mW_Blue",
-        "attachment_Scope_Iron_Sights",
-        "attachment_Scope_Mini_Flex_100x",
-        "attachment_Scope_R_MR_100x",
-        "attachment_Scope_Osa_7_100x",
-        "attachment_Scope_CQ_RDS_125x",
-        "attachment_Scope_2PRO_125x",
-        "attachment_Scope_RO_S_125x",
-        "attachment_Scope_ROX_150x",
-        "attachment_Scope_GRIM_150x",
-        "attachment_Scope_SU_123_150x",
-        "attachment_Scope_1p87_150x",
-        "attachment_Scope_RO_M_175x",
-        "attachment_Scope_3VZR_175x",
-        "attachment_Scope_A_P2_175x",
-        "attachment_Scope_CCO_200x",
-        "attachment_Scope_R4T_200x",
-        "attachment_Scope_BF_2M_250x",
-        "attachment_Scope_Baker_300x",
-        "attachment_Scope_PAS_35_300x",
-        "attachment_Scope_SDO_350x",
-        "attachment_Scope_PVQ_31_400x",
-        "attachment_Scope_LDS_450x",
-        "attachment_Scope_ST_Prisim_500x",
-        "attachment_Scope_SF_G2_500x",
-        "attachment_Scope_Mars_F_LPVO",
-        "attachment_Scope_DVO_LPVO",
-        "attachment_Scope_MC_CO_LPVO",
         "attachment_Scope_Canted_Iron_Sights",
         "attachment_Ergonomic_Match_Trigger",
-        "attachment_Ammo_FMJ",
-        "attachment_Ammo_Tungsten_Core",
-        "attachment_Ammo_Hollow_Point",
-        "attachment_Ammo_Polymer_Case",
-        "attachment_Ammo_Frangible",
+        ...commonAttachmentGroups.AssaultRifles_Ammo,
         "attachment_Ammo_Synthetic_Tip",
         "attachment_Magazine_20rnd_Magazine",
         "attachment_Magazine_20rnd_Fast_Mag",
@@ -689,21 +724,37 @@ export const attachmentGroups = {
         "attachment_Magazine_40rnd_Fast_Mag",
         "attachment_Magazine_45rnd_Magazine",
         "attachment_Magazine_45rnd_Fast_Mag",
-        "attachment_Bottom_Folding_Vertical",
-        "attachment_Bottom_Alloy_Vertical",
-        "attachment_Bottom_Ribbed_Vertical",
-        "attachment_Bottom_6H64_Vertical",
-        "attachment_Bottom_Classic_Vertical",
-        "attachment_Bottom_Underslung_Mount",
-        "attachment_Bottom_Folding_Stubby",
-        "attachment_Bottom_Ribbed_Stubby",
-        "attachment_Bottom_Canted_Stubby",
-        "attachment_Bottom_Stippled_Stubby",
-        "attachment_Bottom_Full_Angled",
-        "attachment_Bottom_PTT_Grip_Pod",
-        "attachment_Bottom_Bipod",
-        "attachment_Bottom_QD_Grip_Pod",
-        "attachment_Bottom_Classic_Grip_Pod",
+        ...commonAttachmentGroups.AssaultRifles_Underbarrels,
+    ],
+    "AssaultRifle_SOR_556_Mk2": [
+        ...commonAttachmentGroups.AssaultRifle_Scopes,
+        ...commonAttachmentGroups.AssaultRifle_Muzzles,
+        ...commonAttachmentGroups.AssaultRifles_Right_Accessories,
+        ...commonAttachmentGroups.AssaultRifles_Top_Accessories,
+        ...commonAttachmentGroups.AssaultRifles_Underbarrels,
+        "attachment_Bottom_Low_Profile_Stubby",
+        "attachment_Bottom_Adjustable_Angled",
+        "attachment_Bottom_Slim_Angled",
+        "attachment_Muzzle_Single_port_Brake",
+        "attachment_Barrel_16_US",
+        "attachment_Barrel_18_Custom",
+        "attachment_Barrel_18_US_LB",
+        "attachment_Barrel_145_Factory",
+        "attachment_Barrel_IAR_Heavy",
+        "attachment_Scope_Canted_Iron_Sights",
+        "attachment_Ergonomic_Match_Trigger",
+        "attachment_Ergonomic_Magwell_Flare",
+        "attachment_Magazine_20rnd_Magazine",
+        "attachment_Magazine_20rnd_Fast_Mag",
+        "attachment_Magazine_30rnd_Magazine",
+        "attachment_Magazine_30rnd_Fast_Mag",
+        "attachment_Magazine_36rnd_Magazine",
+        "attachment_Magazine_40rnd_Magazine",
+        "attachment_Magazine_40rnd_Fast_Mag",
+        "attachment_Magazine_45rnd_Magazine",
+        "attachment_Magazine_45rnd_Fast_Mag",
+        ...commonAttachmentGroups.AssaultRifles_Ammo,
     ]
-
 };
+
+mod.WeaponAttachments.Bottom_Low_Profile_Stubby
