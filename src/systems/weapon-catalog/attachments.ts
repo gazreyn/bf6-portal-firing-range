@@ -3,9 +3,10 @@ import { s } from "../../lib/string-macro";
 export const weaponAttachmentSlots = ['muzzle', 'barrel', 'scope', 'right_accessory', 'top_accessory', 'optic_accessory', 'ergonomics', 'underbarrel', 'magazine', 'ammunition'] as const;
 export type WeaponAttachmentSlot = typeof weaponAttachmentSlots[number];
 export type WeaponAttachment = { id: string, name: string, attachment: mod.WeaponAttachments, slot: WeaponAttachmentSlot };
+export type AttachmentKey = keyof typeof attachmentRegistry;
 
 // Central attachment registry - each attachment defined once
-export const attachmentRegistry: Record<string, WeaponAttachment> = {
+export const attachmentRegistry = {
     // Muzzle attachments
     "attachment_Muzzle_Flash_Hider": { 
         id: "attachment_Muzzle_Flash_Hider", 
@@ -591,14 +592,14 @@ export const attachmentRegistry: Record<string, WeaponAttachment> = {
         attachment: mod.WeaponAttachments.Ammo_Synthetic_Tip,
         slot: "ammunition" 
     },
-};
+} as const;
 
 // Helper function to get attachments by their IDs
-export function getAttachments(ids: string[]): WeaponAttachment[] {
+export function getAttachments(ids: AttachmentKey[]): WeaponAttachment[] {
     return ids.map(id => attachmentRegistry[id]).filter(Boolean);
 }
 
-export const commonAttachmentGroups = {
+export const commonAttachmentGroups: Record<string, AttachmentKey[]> = {
     "AssaultRifle_Scopes": [
         "attachment_Scope_Iron_Sights",
         "attachment_Scope_Mini_Flex_100x",
@@ -675,7 +676,7 @@ export const commonAttachmentGroups = {
 }
 
 // Common attachment groups for different weapon types
-export const weaponAttachments = {
+export const weaponAttachments: Record<string, AttachmentKey[]> = {
     "AssaultRifle_M433": [
         ...commonAttachmentGroups.AssaultRifle_Muzzles,
         ...commonAttachmentGroups.AssaultRifles_Right_Accessories,
