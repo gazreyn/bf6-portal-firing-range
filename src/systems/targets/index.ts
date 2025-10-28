@@ -10,56 +10,52 @@ type TargetSpawnPoint = {
 };
 
 class BotTarget {
-    #behavior: TargetBehavior;
-    #player: mod.Player;
-    #spawnerID: number;
-    #spawnPoint: TargetSpawnPoint;
+    private _behavior: TargetBehavior;
+    private _player: mod.Player;
+    private readonly _spawnerID: number;
+    private readonly _spawnPoint: TargetSpawnPoint;
 
     constructor(player: mod.Player, spawnerID: number, behavior: TargetBehavior = defaultBehavior) {
-        this.#player = player;
-        this.#behavior = behavior;
-        this.#spawnerID = spawnerID; // Probably don't need this as we store in the spawnPoint
-        this.#spawnPoint = SPAWNS.find(spawn => spawn.id === spawnerID) || SPAWNS[0];
+        this._player = player;
+        this._behavior = behavior;
+        this._spawnerID = spawnerID; // Probably don't need this as we store in the spawnPoint
+        this._spawnPoint = SPAWNS.find(spawn => spawn.id === spawnerID) ?? SPAWNS[0];
     }
 
-    get player(): mod.Player {
-        return this.#player;
+    getPlayer(): mod.Player {
+        return this._player;
     }
 
-    get spawnPoint(): TargetSpawnPoint {
-        return this.#spawnPoint;
+    getSpawnPoint(): TargetSpawnPoint {
+        return this._spawnPoint;
     }
 
-    get spawnerID(): number {
-        return this.#spawnerID;
+    getSpawnerID(): number {
+        return this._spawnerID;
     }
 
     onSpawn() {
-        this.#behavior.onSpawn(this.#player, this);
+        this._behavior.onSpawn(this._player, this);
     }
 
     onDeath() {
-        this.#behavior.onDeath(this.#player, this);
+        this._behavior.onDeath(this._player, this);
     }
 
     onHit() {
-        this.#behavior.onHit(this.#player, this);        
+        this._behavior.onHit(this._player, this);
     }
 }
 
 export class BotTargetManager {
 
-    static #targets: Map<number, BotTarget> = new Map(); // Player ID to BotTarget
-    static #spawners: Map<number, number> = new Map(); // Spawner ID to Player ID
+    private static _targets: Map<number, BotTarget> = new Map(); // Player ID to BotTarget
+    private static _spawners: Map<number, number> = new Map(); // Spawner ID to Player ID
 
     static assignAsTarget(player: mod.Player, spawnerID: number) {
-
-        // First check if the spawner already has a target assigned
         const playerId = mod.GetObjId(player);
-        const existingTargetID = this.#spawners.get(spawnerID);
-        const target = this.#targets.get(playerId);
 
-        if(existingTargetID || target) {
+        if(this._spawners.has(spawnerID) || this._targets.has(playerId)) {
             mod.Kill(player); // Prevent duplicate bots with the same name in the same position. Consider what happens onDeath
             return;
         }
@@ -67,19 +63,19 @@ export class BotTargetManager {
         const spawnBehavior = SPAWNS.find(spawn => spawn.id === spawnerID)?.behaviour || defaultBehavior;
         const botTarget = new BotTarget(player, spawnerID, spawnBehavior);
 
-        this.#targets.set(playerId, botTarget);
-        this.#spawners.set(spawnerID, playerId);
+        this._targets.set(playerId, botTarget);
+        this._spawners.set(spawnerID, playerId);
         botTarget.onSpawn();
     }
 
     static removeTarget(player: mod.Player) {
         const playerId = mod.GetObjId(player);
-        const target = this.#targets.get(playerId);
+        const target = this._targets.get(playerId);
 
         if (!target) return;
 
-        this.#targets.delete(playerId);
-        this.#spawners.delete(target.spawnPoint.id);
+        this._targets.delete(playerId);
+        this._spawners.delete(target.getSpawnPoint().id);
     }
 
     static spawnTarget(spawnPoint: TargetSpawnPoint) {
@@ -100,18 +96,18 @@ export class BotTargetManager {
     // Event Handlers
     static onBotTargetDied(player: mod.Player) {
         const playerId = mod.GetObjId(player);
-        const target = this.#targets.get(playerId); // This won't exist if an AI somehow spawns for a spawn that's already taken
+        const target = this._targets.get(playerId); // This won't exist if an AI somehow spawns for a spawn that's already taken
 
         if(!target) return;
 
         target.onDeath();
         this.removeTarget(player);
-        this.respawnTargetAfterTime(target.spawnPoint, 2);
+        this.respawnTargetAfterTime(target.getSpawnPoint(), 2);
     }
 
     static onBotTargetHit(player: mod.Player, _attacker: mod.Player, _dmgType: mod.DamageType) {
         const playerId = mod.GetObjId(player);
-        const target = this.#targets.get(playerId);
+        const target = this._targets.get(playerId);
 
         if (!target) return;
 
@@ -129,11 +125,11 @@ const defaultBehavior: TargetBehavior = {
         mod.AIIdleBehavior(player);
         mod.AISetFocusPoint(player, facingPoint, false);
         mod.SetPlayerMaxHealth(player, 100);
-        console.log(`BotTarget onSpawn (Spawn Point ${target.spawnPoint.id})`);
-        console.log(`[Default Behavior][onSpawn] Applying BotTarget behavior. (${target.spawnPoint.id})`);
+        console.log(`BotTarget onSpawn (Spawn Point ${target.getSpawnPoint().id})`);
+        console.log(`[Default Behavior][onSpawn] Applying BotTarget behavior. (${target.getSpawnPoint().id})`);
     },
     onDeath: async (_player, target) => {
-        console.log(`[Default Behavior][onDeath] BotTarget has died.(${target.spawnPoint.id})`);
+        console.log(`[Default Behavior][onDeath] BotTarget has died.(${target.getSpawnPoint().id})`);
     },
     onHit: async (_player, _target) => {
         return; // No action on hit
@@ -149,13 +145,13 @@ const crouchBehavior: TargetBehavior = {
         mod.AISetStance(player, mod.Stance.Crouch);
         mod.SetPlayerMaxHealth(player, 1000);
 
-        console.log(`[Alternative Behavior][onSpawn] Applying BotTarget behavior. (${target.spawnPoint.id})`);
+        console.log(`[Alternative Behavior][onSpawn] Applying BotTarget behavior. (${target.getSpawnPoint().id})`);
     },
     onDeath: async (_player, target) => {
-        console.log(`[Default Behavior][onDeath] BotTarget has died.(${target.spawnPoint.id})`);
+        console.log(`[Default Behavior][onDeath] BotTarget has died.(${target.getSpawnPoint().id})`);
     },
     onHit: async (_player, target) => {
-        console.log(`[Default Behavior][onHit] BotTarget has been hit.(${target.spawnPoint.id})`);
+        console.log(`[Default Behavior][onHit] BotTarget has been hit.(${target.getSpawnPoint().id})`);
     }
 };
 

@@ -14,8 +14,10 @@ export interface WeaponCatalogState {
 }
 
 export class WeaponCatalog {
-    #playerState: PlayerState;
-    #isOpen: boolean = false;
+    private playerState: PlayerState;
+    private isOpen: boolean = false;
+    private selectedAttachments: { [slot in WeaponAttachmentSlot]?: mod.WeaponAttachments } = {};
+
     public state: WeaponCatalogState = {
         pageState: "weaponSelection",
         selectedCategoryIndex: 0,
@@ -23,42 +25,41 @@ export class WeaponCatalog {
         selectedAttachmentSlot: null,
         weaponCategories: weaponCategories
     };
-    #selectedAttachments: { [slot in WeaponAttachmentSlot]?: mod.WeaponAttachments } = {};
 
     // UI Registry for tracking widgets
-    #uiRegistry: UIRegistry = new UIRegistry();
+    private uiRegistry: UIRegistry = new UIRegistry();
 
     // Main Header Area
-    #headerManager: HeaderManager = new HeaderManager(this.#uiRegistry);
+    private headerManager: HeaderManager = new HeaderManager(this.uiRegistry);
 
     // UI Related Properties
-    #uiCatalog: mod.UIWidget | undefined;
-    #uiCatalogSidebar: mod.UIWidget | undefined;
-    #uiMainCatalogArea: mod.UIWidget | undefined;
+    private uiCatalog: mod.UIWidget | undefined;
+    private uiCatalogSidebar: mod.UIWidget | undefined;
+    private uiMainCatalogArea: mod.UIWidget | undefined;
 
     // Pages
-    #catalogWeaponCategoryPages: mod.UIWidget[] = [];
-    #catalogAttachmentSlotSelectionPage: mod.UIWidget | undefined;
-    #catalogAttachmentSelectionPage: mod.UIWidget | undefined;
+    private catalogWeaponCategoryPages: mod.UIWidget[] = [];
+    private catalogAttachmentSlotSelectionPage: mod.UIWidget | undefined;
+    private catalogAttachmentSelectionPage: mod.UIWidget | undefined;
 
     // Sidebar Area
-    #catalogSidebarButtons: mod.UIWidget[] = [];
+    private catalogSidebarButtons: mod.UIWidget[] = [];
 
-    #uiMainCatalogAreaHeaderBackButton: mod.UIWidget | undefined;
-    #uiMainCatalogAreaHeader: mod.UIWidget | undefined;
-    #uiMainCatalogAreaHeaderTitle: mod.UIWidget | undefined;
+    private uiMainCatalogAreaHeaderBackButton: mod.UIWidget | undefined;
+    private uiMainCatalogAreaHeader: mod.UIWidget | undefined;
+    private uiMainCatalogAreaHeaderTitle: mod.UIWidget | undefined;
 
     // Weapon Items Layout
-    #weaponButtons: { [key: string]: { widget: mod.UIWidget, weapon: WeaponDefinition } } = {};
+    private weaponButtons: { [key: string]: { widget: mod.UIWidget, weapon: WeaponDefinition } } = {};
 
     constructor(player: PlayerState) {
-        this.#playerState = player;
+        this.playerState = player;
 
-        this.#createUI();
+        this.createUI();
     }
 
-    #createUI() {
-        this.#uiCatalog = ParseUI({
+    private createUI() {
+        this.uiCatalog = ParseUI({
             type: "Container",
             size: [LAYOUT.Catalog.width, LAYOUT.Catalog.height],
             position: [0, 0],
@@ -67,23 +68,23 @@ export class WeaponCatalog {
             bgColor: THEME.colors.surfaceBg,
             bgAlpha: THEME.alpha.surface,
             depth: mod.UIDepth.AboveGameUI,
-            playerId: this.#playerState.player,
+            playerId: this.playerState.player,
             visible: false
         });
 
-        if (this.#uiCatalog) {
-            this.#uiRegistry.add("catalog", this.#uiCatalog);
+        if (this.uiCatalog) {
+            this.uiRegistry.add("catalog", this.uiCatalog);
         }
 
-        this.#createUISidebar();
-        this.#createUIMainCatalogArea();
+        this.createUISidebar();
+        this.createUIMainCatalogArea();
     }
 
-    #createUISidebar() {
+    private createUISidebar() {
         // Sidebar Container
-        this.#uiCatalogSidebar = ParseUI({
+        this.uiCatalogSidebar = ParseUI({
             type: "Container",
-            parent: this.#uiCatalog,
+            parent: this.uiCatalog,
             size: [LAYOUT.Sidebar.width, LAYOUT.Catalog.height],
             position: [0, 0],
             anchor: mod.UIAnchor.TopLeft,
@@ -92,8 +93,8 @@ export class WeaponCatalog {
             bgAlpha: THEME.alpha.sidebar,
         });
 
-        if (this.#uiCatalogSidebar) {
-            this.#uiRegistry.add("sidebar", this.#uiCatalogSidebar);
+        if (this.uiCatalogSidebar) {
+            this.uiRegistry.add("sidebar", this.uiCatalogSidebar);
         }
 
         // Sidebar Buttons
@@ -103,7 +104,7 @@ export class WeaponCatalog {
             const button = ParseUI({
                 type: "Button",
                 name: idCategory(index),
-                parent: this.#uiCatalogSidebar,
+                parent: this.uiCatalogSidebar,
                 size: [LAYOUT.Sidebar.width, LAYOUT.Sidebar.button.height],
                 bgFill: mod.UIBgFill.GradientLeft,
                 bgColor: THEME.colors.surfaceBg,
@@ -113,12 +114,12 @@ export class WeaponCatalog {
             });
 
             if (button) {
-                this.#uiRegistry.add(`categoryButton_${index}`, button);
+                this.uiRegistry.add(`categoryButton_${index}`, button);
             }
 
             const buttonText = ParseUI({
                 type: "Text",
-                parent: this.#uiCatalogSidebar,
+                parent: this.uiCatalogSidebar,
                 position: buttonPosition,
                 padding: 16,
                 size: [LAYOUT.Sidebar.width, LAYOUT.Sidebar.button.height],
@@ -129,15 +130,15 @@ export class WeaponCatalog {
             });
 
             if (!buttonText) return;
-            this.#catalogSidebarButtons.push(buttonText);
-            this.#uiRegistry.add(`categoryButtonText_${index}`, buttonText);
+            this.catalogSidebarButtons.push(buttonText);
+            this.uiRegistry.add(`categoryButtonText_${index}`, buttonText);
         });
     }
 
-    #createUIMainCatalogArea() {
-        this.#uiMainCatalogArea = ParseUI({
+    private createUIMainCatalogArea() {
+        this.uiMainCatalogArea = ParseUI({
             type: "Container",
-            parent: this.#uiCatalog,
+            parent: this.uiCatalog,
             size: [LAYOUT.Catalog.width - LAYOUT.Sidebar.width, LAYOUT.Catalog.height],
             position: [LAYOUT.Sidebar.width, 0],
             anchor: mod.UIAnchor.TopLeft,
@@ -146,33 +147,33 @@ export class WeaponCatalog {
             bgAlpha: 0,
         });
 
-        if (this.#uiMainCatalogArea) {
-            this.#uiRegistry.add("mainArea", this.#uiMainCatalogArea);
+        if (this.uiMainCatalogArea) {
+            this.uiRegistry.add("mainArea", this.uiMainCatalogArea);
         }
 
-        this.#createUIMainHeader();
-        this.#createCategoryPages(this.state.weaponCategories);
+        this.createUIMainHeader();
+        this.createCategoryPages(this.state.weaponCategories);
     }
 
-    #createUIMainHeader() {
-        if (!this.#uiMainCatalogArea) return; // Can't add the header if there's no main area
+    private createUIMainHeader() {
+        if (!this.uiMainCatalogArea) return; // Can't add the header if there's no main area
 
         const initialCategory = weaponCategoryNames[this.state.weaponCategories[0] as keyof typeof weaponCategoryNames];
-        const { header, backButton, title } = this.#headerManager.createHeader(this.#uiMainCatalogArea, initialCategory);
-        
-        this.#uiMainCatalogAreaHeader = header;
-        this.#uiMainCatalogAreaHeaderBackButton = backButton;
-        this.#uiMainCatalogAreaHeaderTitle = title;
+        const { header, backButton, title } = this.headerManager.createHeader(this.uiMainCatalogArea, initialCategory);
+
+        this.uiMainCatalogAreaHeader = header;
+        this.uiMainCatalogAreaHeaderBackButton = backButton;
+        this.uiMainCatalogAreaHeaderTitle = title;
     }
 
-    #createCategoryPages(categories: typeof weaponCategories) {
+    private createCategoryPages(categories: typeof weaponCategories) {
         const pageWidth = LAYOUT.Catalog.width - LAYOUT.Sidebar.width;
         const pageHeight = LAYOUT.Catalog.height - LAYOUT.Header.height;
 
         categories.forEach((category, index) => {
             const categoryPage = ParseUI({
                 type: "Container",
-                parent: this.#uiMainCatalogArea,
+                parent: this.uiMainCatalogArea,
                 padding: LAYOUT.Grid.pagePadding,
                 visible: index === 0,
                 size: [pageWidth, pageHeight],
@@ -182,17 +183,17 @@ export class WeaponCatalog {
             });
 
             if (!categoryPage) return;
-            this.#catalogWeaponCategoryPages.push(categoryPage);
-            this.#uiRegistry.add(`categoryPage_${index}`, categoryPage);
+            this.catalogWeaponCategoryPages.push(categoryPage);
+            this.uiRegistry.add(`categoryPage_${index}`, categoryPage);
 
             // Create category-specific UI elements here (e.g., weapon list)
             const weapons = getWeaponsByCategory(category);
-            this.#addWeaponsToPage(index, weapons);
+            this.addWeaponsToPage(index, weapons);
         });
     }
 
-    #addWeaponsToPage(pageIndex: number, weapons: WeaponDefinition[]) {
-        const weaponsPerRow = this.#calculateItemsPerRow(LAYOUT.Grid.item.width, LAYOUT.Grid.gap.x);
+    private addWeaponsToPage(pageIndex: number, weapons: WeaponDefinition[]) {
+        const weaponsPerRow = this.calculateItemsPerRow(LAYOUT.Grid.item.width, LAYOUT.Grid.gap.x);
 
         weapons.forEach((weapon, index) => {
 
@@ -204,7 +205,7 @@ export class WeaponCatalog {
 
             const widget = ParseUI({
                 type: "Container",
-                parent: this.#catalogWeaponCategoryPages[pageIndex],
+                parent: this.catalogWeaponCategoryPages[pageIndex],
                 position: itemPos,
                 size: [LAYOUT.Grid.item.width, LAYOUT.Grid.item.height],
                 bgFill: mod.UIBgFill.None,
@@ -232,7 +233,7 @@ export class WeaponCatalog {
 
             if (!widget) return;
 
-            this.#uiRegistry.add(`weaponTile_${weapon.id}`, widget);
+            this.uiRegistry.add(`weaponTile_${weapon.id}`, widget);
 
             mod.AddUIWeaponImage(
                 weapon.name,
@@ -242,56 +243,56 @@ export class WeaponCatalog {
                 weapon.weapon,
                 widget
             );
-            this.#weaponButtons[weapon.id] = {
+            this.weaponButtons[weapon.id] = {
                 widget,
                 weapon
             }
         });
     }
 
-    #selectCategory(index: number) {
+    private selectCategory(index: number) {
         if (index < 0 || index >= this.state.weaponCategories.length) return;
 
         if (this.state.selectedCategoryIndex === index) return; // No change
 
         // Set previous button color back to normal
-        mod.SetUIWidgetVisible(this.#catalogWeaponCategoryPages[this.state.selectedCategoryIndex], false);
-    mod.SetUITextColor(this.#catalogSidebarButtons[this.state.selectedCategoryIndex], mod.CreateVector(THEME.colors.textPrimary[0], THEME.colors.textPrimary[1], THEME.colors.textPrimary[2]));
+        mod.SetUIWidgetVisible(this.catalogWeaponCategoryPages[this.state.selectedCategoryIndex], false);
+        mod.SetUITextColor(this.catalogSidebarButtons[this.state.selectedCategoryIndex], mod.CreateVector(THEME.colors.textPrimary[0], THEME.colors.textPrimary[1], THEME.colors.textPrimary[2]));
 
         this.state.selectedCategoryIndex = index;
-        mod.SetUIWidgetVisible(this.#catalogWeaponCategoryPages[this.state.selectedCategoryIndex], true);
-    mod.SetUITextColor(this.#catalogSidebarButtons[this.state.selectedCategoryIndex], mod.CreateVector(THEME.colors.textAccent[0], THEME.colors.textAccent[1], THEME.colors.textAccent[2]));
+        mod.SetUIWidgetVisible(this.catalogWeaponCategoryPages[this.state.selectedCategoryIndex], true);
+        mod.SetUITextColor(this.catalogSidebarButtons[this.state.selectedCategoryIndex], mod.CreateVector(THEME.colors.textAccent[0], THEME.colors.textAccent[1], THEME.colors.textAccent[2]));
 
         if(this.state.pageState !== "weaponSelection") {
-            this.#setPage("weaponSelection");
+            this.setPage("weaponSelection");
         }
 
-        this.#updateHeader();
+        this.updateHeader();
     }
 
-    #generateAttachmentSlotSelectionUI() {
+    private generateAttachmentSlotSelectionUI() {
         if(!this.state.selectedWeapon) return;
 
-        if(this.#catalogAttachmentSlotSelectionPage) {
-            this.#uiRegistry.remove("attachmentSlotPage");
-            this.#catalogAttachmentSlotSelectionPage = undefined;
+        if(this.catalogAttachmentSlotSelectionPage) {
+            this.uiRegistry.remove("attachmentSlotPage");
+            this.catalogAttachmentSlotSelectionPage = undefined;
         }
-        
-        this.#catalogAttachmentSlotSelectionPage = ParseUI({
+
+        this.catalogAttachmentSlotSelectionPage = ParseUI({
             type: "Container",
-            parent: this.#uiMainCatalogArea,
+            parent: this.uiMainCatalogArea,
             padding: LAYOUT.Grid.pagePadding,
             position: [0, LAYOUT.Header.height],
             size: [LAYOUT.Catalog.width, LAYOUT.Catalog.height],
             bgFill: mod.UIBgFill.None,
         });
 
-        if (this.#catalogAttachmentSlotSelectionPage) {
-            this.#uiRegistry.add("attachmentSlotPage", this.#catalogAttachmentSlotSelectionPage);
+        if (this.catalogAttachmentSlotSelectionPage) {
+            this.uiRegistry.add("attachmentSlotPage", this.catalogAttachmentSlotSelectionPage);
         }
 
         const availableSlots = getAvailableAttachmentSlots(this.state.selectedWeapon.id);
-    const attachmentSlotsPerRow = this.#calculateItemsPerRow(LAYOUT.Slots.item.width, LAYOUT.Slots.gap.x);     
+    const attachmentSlotsPerRow = this.calculateItemsPerRow(LAYOUT.Slots.item.width, LAYOUT.Slots.gap.x);
 
         availableSlots.forEach((slot, index) => {
             const xColNum = Math.floor(index % attachmentSlotsPerRow);
@@ -302,7 +303,7 @@ export class WeaponCatalog {
 
             const slotWidget = ParseUI({
                 type: "Container",
-                parent: this.#catalogAttachmentSlotSelectionPage,
+                parent: this.catalogAttachmentSlotSelectionPage,
                 position: itemPos,
                 padding: 0,
                 size: [LAYOUT.Slots.item.width, LAYOUT.Slots.item.height],
@@ -333,41 +334,41 @@ export class WeaponCatalog {
             });
 
             if (slotWidget) {
-                this.#uiRegistry.add(`slotTile_${slot}`, slotWidget);
+                this.uiRegistry.add(`slotTile_${slot}`, slotWidget);
             }
         });
     }
 
-    #generateAttachmentSelectionUI() {
+    private generateAttachmentSelectionUI() {
         if(!this.state.selectedWeapon || !this.state.selectedAttachmentSlot) return;
 
         // Clean up previous attachment selection page if it exists
-        if (this.#catalogAttachmentSelectionPage) {
+        if (this.catalogAttachmentSelectionPage) {
             // Remove individual attachment tiles from registry first
             const previousAttachments = getWeaponAttachmentsBySlot(this.state.selectedWeapon.id, this.state.selectedAttachmentSlot);
             previousAttachments.forEach((attachment) => {
-                this.#uiRegistry.remove(`attachmentTile_${attachment.id}`);
+                this.uiRegistry.remove(`attachmentTile_${attachment.id}`);
             });
             // Remove the page itself
-            this.#uiRegistry.remove("attachmentSelectionPage");
-            this.#catalogAttachmentSelectionPage = undefined;
+            this.uiRegistry.remove("attachmentSelectionPage");
+            this.catalogAttachmentSelectionPage = undefined;
         }
 
-        this.#catalogAttachmentSelectionPage = ParseUI({
+        this.catalogAttachmentSelectionPage = ParseUI({
             type: "Container",
-            parent: this.#uiMainCatalogArea,
+            parent: this.uiMainCatalogArea,
             padding: LAYOUT.Grid.pagePadding,
             position: [0, LAYOUT.Header.height],
             size: [LAYOUT.Catalog.width, LAYOUT.Catalog.height],
             bgFill: mod.UIBgFill.None,
         });
 
-        if (this.#catalogAttachmentSelectionPage) {
-            this.#uiRegistry.add("attachmentSelectionPage", this.#catalogAttachmentSelectionPage);
+        if (this.catalogAttachmentSelectionPage) {
+            this.uiRegistry.add("attachmentSelectionPage", this.catalogAttachmentSelectionPage);
         }
 
         const availableAttachments = getWeaponAttachmentsBySlot(this.state.selectedWeapon.id, this.state.selectedAttachmentSlot);
-    const attachmentsPerRow = this.#calculateItemsPerRow(LAYOUT.Attachments.item.width, LAYOUT.Attachments.gap.x);
+        const attachmentsPerRow = this.calculateItemsPerRow(LAYOUT.Attachments.item.width, LAYOUT.Attachments.gap.x);
 
         availableAttachments.forEach((attachment, index) => {
             const xColNum = Math.floor(index % attachmentsPerRow);
@@ -378,7 +379,7 @@ export class WeaponCatalog {
 
             const attachmentWidget = ParseUI({
                 type: "Container",
-                parent: this.#catalogAttachmentSelectionPage,
+                parent: this.catalogAttachmentSelectionPage,
                 position: itemPos,
                 padding: 0,
                 size: [LAYOUT.Attachments.item.width, LAYOUT.Attachments.item.height],
@@ -409,58 +410,58 @@ export class WeaponCatalog {
             });
 
             if (attachmentWidget) {
-                this.#uiRegistry.add(`attachmentTile_${attachment.id}`, attachmentWidget);
+                this.uiRegistry.add(`attachmentTile_${attachment.id}`, attachmentWidget);
             }
         });
     }
 
     toggle() {
-        this.#isOpen ? this.close() : this.open();
+        this.isOpen ? this.close() : this.open();
     }
 
     open() {
-        if (!this.#uiCatalog) return;
-        mod.EnableUIInputMode(true, this.#playerState.player);
-        mod.SetUIWidgetVisible(this.#uiCatalog, true);
-        this.#isOpen = true;
+        if (!this.uiCatalog) return;
+        mod.EnableUIInputMode(true, this.playerState.player);
+        mod.SetUIWidgetVisible(this.uiCatalog, true);
+        this.isOpen = true;
     }
 
     close() {
-        mod.EnableUIInputMode(false, this.#playerState.player);
-        if (!this.#uiCatalog) return;
-        mod.SetUIWidgetVisible(this.#uiCatalog, false);
-        this.#isOpen = false;
+        mod.EnableUIInputMode(false, this.playerState.player);
+        if (!this.uiCatalog) return;
+        mod.SetUIWidgetVisible(this.uiCatalog, false);
+        this.isOpen = false;
     }
 
     destroy() {
         // Disable input mode first
-        mod.EnableUIInputMode(false, this.#playerState.player);
+        mod.EnableUIInputMode(false, this.playerState.player);
         
         // Clean up all UI widgets through the registry
-        this.#uiRegistry.removeAll();
+        this.uiRegistry.removeAll();
         
         // Clear all widget references
-        this.#uiCatalog = undefined;
-        this.#uiCatalogSidebar = undefined;
-        this.#uiMainCatalogArea = undefined;
-        this.#uiMainCatalogAreaHeader = undefined;
-        this.#uiMainCatalogAreaHeaderBackButton = undefined;
-        this.#uiMainCatalogAreaHeaderTitle = undefined;
-        this.#catalogAttachmentSlotSelectionPage = undefined;
-        this.#catalogAttachmentSelectionPage = undefined;
+        this.uiCatalog = undefined;
+        this.uiCatalogSidebar = undefined;
+        this.uiMainCatalogArea = undefined;
+        this.uiMainCatalogAreaHeader = undefined;
+        this.uiMainCatalogAreaHeaderBackButton = undefined;
+        this.uiMainCatalogAreaHeaderTitle = undefined;
+        this.catalogAttachmentSlotSelectionPage = undefined;
+        this.catalogAttachmentSelectionPage = undefined;
         
         // Clear arrays and objects
-        this.#catalogWeaponCategoryPages = [];
-        this.#catalogSidebarButtons = [];
-        this.#weaponButtons = {};
-        
+        this.catalogWeaponCategoryPages = [];
+        this.catalogSidebarButtons = [];
+        this.weaponButtons = {};
+
         // Reset state
-        this.#isOpen = false;
+        this.isOpen = false;
         this.state.pageState = "weaponSelection";
         this.state.selectedCategoryIndex = 0;
         this.state.selectedWeapon = null;
         this.state.selectedAttachmentSlot = null;
-        this.#selectedAttachments = {};
+        this.selectedAttachments = {};
     }
 
     onUIButtonEvent(widget: mod.UIWidget, _event: mod.UIButtonEvent) {
@@ -474,7 +475,7 @@ export class WeaponCatalog {
 
         // Back Button
         if (widgetName === IDS.buttons.back) {
-            this.#handleBackButton();
+            this.handleBackButton();
             return;
         }
 
@@ -483,80 +484,80 @@ export class WeaponCatalog {
             const indexStr = widgetName.replace(IDS.buttons.categoryPrefix, "");
             const index = parseInt(indexStr);
             if (isNaN(index)) return;
-            this.#selectCategory(index);
+            this.selectCategory(index);
             return;
         }
 
         // Handle weapon selection
         if (widgetName.startsWith("gun_")) {
-            this.#handleWeaponSelection(widgetName);
+            this.handleWeaponSelection(widgetName);
         }
 
         // Handle attachment slot selection
         if (widgetName.startsWith(IDS.buttons.slotPrefix)) {
             const slotStr = widgetName.replace(IDS.buttons.slotPrefix, "") as WeaponAttachmentSlot;
-            this.#handleAttachmentSlotSelection(slotStr);
+            this.handleAttachmentSlotSelection(slotStr);
         }
 
         // Handle attachment selection
         if (widgetName.startsWith(IDS.buttons.attachmentPrefix)) {
             const attachmentId = widgetName.replace(IDS.buttons.attachmentPrefix, "");
-            this.#handleAttachmentSelection(attachmentId);
+            this.handleAttachmentSelection(attachmentId);
         }
     }
 
-    #handleBackButton() {
+    handleBackButton() {
         switch (this.state.pageState) {
             case "attachmentSelection":
-                this.#setPage("attachmentSlotSelection");
+                this.setPage("attachmentSlotSelection");
                 break;
             case "attachmentSlotSelection":
-                this.#setPage("weaponSelection");
+                this.setPage("weaponSelection");
                 break;
             case "weaponSelection":
                 return; // Already at top level, nothing to do. Can't really happen
         }
 
-        this.#updateHeader();
+        this.updateHeader();
     }
 
-    #updateHeader() {
-        this.#headerManager.updateHeader(this.state);
+    private updateHeader() {
+        this.headerManager.updateHeader(this.state);
     }
 
-    #setPage(page: "weaponSelection" | "attachmentSlotSelection" | "attachmentSelection") {
+    private setPage(page: "weaponSelection" | "attachmentSlotSelection" | "attachmentSelection") {
         this.state.pageState = page;
 
         // Clean up previous page UI if necessary
-        if(page !== "attachmentSlotSelection" && this.#catalogAttachmentSlotSelectionPage) {
+        if(page !== "attachmentSlotSelection" && this.catalogAttachmentSlotSelectionPage) {
             // Remove individual slot tiles from registry first
             if (this.state.selectedWeapon) {
                 const availableSlots = getAvailableAttachmentSlots(this.state.selectedWeapon.id);
                 availableSlots.forEach((slot) => {
-                    this.#uiRegistry.remove(`slotTile_${slot}`);
+                    this.uiRegistry.remove(`slotTile_${slot}`);
                 });
             }
             // Remove the page itself
-            this.#uiRegistry.remove("attachmentSlotPage");
-            this.#catalogAttachmentSlotSelectionPage = undefined;
+            this.uiRegistry.remove("attachmentSlotPage");
+            this.catalogAttachmentSlotSelectionPage = undefined;
         }
 
-        if(page !== "attachmentSelection" && this.#catalogAttachmentSelectionPage) {
+        if(page !== "attachmentSelection" && this.catalogAttachmentSelectionPage) {
             // Remove individual attachment tiles from registry first
             if (this.state.selectedWeapon && this.state.selectedAttachmentSlot) {
                 const availableAttachments = getWeaponAttachmentsBySlot(this.state.selectedWeapon.id, this.state.selectedAttachmentSlot);
                 availableAttachments.forEach((attachment) => {
-                    this.#uiRegistry.remove(`attachmentTile_${attachment.id}`);
+                    this.uiRegistry.remove(`attachmentTile_${attachment.id}`);
                 });
             }
             // Remove the page itself
-            this.#uiRegistry.remove("attachmentSelectionPage");
-            this.#catalogAttachmentSelectionPage = undefined;
+            this.uiRegistry.remove("attachmentSelectionPage");
+            this.catalogAttachmentSelectionPage = undefined;
         }
 
         // Consideration: This will be applied every page change, might want to optimize later
         if(page !== "weaponSelection") {
-            mod.SetUIWidgetVisible(this.#catalogWeaponCategoryPages[this.state.selectedCategoryIndex], false);
+            mod.SetUIWidgetVisible(this.catalogWeaponCategoryPages[this.state.selectedCategoryIndex], false);
         }
 
         switch (page) {
@@ -564,21 +565,21 @@ export class WeaponCatalog {
                 // TODO: Consider if resetting just gets handled on weapon selection
                 this.state.selectedWeapon = null;
                 this.state.selectedAttachmentSlot = null;
-                this.#selectedAttachments = {};
-                mod.SetUIWidgetVisible(this.#catalogWeaponCategoryPages[this.state.selectedCategoryIndex], true);
+                this.selectedAttachments = {};
+                mod.SetUIWidgetVisible(this.catalogWeaponCategoryPages[this.state.selectedCategoryIndex], true);
                 break;
             case "attachmentSlotSelection":
-                this.#generateAttachmentSlotSelectionUI();
+                this.generateAttachmentSlotSelectionUI();
                 break;
             case "attachmentSelection":
-                this.#generateAttachmentSelectionUI();
+                this.generateAttachmentSelectionUI();
                 break;
         }
 
-        this.#updateHeader(); // Update header title based on new page
+        this.updateHeader(); // Update header title based on new page
     }
 
-    #giveWeaponToPlayer() {
+    private giveWeaponToPlayer() {
         const weaponPackage = mod.CreateNewWeaponPackage();
 
         if(!this.state.selectedWeapon) return; // Do nothing if none selected.
@@ -588,22 +589,22 @@ export class WeaponCatalog {
         if (!weapon) return;
 
         // Add Attachments
-        for (const slot in this.#selectedAttachments) {
-            const attachment = this.#selectedAttachments[slot as WeaponAttachmentSlot] as mod.WeaponAttachments;
+        for (const slot in this.selectedAttachments) {
+            const attachment = this.selectedAttachments[slot as WeaponAttachmentSlot] as mod.WeaponAttachments;
             mod.AddAttachmentToWeaponPackage(attachment, weaponPackage);
         }
 
         // Give Base Weapon
-        mod.AddEquipment(this.#playerState.player, weapon.weapon, weaponPackage);
-        mod.ForceSwitchInventory(this.#playerState.player, mod.InventorySlots.PrimaryWeapon);
+        mod.AddEquipment(this.playerState.player, weapon.weapon, weaponPackage);
+        mod.ForceSwitchInventory(this.playerState.player, mod.InventorySlots.PrimaryWeapon);
     }
 
-    #handleWeaponSelection(weapon_id: string) {
+    private handleWeaponSelection(weapon_id: string) {
         const weapon = getWeaponById(weapon_id);
         if (!weapon) return;
 
         if(this.state.selectedWeapon && this.state.selectedWeapon.id !== weapon.id) {
-            this.#selectedAttachments = {}; // Reset selected attachments on weapon change
+            this.selectedAttachments = {}; // Reset selected attachments on weapon change
         }
 
         this.state.selectedWeapon = {
@@ -611,31 +612,31 @@ export class WeaponCatalog {
             name: weapon.name,
             id: weapon.id
         };
-        
-        this.#giveWeaponToPlayer();
-        this.#setPage("attachmentSlotSelection");
+
+        this.giveWeaponToPlayer();
+        this.setPage("attachmentSlotSelection");
     }
 
-    #handleAttachmentSlotSelection(slot: WeaponAttachmentSlot) {
+    private handleAttachmentSlotSelection(slot: WeaponAttachmentSlot) {
         if (!this.state.selectedWeapon) return;
 
         // TODO: Handle this part
         this.state.selectedAttachmentSlot = slot;
-        this.#setPage("attachmentSelection");
+        this.setPage("attachmentSelection");
     }
 
-    #handleAttachmentSelection(attachment_id: string) {
+    private handleAttachmentSelection(attachment_id: string) {
         if (!this.state.selectedWeapon || !this.state.selectedAttachmentSlot) return;
 
         const attachment = getWeaponAttachment(this.state.selectedWeapon.id, attachment_id);
 
         if (!attachment) return;
 
-        this.#selectedAttachments[this.state.selectedAttachmentSlot] = attachment.attachment;
-        this.#giveWeaponToPlayer();
+        this.selectedAttachments[this.state.selectedAttachmentSlot] = attachment.attachment;
+        this.giveWeaponToPlayer();
     }
 
-    #calculateItemsPerRow(itemWidth: number, horizontalSpacing: number): number {
+    private calculateItemsPerRow(itemWidth: number, horizontalSpacing: number): number {
         const pageWidth = LAYOUT.Catalog.width - LAYOUT.Sidebar.width - (LAYOUT.Grid.pagePadding * 2); // padding on each side
         const itemsPerRow = Math.floor(pageWidth / (itemWidth + horizontalSpacing));
         return itemsPerRow;

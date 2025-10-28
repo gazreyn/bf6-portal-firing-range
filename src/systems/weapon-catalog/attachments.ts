@@ -757,5 +757,3 @@ export const weaponAttachments: Record<string, AttachmentKey[]> = {
         ...commonAttachmentGroups.AssaultRifles_Ammo,
     ]
 };
-
-mod.WeaponAttachments.Bottom_Low_Profile_Stubby

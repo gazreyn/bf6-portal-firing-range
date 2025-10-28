@@ -2,11 +2,10 @@ import { WeaponCatalog } from "../weapon-catalog";
 import { isAI } from "../../lib/helpers";
 
 export class PlayerState {
-    player: mod.Player;
-    weaponCatalog: WeaponCatalog | undefined;
-
-    static playerInstances: mod.Player[] = [];
-    static #allPlayerStates: { [key: number]: PlayerState } = {};
+    public readonly player: mod.Player;
+    public static playerInstances: mod.Player[] = [];
+    private static _allPlayerStates: { [key: number]: PlayerState } = {};
+    public weaponCatalog: WeaponCatalog | undefined;
     
     constructor(player: mod.Player) {
         this.player = player;
@@ -23,20 +22,32 @@ export class PlayerState {
 
         if (playerId < 0) return undefined; // Invalid player
 
-        return PlayerState.#allPlayerStates[playerId] ??= new PlayerState(player);
+        return PlayerState._allPlayerStates[playerId] ??= new PlayerState(player);
     }
 
     static remove(playerId: number) {
-        // Clean up any invalid player instances
-        PlayerState.playerInstances.forEach((player, index) => {
-            if(mod.GetObjId(player) < 0) {
-                PlayerState.playerInstances.splice(index, 1);
+        // Remove only the specific player; keep opportunistic cleanup separate
+        for (let i = PlayerState.playerInstances.length - 1; i >= 0; i--) {
+            const id = mod.GetObjId(PlayerState.playerInstances[i]);
+            if (id === playerId) {
+                PlayerState.playerInstances.splice(i, 1);
+                break;
             }
-        });
+        }
 
         // Destroy any UI's and remove from allPlayerStates
-        PlayerState.#allPlayerStates[playerId]?.destroyUI();
-        delete PlayerState.#allPlayerStates[playerId];
+        PlayerState._allPlayerStates[playerId]?.destroyUI();
+        delete this._allPlayerStates[playerId];
+    }
+
+    // Optional: call this periodically (e.g., on join, tick) to prune stale entries
+    static pruneInvalidPlayers() {
+        for (let i = PlayerState.playerInstances.length - 1; i >= 0; i--) {
+            const id = mod.GetObjId(PlayerState.playerInstances[i]);
+            if (id < 0) {
+                PlayerState.playerInstances.splice(i, 1);
+            }
+        }
     }
 
     destroyUI() {

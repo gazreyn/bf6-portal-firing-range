@@ -2,43 +2,43 @@
  * UI Registry for tracking and managing widget lifecycle
  */
 export class UIRegistry {
-  private widgets = new Map<string, mod.UIWidget>();
+  private _widgets = new Map<string, mod.UIWidget>();
 
   add(name: string, widget: mod.UIWidget): void {
-    this.widgets.set(name, widget);
+    this._widgets.set(name, widget);
   }
 
   get(name: string): mod.UIWidget | undefined {
-    return this.widgets.get(name);
+    return this._widgets.get(name);
   }
 
   safeVisible(name: string, visible: boolean): void {
-    const widget = this.widgets.get(name);
+    const widget = this._widgets.get(name);
     if (widget) {
       mod.SetUIWidgetVisible(widget, visible);
     }
   }
 
   remove(name: string): void {
-    const widget = this.widgets.get(name);
+    const widget = this._widgets.get(name);
     if (widget) {
       mod.DeleteUIWidget(widget);
-      this.widgets.delete(name);
+      this._widgets.delete(name);
     }
   }
 
   removeAll(): void {
-    for (const [_name, widget] of this.widgets) {
+    for (const [_name, widget] of this._widgets) {
       mod.DeleteUIWidget(widget);
     }
-    this.widgets.clear();
+    this._widgets.clear();
   }
 
   has(name: string): boolean {
-    return this.widgets.has(name);
+    return this._widgets.has(name);
   }
 
   size(): number {
-    return this.widgets.size;
+    return this._widgets.size;
   }
 }
