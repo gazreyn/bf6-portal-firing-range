@@ -1,5 +1,5 @@
 import { s } from "../../lib/string-macro";
-import { weaponCategoryNames, weaponAttachmentSlotNames } from "./weapons.generated";
+import { weaponCategoryNames, weaponAttachmentSlotNames } from "./weapon-store";
 import { ParseUI } from "../../lib/ui";
 import { type UIRegistry } from "../ui";
 import { type WeaponCatalogState } from "./index";

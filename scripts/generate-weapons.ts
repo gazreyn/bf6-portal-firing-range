@@ -25,7 +25,7 @@ interface WeaponDefinition {
     name: string;
     category: WeaponCategory;
     attachmentSlots: WeaponAttachmentSlot[];
-    attachments: string[]; // Array of attachment IDs
+    attachmentIds: string[]; // Array of attachment IDs
 }
 
 // CSV processing functions
@@ -455,7 +455,7 @@ async function main() {
             name: formatDisplayName(enumName),
             category,
             attachmentSlots,
-            attachments: weaponAttachmentIds
+            attachmentIds: weaponAttachmentIds
         };
         
         weapons.push(weapon);
@@ -469,8 +469,8 @@ async function main() {
     
     console.log('🎉 Generation complete!');
     console.log(`📝 Generated files:`);
-    console.log(`   - src/systems/weapon-catalog/attachments.generated.ts`);
-    console.log(`   - src/systems/weapon-catalog/weapons.generated.ts`);
+    console.log(`   - src/systems/weapon-catalog/generated/attachments.ts`);
+    console.log(`   - src/systems/weapon-catalog/generated/weapons.ts`);
     console.log(`💡 Review the generated files and update your imports as needed.`);
     
     if (csvData.length === 0) {
@@ -484,24 +484,15 @@ async function generateAttachmentsFile(
     attachmentRegistry: Record<string, WeaponAttachment>,
     weaponAttachments: Record<string, string[]>
 ) {
+    const outputDir = path.join(process.cwd(), 'src/systems/weapon-catalog/generated');
+    await fs.mkdir(outputDir, { recursive: true });
+
     const content = `// This file is auto-generated. Do not edit manually.
 // Run 'npm run generate-weapons' to regenerate.
 
-import { s } from "../../lib/string-macro";
+import { s } from "../../../lib/string-macro";
 
-export const weaponAttachmentSlots = ['muzzle', 'barrel', 'scope', 'right_accessory', 'top_accessory', 'left_accessory', 'optic_accessory', 'ergonomics', 'underbarrel', 'magazine', 'ammunition'] as const;
-export type WeaponAttachmentSlot = typeof weaponAttachmentSlots[number];
-
-export type WeaponAttachment = { 
-    id: string; 
-    name: string; 
-    attachment: mod.WeaponAttachments; 
-    slot: WeaponAttachmentSlot 
-};
-
-export type AttachmentKey = keyof typeof attachmentRegistry;
-
-export const attachmentRegistry = {
+export const generatedAttachmentRegistry = {
 ${Object.entries(attachmentRegistry).map(([key, attachment]) => 
     `    "${key}": {
         id: "${attachment.id}",
@@ -512,123 +503,53 @@ ${Object.entries(attachmentRegistry).map(([key, attachment]) =>
 ).join(',\n')}
 } as const;
 
-export function getAttachments(ids: AttachmentKey[]): WeaponAttachment[] {
-    return ids.map(id => attachmentRegistry[id]);
-}
-
-// Weapon-attachment mappings generated from CSV data
-export const weaponAttachments: Record<string, AttachmentKey[]> = {
+export const generatedWeaponAttachments = {
 ${Object.entries(weaponAttachments).map(([weapon, attachments]) => 
     `    "${weapon}": [
         ${attachments.map(a => `"${a}"`).join(',\n        ')}
     ]`
 ).join(',\n')}
-};
+} as const;
 `;
 
     await fs.writeFile(
-        path.join(process.cwd(), 'src/systems/weapon-catalog/attachments.generated.ts'),
+        path.join(outputDir, 'attachments.ts'),
         content,
         'utf-8'
     );
 }
 
 async function generateWeaponsFile(weapons: WeaponDefinition[]) {
-    const categories = [...new Set(weapons.map(w => w.category))];
-    
+    const outputDir = path.join(process.cwd(), 'src/systems/weapon-catalog/generated');
+    await fs.mkdir(outputDir, { recursive: true });
+
     const content = `// This file is auto-generated. Do not edit manually.
 // Run 'npm run generate-weapons' to regenerate.
 
-import { s } from "../../lib/string-macro";
-import { getAttachments, weaponAttachments, type WeaponAttachmentSlot, type WeaponAttachment, type AttachmentKey } from "./attachments.generated";
+import { s } from "../../../lib/string-macro";
+import type { WeaponRecord } from "../weapon-store";
 
-export const weaponCategories = ${JSON.stringify(categories)} as const;
-export type WeaponCategory = typeof weaponCategories[number];
-
-export type WeaponDefinition = { 
-    id: string; 
-    weapon: mod.Weapons; 
-    name: string; 
-    category: WeaponCategory; 
-    attachmentSlots: WeaponAttachmentSlot[]; 
-    attachments: WeaponAttachment[] 
-};
-
-export function getWeaponsByCategory(category: WeaponCategory): WeaponDefinition[] {
-    return weapons.filter(w => w.category === category);
-}
-
-export function getAvailableAttachmentSlots(weapon_id: string): WeaponAttachmentSlot[] {
-    const weapon = weapons.find(w => w.id === weapon_id);
-    if (!weapon) return [];
-    return weapon.attachmentSlots;
-}
-
-export function getWeaponAttachmentsBySlot(weapon_id: string, slot: WeaponAttachmentSlot): WeaponAttachment[] {
-    const weapon = weapons.find(w => w.id === weapon_id);
-    if (!weapon) return [];
-    return weapon.attachments.filter(att => att.slot === slot);
-}
-
-export function isValidAttachmmentSlotForWeapon(weapon_id: string, slot: WeaponAttachmentSlot): boolean {
-    const weapon = weapons.find(w => w.id === weapon_id);
-    if (!weapon) return false;
-    return weapon.attachmentSlots.includes(slot);
-}
-
-export function getWeaponById(id: string): WeaponDefinition | undefined {
-    return weapons.find(w => w.id === id);
-}
-
-export function getWeaponAttachment(weapon_id: string, attachment_id: string): WeaponAttachment | undefined {
-    const weapon = weapons.find(w => w.id === weapon_id);
-    if (!weapon) return undefined;
-    return weapon.attachments.find(att => att.id === attachment_id);
-}
-
-export function getCategoriesWithAvailableWeapons(): WeaponCategory[] {
-    const categories: Set<WeaponCategory> = new Set();
-    weapons.forEach(weapon => {
-        categories.add(weapon.category);
-    });
-    return Array.from(categories);
-}
-
-export const weapons: WeaponDefinition[] = [
+export const weaponRecords: WeaponRecord[] = [
 ${weapons.map(weapon => {
-    const weaponKey = weapon.weapon.replace('mod.Weapons.', ''); // Extract enum name
+    const attachmentsArray = weapon.attachmentIds.length
+        ? `[
+            ${weapon.attachmentIds.map(id => `"${id}"`).join(',\n            ')}
+        ]`
+        : '[]';
     return `    {
         id: '${weapon.id}',
         weapon: ${weapon.weapon},
         name: s\`${weapon.name}\`,
         category: "${weapon.category}",
         attachmentSlots: ${JSON.stringify(weapon.attachmentSlots)},
-        attachments: getAttachments(weaponAttachments['${weaponKey}'] || [])
+        attachmentIds: ${attachmentsArray}
     }`;
 }).join(',\n')}
 ];
-
-export const weaponCategoryNames: Record<WeaponCategory, string> = {
-${categories.map(cat => `    ${cat}: s\`${cat.toUpperCase()}\``).join(',\n')}
-};
-
-export const weaponAttachmentSlotNames: Record<WeaponAttachmentSlot, string> = {
-    muzzle: s\`MUZZLE\`,
-    barrel: s\`BARREL\`,
-    scope: s\`SCOPE\`,
-    right_accessory: s\`RIGHT ACCESSORY\`,
-    top_accessory: s\`TOP ACCESSORY\`,
-    left_accessory: s\`LEFT ACCESSORY\`,
-    optic_accessory: s\`OPTIC ACCESSORY\`,
-    ergonomics: s\`ERGONOMICS\`,
-    underbarrel: s\`UNDERBARREL\`,
-    magazine: s\`MAGAZINE\`,
-    ammunition: s\`AMMUNITION\`,
-};
 `;
 
     await fs.writeFile(
-        path.join(process.cwd(), 'src/systems/weapon-catalog/weapons.generated.ts'),
+        path.join(outputDir, 'weapons.ts'),
         content,
         'utf-8'
     );

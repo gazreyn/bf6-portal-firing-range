@@ -1,21 +1,9 @@
 // This file is auto-generated. Do not edit manually.
 // Run 'npm run generate-weapons' to regenerate.
 
-import { s } from "../../lib/string-macro";
+import { s } from "../../../lib/string-macro";
 
-export const weaponAttachmentSlots = ['muzzle', 'barrel', 'scope', 'right_accessory', 'top_accessory', 'left_accessory', 'optic_accessory', 'ergonomics', 'underbarrel', 'magazine', 'ammunition'] as const;
-export type WeaponAttachmentSlot = typeof weaponAttachmentSlots[number];
-
-export type WeaponAttachment = { 
-    id: string; 
-    name: string; 
-    attachment: mod.WeaponAttachments; 
-    slot: WeaponAttachmentSlot 
-};
-
-export type AttachmentKey = keyof typeof attachmentRegistry;
-
-export const attachmentRegistry = {
+export const generatedAttachmentRegistry = {
     "attachment_Ammo_Buckshot": {
         id: "attachment_Ammo_Buckshot",
         name: s`BUCKSHOT`,
@@ -1992,12 +1980,7 @@ export const attachmentRegistry = {
     }
 } as const;
 
-export function getAttachments(ids: AttachmentKey[]): WeaponAttachment[] {
-    return ids.map(id => attachmentRegistry[id]);
-}
-
-// Weapon-attachment mappings generated from CSV data
-export const weaponAttachments: Record<string, AttachmentKey[]> = {
+export const generatedWeaponAttachments = {
     "Shotgun__185KS_K": [
         "attachment_Ammo_Buckshot",
         "attachment_Ammo_Flechette",
@@ -5254,4 +5237,4 @@ export const weaponAttachments: Record<string, AttachmentKey[]> = {
         "attachment_Scope_ROX_150x",
         "attachment_Scope_A_P2_175x"
     ]
-};
+} as const;

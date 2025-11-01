@@ -1,7 +1,6 @@
 import type { PlayerState } from "../player";
 import { ParseUI } from "../../lib/ui";
-import { getWeaponById, getWeaponsByCategory, weaponCategories, weaponCategoryNames, weaponAttachmentSlotNames, type WeaponDefinition, getAvailableAttachmentSlots, getWeaponAttachmentsBySlot, getWeaponAttachment } from "./weapons.generated";
-import { type WeaponAttachmentSlot } from "./attachments.generated";
+import { getWeaponById, getWeaponsByCategory, weaponCategories, weaponCategoryNames, weaponAttachmentSlotNames, type WeaponDefinition, type WeaponAttachmentSlot, getAvailableAttachmentSlots, getWeaponAttachmentsBySlot, getWeaponAttachment } from "./weapon-store";
 import { LAYOUT, THEME, IDS, idCategory, idSlot, idAttachment, HeaderManager } from "./weapon-catalog.view";
 import { UIRegistry } from "../ui";
 
