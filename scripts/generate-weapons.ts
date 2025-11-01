@@ -264,17 +264,17 @@ async function loadCSVData(csvPath: string): Promise<CSVAttachmentEntry[]> {
 }
 
 // Weapons to exclude from generation (for testing or content filtering)
-const EXCLUDED_WEAPONS = new Set([
-    'Carbine_SOR_300SC',
-    'Sidearm_GGH_22',
-    'Sniper_Mini_Scout',
+const EXCLUDED_WEAPONS: Set<string> = new Set([
+    // 'Carbine_SOR_300SC',
+    // 'Sidearm_GGH_22',
+    // 'Sniper_Mini_Scout',
     // Add other weapons you want to exclude
 ]);
 
 // Attachments to exclude from CSV processing (don't exist in mod types)
-const EXCLUDED_ATTACHMENTS = new Set([
-    'Canted Reflex',
-    '60RND Fast Mag',
+const EXCLUDED_ATTACHMENTS: Set<string> = new Set([
+    // 'Canted Reflex',
+    // '60RND Fast Mag',
     // Add other CSV attachments that don't exist in the TypeScript enums
 ]);
 

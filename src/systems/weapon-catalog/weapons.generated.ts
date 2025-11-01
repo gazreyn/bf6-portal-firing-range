@@ -178,6 +178,14 @@ export const weapons: WeaponDefinition[] = [
         attachments: getAttachments(weaponAttachments['Carbine_SG_553R'] || [])
     },
     {
+        id: 'gun_Carbine_SOR_300SC',
+        weapon: mod.Weapons.Carbine_SOR_300SC,
+        name: s`SOR 300SC`,
+        category: "carbine",
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachments: getAttachments(weaponAttachments['Carbine_SOR_300SC'] || [])
+    },
+    {
         id: 'gun_DMR_LMR27',
         weapon: mod.Weapons.DMR_LMR27,
         name: s`LMR27`,
@@ -306,6 +314,14 @@ export const weapons: WeaponDefinition[] = [
         attachments: getAttachments(weaponAttachments['Sidearm_ES_57'] || [])
     },
     {
+        id: 'gun_Sidearm_GGH_22',
+        weapon: mod.Weapons.Sidearm_GGH_22,
+        name: s`GGH 22`,
+        category: "pistol",
+        attachmentSlots: ["muzzle","scope","right_accessory","top_accessory","magazine","ammunition"],
+        attachments: getAttachments(weaponAttachments['Sidearm_GGH_22'] || [])
+    },
+    {
         id: 'gun_Sidearm_M44',
         weapon: mod.Weapons.Sidearm_M44,
         name: s`M44`,
@@ -400,6 +416,14 @@ export const weapons: WeaponDefinition[] = [
         category: "sniper",
         attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","left_accessory","optic_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Sniper_M2010_ESR'] || [])
+    },
+    {
+        id: 'gun_Sniper_Mini_Scout',
+        weapon: mod.Weapons.Sniper_Mini_Scout,
+        name: s`MINI SCOUT`,
+        category: "sniper",
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","left_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachments: getAttachments(weaponAttachments['Sniper_Mini_Scout'] || [])
     },
     {
         id: 'gun_Sniper_PSR',

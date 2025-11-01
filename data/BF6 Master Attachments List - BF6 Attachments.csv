@@ -3067,3 +3067,174 @@ SF-G2 5.00X,Scope,USG-90,10
 MARS-F LPVO,Scope,USG-90,25
 GRIM 1.50X,Scope,USG-90,25
 PAS-35 3.00X,Scope,USG-90,25
+Flash Hider,Muzzle,SOR-300SC,10
+Single-Port Brake,Muzzle,SOR-300SC,5
+Double-Port Brake,Muzzle,SOR-300SC,10
+Compensated Brake,Muzzle,SOR-300SC,20
+Linear Comp,Muzzle,SOR-300SC,10
+Standard Suppressor,Muzzle,SOR-300SC,20
+Long Suppressor,Muzzle,SOR-300SC,25
+CQB Suppressor,Muzzle,SOR-300SC,30
+Lightened Suppressor,Muzzle,SOR-300SC,30
+"9"" Factory",Barrel,SOR-300SC,10
+"10.5"" Custom",Barrel,SOR-300SC,15
+"7.5"" Compact",Barrel,SOR-300SC,15
+"9"" Fluted",Barrel,SOR-300SC,20
+Folding Vertical,Underbarrel,SOR-300SC,10
+Alloy Vertical,Underbarrel,SOR-300SC,20
+Ribbed Vertical,Underbarrel,SOR-300SC,20
+6H64 Vertical,Underbarrel,SOR-300SC,25
+Classic Vertical,Underbarrel,SOR-300SC,35
+Folding Stubby,Underbarrel,SOR-300SC,20
+Ribbed Stubby,Underbarrel,SOR-300SC,30
+Canted Stubby,Underbarrel,SOR-300SC,30
+Stippled Stubby,Underbarrel,SOR-300SC,35
+Low-Profile Stubby,Underbarrel,SOR-300SC,45
+Compact Handstop,Underbarrel,SOR-300SC,10
+Adjustable Angled,Underbarrel,SOR-300SC,15
+Slim Angled,Underbarrel,SOR-300SC,25
+Full Angled,Underbarrel,SOR-300SC,25
+30RND Magazine,Magazine,SOR-300SC,5
+20RND Fast Mag,Magazine,SOR-300SC,5
+20RND Magazine,Magazine,SOR-300SC,5
+30RND Fast Mag,Magazine,SOR-300SC,10
+36RND Magazine,Magazine,SOR-300SC,15
+40RND Magazine,Magazine,SOR-300SC,25
+40RND Fast Mag,Magazine,SOR-300SC,30
+FMJ,Ammunition,SOR-300SC,5
+Tungsten Core,Ammunition,SOR-300SC,5
+Polymer Case,Ammunition,SOR-300SC,10
+Hollow Point,Ammunition,SOR-300SC,20
+Frangible,Ammunition,SOR-300SC,20
+Magwell Flare,Ergonomics,SOR-300SC,10
+Match Trigger,Ergonomics,SOR-300SC,15
+Canted Iron Sights,Optic Accessory,SOR-300SC,5
+Canted Reflex,Optic Accessory,SOR-300SC,10
+Iron Sights,Scope,SOR-300SC,5
+MINI FLEX 1.00X,Scope,SOR-300SC,10
+R-MR 1.00X,Scope,SOR-300SC,10
+OSA-7 1.00x,Scope,SOR-300SC,10
+CQ RDS 1.25X,Scope,SOR-300SC,10
+RO-S 1.25X,Scope,SOR-300SC,10
+2PRO 1.25X,Scope,SOR-300SC,10
+ROX 1.50X,Scope,SOR-300SC,10
+SU-123 1.50X,Scope,SOR-300SC,10
+1P87 1.50X,Scope,SOR-300SC,10
+A-P2 1.75X,Scope,SOR-300SC,10
+RO-M 1.75x,Scope,SOR-300SC,10
+3VZR 1.75X,Scope,SOR-300SC,10
+CCO 2.00x,Scope,SOR-300SC,10
+R4T 2.00X,Scope,SOR-300SC,10
+BF-2M 2.50x,Scope,SOR-300SC,10
+BAKER 3.00X,Scope,SOR-300SC,10
+SDO 3.50X,Scope,SOR-300SC,10
+PVQ-31 4.00x,Scope,SOR-300SC,10
+LDS 4.50X,Scope,SOR-300SC,10
+ST PRISIM 5.00X,Scope,SOR-300SC,10
+SF-G2 5.00X,Scope,SOR-300SC,10
+NGFC LPVO,Scope,SOR-300SC,25
+GRIM 1.50X,Scope,SOR-300SC,25
+PAS-35 3.00X,Scope,SOR-300SC,25
+5 MW Red,Top Accessory,SOR-300SC,10
+5 MW Green,Top Accessory,SOR-300SC,10
+50 MW Green,Top Accessory,SOR-300SC,20
+50 MW Blue,Top Accessory,SOR-300SC,20
+120 MW Blue,Top Accessory,SOR-300SC,30
+Flashlight,Right Accessory,SOR-300SC,10
+Flash Hider,Muzzle,Mini Scout,10
+Single-Port Brake,Muzzle,Mini Scout,5
+Compensated Brake,Muzzle,Mini Scout,20
+Standard Suppressor,Muzzle,Mini Scout,20
+Long Suppressor,Muzzle,Mini Scout,25
+Double-Port Brake,Muzzle,Mini Scout,10
+CQB Suppressor,Muzzle,Mini Scout,30
+Lightened Suppressor,Muzzle,Mini Scout,30
+"16"" Factory",Barrel,Mini Scout,10
+"18"" Extended",Barrel,Mini Scout,15
+"12"" SBR",Barrel,Mini Scout,15
+"16"" Pencil",Barrel,Mini Scout,20
+Flashlight,Left Accessory,Mini Scout,10
+Range Finder,Left Accessory,Mini Scout,15
+Low-Profile Stubby,Underbarrel,Mini Scout,10
+Slim Angled,Underbarrel,Mini Scout,15
+Full Angled,Underbarrel,Mini Scout,5
+QD Grip Pod,Underbarrel,Mini Scout,10
+Classic Grip Pod,Underbarrel,Mini Scout,20
+Bipod,Underbarrel,Mini Scout,10
+10RND Magazine,Magazine,Mini Scout,5
+10RND Fast Mag,Magazine,Mini Scout,10
+15RND Magazine,Magazine,Mini Scout,30
+15RND Fast Mag,Magazine,Mini Scout,35
+20RND Magazine,Magazine,Mini Scout,55
+20RND Fast Mag,Magazine,Mini Scout,60
+FMJ,Ammunition,Mini Scout,5
+Tungsten Core,Ammunition,Mini Scout,5
+Frangible,Ammunition,Mini Scout,20
+Anti-Glare Coating,Optic Accessory,Mini Scout,10
+Iron Sights,Scope,Mini Scout,15
+MINI FLEX 1.00X,Scope,Mini Scout,10
+R-MR 1.00X,Scope,Mini Scout,10
+OSA-7 1.00x,Scope,Mini Scout,10
+CQ RDS 1.25X,Scope,Mini Scout,10
+RO-S 1.25X,Scope,Mini Scout,10
+2PRO 1.25X,Scope,Mini Scout,10
+ROX 1.50X,Scope,Mini Scout,10
+SU-123 1.50X,Scope,Mini Scout,10
+1P87 1.50X,Scope,Mini Scout,10
+A-P2 1.75X,Scope,Mini Scout,10
+RO-M 1.75x,Scope,Mini Scout,10
+3VZR 1.75X,Scope,Mini Scout,10
+CCO 2.00x,Scope,Mini Scout,10
+R4T 2.00X,Scope,Mini Scout,10
+BF-2M 2.50x,Scope,Mini Scout,10
+BAKER 3.00X,Scope,Mini Scout,10
+SDO 3.50X,Scope,Mini Scout,10
+PVQ-31 4.00x,Scope,Mini Scout,10
+LDS 4.50X,Scope,Mini Scout,10
+ST PRISIM 5.00X,Scope,Mini Scout,10
+SF-G2 5.00X,Scope,Mini Scout,10
+S-VPS 6.00X,Scope,Mini Scout,10
+SSDS 6.00X,Scope,Mini Scout,10
+NFX 8.00X,Scope,Mini Scout,10
+LERT 8.00X,Scope,Mini Scout,10
+R-VPS 10.00X,Scope,Mini Scout,10
+MARS-F LPVO,Scope,Mini Scout,25
+MC-CO LPVO,Scope,Mini Scout,25
+DVO LPVO,Scope,Mini Scout,25
+SM RIFLE VARIABLE,Scope,Mini Scout,25
+1P88 VARIABLE,Scope,Mini Scout,25
+GRIM 1.50X,Scope,Mini Scout,25
+PAS-35 3.00X,Scope,Mini Scout,25
+TS-HD 6.00X,Scope,Mini Scout,25
+5 MW Red,Right Accessory,Mini Scout,10
+5 MW Green,Right Accessory,Mini Scout,10
+50 MW Green,Right Accessory,Mini Scout,20
+50 MW Blue,Right Accessory,Mini Scout,20
+120 MW Blue,Right Accessory,Mini Scout,30
+Flash Hider,Muzzle,GGH-22,10
+Single-Port Brake,Muzzle,GGH-22,10
+Standard Suppressor,Muzzle,GGH-22,20
+CQB Suppressor,Muzzle,GGH-22,30
+114MM Factory,Barrel,GGH-22,10
+114MM Pencil,Barrel,GGH-22,20
+Flashlight,Underbarrel,GGH-22,10
+5 MW Red,Underbarrel,GGH-22,10
+5 MW Green,Underbarrel,GGH-22,10
+50 MW Green,Underbarrel,GGH-22,20
+Laser/Light Combo Red,Underbarrel,GGH-22,20
+Laser/Light Combo Green,Underbarrel,GGH-22,20
+15RND Magazine,Magazine,GGH-22,5
+20RND Magazine,Magazine,GGH-22,20
+22RND Magazine,Magazine,GGH-22,30
+FMJ,Ammunition,GGH-22,5
+Tungsten Core,Ammunition,GGH-22,5
+Hollow Point,Ammunition,GGH-22,20
+Frangible,Ammunition,GGH-22,20
+Improved Mag Catch,Ergonomics,GGH-22,5
+Iron Sights,Scope,GGH-22,5
+MINI FLEX 1.00X,Scope,GGH-22,10
+R-MR 1.00X,Scope,GGH-22,10
+CQ RDS 1.25X,Scope,GGH-22,10
+RO-S 1.25X,Scope,GGH-22,10
+ROX 1.50X,Scope,GGH-22,10
+A-P2 1.75X,Scope,GGH-22,10
