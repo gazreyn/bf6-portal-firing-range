@@ -62,7 +62,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.AssaultRifle_AK4D,
         name: s`AK4D`,
         category: "assault",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['AssaultRifle_AK4D'] || [])
     },
     {
@@ -70,7 +70,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.AssaultRifle_B36A4,
         name: s`B36A4`,
         category: "assault",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['AssaultRifle_B36A4'] || [])
     },
     {
@@ -78,7 +78,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.AssaultRifle_KORD_6P67,
         name: s`KORD 6P67`,
         category: "assault",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['AssaultRifle_KORD_6P67'] || [])
     },
     {
@@ -86,7 +86,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.AssaultRifle_L85A3,
         name: s`L85A3`,
         category: "assault",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['AssaultRifle_L85A3'] || [])
     },
     {
@@ -94,7 +94,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.AssaultRifle_M433,
         name: s`M433`,
         category: "assault",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['AssaultRifle_M433'] || [])
     },
     {
@@ -102,7 +102,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.AssaultRifle_NVO_228E,
         name: s`NVO 228E`,
         category: "assault",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['AssaultRifle_NVO_228E'] || [])
     },
     {
@@ -110,7 +110,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.AssaultRifle_SOR_556_Mk2,
         name: s`SOR 556 MK2`,
         category: "assault",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['AssaultRifle_SOR_556_Mk2'] || [])
     },
     {
@@ -118,7 +118,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.AssaultRifle_TR_7,
         name: s`TR 7`,
         category: "assault",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['AssaultRifle_TR_7'] || [])
     },
     {
@@ -126,7 +126,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Carbine_AK_205,
         name: s`AK 205`,
         category: "carbine",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","optic_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Carbine_AK_205'] || [])
     },
     {
@@ -134,7 +134,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Carbine_GRT_BC,
         name: s`GRT BC`,
         category: "carbine",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Carbine_GRT_BC'] || [])
     },
     {
@@ -142,7 +142,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Carbine_M277,
         name: s`M277`,
         category: "carbine",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Carbine_M277'] || [])
     },
     {
@@ -150,7 +150,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Carbine_M417_A2,
         name: s`M417 A2`,
         category: "carbine",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Carbine_M417_A2'] || [])
     },
     {
@@ -158,7 +158,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Carbine_M4A1,
         name: s`M4A1`,
         category: "carbine",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Carbine_M4A1'] || [])
     },
     {
@@ -166,7 +166,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Carbine_QBZ_192,
         name: s`QBZ 192`,
         category: "carbine",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Carbine_QBZ_192'] || [])
     },
     {
@@ -174,7 +174,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Carbine_SG_553R,
         name: s`SG 553R`,
         category: "carbine",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Carbine_SG_553R'] || [])
     },
     {
@@ -182,7 +182,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Carbine_SOR_300SC,
         name: s`SOR 300SC`,
         category: "carbine",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Carbine_SOR_300SC'] || [])
     },
     {
@@ -190,7 +190,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.DMR_LMR27,
         name: s`LMR27`,
         category: "dmr",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","optic_accessory","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['DMR_LMR27'] || [])
     },
     {
@@ -198,7 +198,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.DMR_M39_EMR,
         name: s`M39 EMR`,
         category: "dmr",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['DMR_M39_EMR'] || [])
     },
     {
@@ -206,7 +206,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.DMR_SVDM,
         name: s`SVDM`,
         category: "dmr",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","optic_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['DMR_SVDM'] || [])
     },
     {
@@ -214,7 +214,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.DMR_SVK_86,
         name: s`SVK 86`,
         category: "dmr",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","left_accessory","top_accessory","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['DMR_SVK_86'] || [])
     },
     {
@@ -222,7 +222,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.LMG_DRS_IAR,
         name: s`DRS IAR`,
         category: "lmg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['LMG_DRS_IAR'] || [])
     },
     {
@@ -230,7 +230,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.LMG_KTS100_MK8,
         name: s`KTS100 MK8`,
         category: "lmg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['LMG_KTS100_MK8'] || [])
     },
     {
@@ -238,7 +238,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.LMG_L110,
         name: s`L110`,
         category: "lmg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['LMG_L110'] || [])
     },
     {
@@ -246,7 +246,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.LMG_M_60,
         name: s`M 60`,
         category: "lmg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","optic_accessory","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['LMG_M_60'] || [])
     },
     {
@@ -254,7 +254,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.LMG_M123K,
         name: s`M123K`,
         category: "lmg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['LMG_M123K'] || [])
     },
     {
@@ -262,7 +262,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.LMG_M240L,
         name: s`M240L`,
         category: "lmg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['LMG_M240L'] || [])
     },
     {
@@ -270,7 +270,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.LMG_M250,
         name: s`M250`,
         category: "lmg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['LMG_M250'] || [])
     },
     {
@@ -278,7 +278,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.LMG_RPKM,
         name: s`RPKM`,
         category: "lmg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","optic_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['LMG_RPKM'] || [])
     },
     {
@@ -286,7 +286,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Shotgun__185KS_K,
         name: s` 185KS K`,
         category: "shotgun",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Shotgun__185KS_K'] || [])
     },
     {
@@ -294,7 +294,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Shotgun_M1014,
         name: s`M1014`,
         category: "shotgun",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Shotgun_M1014'] || [])
     },
     {
@@ -302,7 +302,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Shotgun_M87A1,
         name: s`M87A1`,
         category: "shotgun",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Shotgun_M87A1'] || [])
     },
     {
@@ -310,7 +310,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Sidearm_ES_57,
         name: s`ES 57`,
         category: "pistol",
-        attachmentSlots: ["muzzle","scope","right_accessory","top_accessory","magazine","ammunition"],
+        attachmentSlots: ["muzzle","scope","magazine","ammunition","barrel","ergonomics","underbarrel"],
         attachments: getAttachments(weaponAttachments['Sidearm_ES_57'] || [])
     },
     {
@@ -318,7 +318,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Sidearm_GGH_22,
         name: s`GGH 22`,
         category: "pistol",
-        attachmentSlots: ["muzzle","scope","right_accessory","top_accessory","magazine","ammunition"],
+        attachmentSlots: ["muzzle","scope","magazine","ammunition","barrel","underbarrel","ergonomics"],
         attachments: getAttachments(weaponAttachments['Sidearm_GGH_22'] || [])
     },
     {
@@ -326,7 +326,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Sidearm_M44,
         name: s`M44`,
         category: "pistol",
-        attachmentSlots: ["muzzle","scope","right_accessory","top_accessory","magazine","ammunition"],
+        attachmentSlots: ["scope","magazine","ammunition","barrel"],
         attachments: getAttachments(weaponAttachments['Sidearm_M44'] || [])
     },
     {
@@ -334,7 +334,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Sidearm_M45A1,
         name: s`M45A1`,
         category: "pistol",
-        attachmentSlots: ["muzzle","scope","right_accessory","top_accessory","magazine","ammunition"],
+        attachmentSlots: ["muzzle","scope","magazine","ammunition","barrel","ergonomics","underbarrel"],
         attachments: getAttachments(weaponAttachments['Sidearm_M45A1'] || [])
     },
     {
@@ -342,7 +342,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Sidearm_P18,
         name: s`P18`,
         category: "pistol",
-        attachmentSlots: ["muzzle","scope","right_accessory","top_accessory","magazine","ammunition"],
+        attachmentSlots: ["muzzle","scope","magazine","ammunition","barrel","ergonomics","underbarrel"],
         attachments: getAttachments(weaponAttachments['Sidearm_P18'] || [])
     },
     {
@@ -350,7 +350,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.SMG_KV9,
         name: s`KV9`,
         category: "smg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['SMG_KV9'] || [])
     },
     {
@@ -358,7 +358,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.SMG_PW5A3,
         name: s`PW5A3`,
         category: "smg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['SMG_PW5A3'] || [])
     },
     {
@@ -366,7 +366,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.SMG_PW7A2,
         name: s`PW7A2`,
         category: "smg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['SMG_PW7A2'] || [])
     },
     {
@@ -374,7 +374,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.SMG_SCW_10,
         name: s`SCW 10`,
         category: "smg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['SMG_SCW_10'] || [])
     },
     {
@@ -382,7 +382,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.SMG_SGX,
         name: s`SGX`,
         category: "smg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['SMG_SGX'] || [])
     },
     {
@@ -390,7 +390,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.SMG_SL9,
         name: s`SL9`,
         category: "smg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['SMG_SL9'] || [])
     },
     {
@@ -398,7 +398,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.SMG_UMG_40,
         name: s`UMG 40`,
         category: "smg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['SMG_UMG_40'] || [])
     },
     {
@@ -406,7 +406,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.SMG_USG_90,
         name: s`USG 90`,
         category: "smg",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","top_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","right_accessory","left_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['SMG_USG_90'] || [])
     },
     {
@@ -414,7 +414,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Sniper_M2010_ESR,
         name: s`M2010 ESR`,
         category: "sniper",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","left_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","top_accessory","left_accessory","optic_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Sniper_M2010_ESR'] || [])
     },
     {
@@ -422,7 +422,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Sniper_Mini_Scout,
         name: s`MINI SCOUT`,
         category: "sniper",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","left_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","optic_accessory","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Sniper_Mini_Scout'] || [])
     },
     {
@@ -430,7 +430,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Sniper_PSR,
         name: s`PSR`,
         category: "sniper",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","left_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","top_accessory","left_accessory","optic_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Sniper_PSR'] || [])
     },
     {
@@ -438,7 +438,7 @@ export const weapons: WeaponDefinition[] = [
         weapon: mod.Weapons.Sniper_SV_98,
         name: s`SV 98`,
         category: "sniper",
-        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","top_accessory","left_accessory","optic_accessory","ergonomics","magazine","ammunition"],
+        attachmentSlots: ["muzzle","barrel","scope","underbarrel","right_accessory","left_accessory","optic_accessory","ergonomics","magazine","ammunition"],
         attachments: getAttachments(weaponAttachments['Sniper_SV_98'] || [])
     }
 ];

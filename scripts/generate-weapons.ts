@@ -430,13 +430,31 @@ async function main() {
         
         const category = deriveWeaponCategory(enumName);
         const weaponAttachmentIds = weaponAttachments[enumName] || [];
+
+        const availableSlotsSet = new Set<WeaponAttachmentSlot>();
+        for (const attachmentId of weaponAttachmentIds) {
+            const attachment = attachmentRegistry[attachmentId];
+            if (attachment) {
+                availableSlotsSet.add(attachment.slot);
+            }
+        }
+
+        const defaultSlots = getDefaultAttachmentSlots(category);
+        const attachmentSlots = defaultSlots.filter(slot => availableSlotsSet.has(slot));
+
+        // Include any slots that exist outside the defaults to avoid dropping unexpected mappings
+        for (const slot of availableSlotsSet) {
+            if (!attachmentSlots.includes(slot)) {
+                attachmentSlots.push(slot);
+            }
+        }
         
         const weapon: WeaponDefinition = {
             id: `gun_${enumName}`,
             weapon: `mod.Weapons.${enumName}`,
             name: formatDisplayName(enumName),
             category,
-            attachmentSlots: getDefaultAttachmentSlots(category),
+            attachmentSlots,
             attachments: weaponAttachmentIds
         };
         
