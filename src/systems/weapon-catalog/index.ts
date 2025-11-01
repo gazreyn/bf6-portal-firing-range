@@ -1,7 +1,7 @@
 import type { PlayerState } from "../player";
 import { ParseUI } from "../../lib/ui";
-import { getWeaponById, getWeaponsByCategory, weaponCategories, weaponCategoryNames, weaponAttachmentSlotNames, type WeaponDefinition, getAvailableAttachmentSlots, getWeaponAttachmentsBySlot, getWeaponAttachment } from "./weapons";
-import { type WeaponAttachmentSlot } from "./attachments";
+import { getWeaponById, getWeaponsByCategory, weaponCategories, weaponCategoryNames, weaponAttachmentSlotNames, type WeaponDefinition, getAvailableAttachmentSlots, getWeaponAttachmentsBySlot, getWeaponAttachment } from "./weapons.generated";
+import { type WeaponAttachmentSlot } from "./attachments.generated";
 import { LAYOUT, THEME, IDS, idCategory, idSlot, idAttachment, HeaderManager } from "./weapon-catalog.view";
 import { UIRegistry } from "../ui";
 
@@ -526,7 +526,10 @@ export class WeaponCatalog {
     }
 
     private setPage(page: "weaponSelection" | "attachmentSlotSelection" | "attachmentSelection") {
+        const previousPage = this.state.pageState;
         this.state.pageState = page;
+
+        // TODO: Conditionally clean up and set pages based on previous and new page
 
         // Clean up previous page UI if necessary
         if(page !== "attachmentSlotSelection" && this.catalogAttachmentSlotSelectionPage) {

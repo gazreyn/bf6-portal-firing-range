@@ -1,0 +1,3069 @@
+Attachmentname,Slot,WeaponUnlock,Points
+Buckshot,Ammunition,18.5KS-K,10
+Flechette,Ammunition,18.5KS-K,30
+Slugs,Ammunition,18.5KS-K,40
+430MM Cut,Barrel,18.5KS-K,10
+430MM Factory,Barrel,18.5KS-K,15
+Flashlight,Left Accessory,18.5KS-K,10
+4RND Fast Mag,Magazine,18.5KS-K,10
+4RND Magazine,Magazine,18.5KS-K,5
+8RND Fast Mag,Magazine,18.5KS-K,10
+8RND Magazine,Magazine,18.5KS-K,5
+CQB Suppressor,Muzzle,18.5KS-K,30
+Double-Port Brake,Muzzle,18.5KS-K,10
+Flash Hider,Muzzle,18.5KS-K,10
+Lightened Suppressor,Muzzle,18.5KS-K,30
+Canted Iron Sights,Optic Accessory,18.5KS-K,5
+Canted Reflex,Optic Accessory,18.5KS-K,10
+5 MW Red,Right Accessory,18.5KS-K,10
+5 MW Green,Right Accessory,18.5KS-K,10
+50 MW Green,Right Accessory,18.5KS-K,20
+50 MW Blue,Right Accessory,18.5KS-K,20
+120 MW Blue,Right Accessory,18.5KS-K,30
+Iron Sights,Scope,18.5KS-K,5
+MINI FLEX 1.00X,Scope,18.5KS-K,10
+R-MR 1.00X,Scope,18.5KS-K,10
+OSA-7 1.00x,Scope,18.5KS-K,10
+CQ RDS 1.25X,Scope,18.5KS-K,10
+RO-S 1.25X,Scope,18.5KS-K,10
+2PRO 1.25X,Scope,18.5KS-K,10
+ROX 1.50X,Scope,18.5KS-K,10
+SU-123 1.50X,Scope,18.5KS-K,10
+1P87 1.50X,Scope,18.5KS-K,10
+A-P2 1.75X,Scope,18.5KS-K,10
+RO-M 1.75x,Scope,18.5KS-K,10
+3VZR 1.75X,Scope,18.5KS-K,10
+CCO 2.00x,Scope,18.5KS-K,10
+R4T 2.00X,Scope,18.5KS-K,10
+BF-2M 2.50x,Scope,18.5KS-K,10
+BAKER 3.00X,Scope,18.5KS-K,10
+SDO 3.50X,Scope,18.5KS-K,10
+PVQ-31 4.00x,Scope,18.5KS-K,10
+LDS 4.50X,Scope,18.5KS-K,10
+ST PRISIM 5.00X,Scope,18.5KS-K,10
+SF-G2 5.00X,Scope,18.5KS-K,10
+MARS-F LPVO,Scope,18.5KS-K,25
+GRIM 1.50X,Scope,18.5KS-K,25
+PAS-35 3.00X,Scope,18.5KS-K,25
+6H64 Vertical,Underbarrel,18.5KS-K,25
+Alloy Vertical,Underbarrel,18.5KS-K,20
+Canted Stubby,Underbarrel,18.5KS-K,30
+Classic Vertical,Underbarrel,18.5KS-K,35
+Folding Stubby,Underbarrel,18.5KS-K,20
+Folding Vertical,Underbarrel,18.5KS-K,10
+Full Angled,Underbarrel,18.5KS-K,25
+Low-Profile Stubby,Underbarrel,18.5KS-K,45
+Ribbed Stubby,Underbarrel,18.5KS-K,30
+Ribbed Vertical,Underbarrel,18.5KS-K,20
+Slim Angled,Underbarrel,18.5KS-K,25
+Stippled Stubby,Underbarrel,18.5KS-K,35
+FMJ,Ammunition,AK-205,5
+Tungsten Core,Ammunition,AK-205,5
+Polymer Case,Ammunition,AK-205,10
+Hollow Point,Ammunition,AK-205,20
+Frangible,Ammunition,AK-205,20
+Synthetic Tip,Ammunition,AK-205,30
+314MM Factory,Barrel,AK-205,10
+314MM Prototype,Barrel,AK-205,10
+314MM Fluted,Barrel,AK-205,20
+Improved Mag Catch,Ergonomics,AK-205,5
+Magwell Flare,Ergonomics,AK-205,10
+Match Trigger,Ergonomics,AK-205,15
+Flashlight,Left Accessory,AK-205,10
+30RND Fast Mag,Magazine,AK-205,10
+30RND Magazine,Magazine,AK-205,5
+36RND Magazine,Magazine,AK-205,15
+40RND Fast Mag,Magazine,AK-205,30
+40RND Magazine,Magazine,AK-205,25
+45RND Fast Mag,Magazine,AK-205,40
+45RND Magazine,Magazine,AK-205,35
+50RND Magazine,Magazine,AK-205,45
+Compensated Brake,Muzzle,AK-205,20
+CQB Suppressor,Muzzle,AK-205,30
+Double-Port Brake,Muzzle,AK-205,10
+Flash Hider,Muzzle,AK-205,10
+Lightened Suppressor,Muzzle,AK-205,30
+Linear Comp,Muzzle,AK-205,10
+Long Suppressor,Muzzle,AK-205,25
+Standard Suppressor,Muzzle,AK-205,20
+Canted Iron Sights,Optic Accessory,AK-205,5
+Canted Reflex,Optic Accessory,AK-205,10
+Piggyback Reflex,Optic Accessory,AK-205,10
+5 MW Red,Right Accessory,AK-205,10
+5 MW Green,Right Accessory,AK-205,10
+50 MW Green,Right Accessory,AK-205,20
+50 MW Blue,Right Accessory,AK-205,20
+120 MW Blue,Right Accessory,AK-205,30
+Iron Sights,Scope,AK-205,5
+MINI FLEX 1.00X,Scope,AK-205,10
+R-MR 1.00X,Scope,AK-205,10
+OSA-7 1.00x,Scope,AK-205,10
+CQ RDS 1.25X,Scope,AK-205,10
+RO-S 1.25X,Scope,AK-205,10
+2PRO 1.25X,Scope,AK-205,10
+ROX 1.50X,Scope,AK-205,10
+SU-123 1.50X,Scope,AK-205,10
+1P87 1.50X,Scope,AK-205,10
+A-P2 1.75X,Scope,AK-205,10
+RO-M 1.75x,Scope,AK-205,10
+3VZR 1.75X,Scope,AK-205,10
+CCO 2.00x,Scope,AK-205,10
+R4T 2.00X,Scope,AK-205,10
+BF-2M 2.50x,Scope,AK-205,10
+BAKER 3.00X,Scope,AK-205,10
+SDO 3.50X,Scope,AK-205,10
+PVQ-31 4.00x,Scope,AK-205,10
+LDS 4.50X,Scope,AK-205,10
+ST PRISIM 5.00X,Scope,AK-205,10
+SF-G2 5.00X,Scope,AK-205,10
+MARS-F LPVO,Scope,AK-205,25
+GRIM 1.50X,Scope,AK-205,25
+PAS-35 3.00X,Scope,AK-205,25
+6H64 Vertical,Underbarrel,AK-205,25
+Alloy Vertical,Underbarrel,AK-205,20
+Canted Stubby,Underbarrel,AK-205,30
+Classic Vertical,Underbarrel,AK-205,35
+Folding Stubby,Underbarrel,AK-205,20
+Folding Vertical,Underbarrel,AK-205,10
+Full Angled,Underbarrel,AK-205,25
+Low-Profile Stubby,Underbarrel,AK-205,45
+Ribbed Stubby,Underbarrel,AK-205,30
+Ribbed Vertical,Underbarrel,AK-205,20
+Slim Angled,Underbarrel,AK-205,25
+Stippled Stubby,Underbarrel,AK-205,35
+FMJ,Ammunition,AK4D,5
+Tungsten Core,Ammunition,AK4D,5
+Polymer Case,Ammunition,AK4D,10
+Hollow Point,Ammunition,AK4D,20
+Frangible,Ammunition,AK4D,20
+450MM Factory,Barrel,AK4D,10
+600MM Cut,Barrel,AK4D,10
+600MM Fluted,Barrel,AK4D,15
+600MM DMR,Barrel,AK4D,10
+409MM US,Barrel,AK4D,15
+Match Trigger,Ergonomics,AK4D,15
+Flashlight,Left Accessory,AK4D,10
+15RND Fast Mag,Magazine,AK4D,10
+15RND Magazine,Magazine,AK4D,5
+20RND Fast Mag,Magazine,AK4D,10
+20RND Magazine,Magazine,AK4D,5
+30RND Magazine,Magazine,AK4D,40
+Compensated Brake,Muzzle,AK4D,20
+CQB Suppressor,Muzzle,AK4D,30
+Double-Port Brake,Muzzle,AK4D,10
+Flash Hider,Muzzle,AK4D,10
+Lightened Suppressor,Muzzle,AK4D,30
+Linear Comp,Muzzle,AK4D,10
+Long Suppressor,Muzzle,AK4D,25
+Standard Suppressor,Muzzle,AK4D,20
+Canted Iron Sights,Optic Accessory,AK4D,5
+Canted Reflex,Optic Accessory,AK4D,10
+5 MW Red,Right Accessory,AK4D,10
+5 MW Green,Right Accessory,AK4D,10
+50 MW Green,Right Accessory,AK4D,20
+50 MW Blue,Right Accessory,AK4D,20
+120 MW Blue,Right Accessory,AK4D,30
+Iron Sights,Scope,AK4D,5
+MINI FLEX 1.00X,Scope,AK4D,10
+R-MR 1.00X,Scope,AK4D,10
+OSA-7 1.00x,Scope,AK4D,10
+CQ RDS 1.25X,Scope,AK4D,10
+RO-S 1.25X,Scope,AK4D,10
+2PRO 1.25X,Scope,AK4D,10
+ROX 1.50X,Scope,AK4D,10
+SU-123 1.50X,Scope,AK4D,10
+1P87 1.50X,Scope,AK4D,10
+A-P2 1.75X,Scope,AK4D,10
+RO-M 1.75x,Scope,AK4D,10
+3VZR 1.75X,Scope,AK4D,10
+CCO 2.00x,Scope,AK4D,10
+R4T 2.00X,Scope,AK4D,10
+BF-2M 2.50x,Scope,AK4D,10
+BAKER 3.00X,Scope,AK4D,10
+SDO 3.50X,Scope,AK4D,10
+PVQ-31 4.00x,Scope,AK4D,10
+LDS 4.50X,Scope,AK4D,10
+ST PRISIM 5.00X,Scope,AK4D,10
+SF-G2 5.00X,Scope,AK4D,10
+MARS-F LPVO,Scope,AK4D,25
+MC-CO LPVO,Scope,AK4D,25
+DVO LPVO,Scope,AK4D,25
+GRIM 1.50X,Scope,AK4D,25
+PAS-35 3.00X,Scope,AK4D,25
+6H64 Vertical,Underbarrel,AK4D,25
+Adjustable Angled,Underbarrel,AK4D,15
+Alloy Vertical,Underbarrel,AK4D,20
+Bipod,Underbarrel,AK4D,10
+Canted Stubby,Underbarrel,AK4D,30
+Classic Grip Pod,Underbarrel,AK4D,30
+Classic Vertical,Underbarrel,AK4D,35
+Folding Stubby,Underbarrel,AK4D,20
+Folding Vertical,Underbarrel,AK4D,10
+Full Angled,Underbarrel,AK4D,25
+Low-Profile Stubby,Underbarrel,AK4D,45
+PTT Grip Pod,Underbarrel,AK4D,20
+QD Grip Pod,Underbarrel,AK4D,30
+Ribbed Stubby,Underbarrel,AK4D,30
+Ribbed Vertical,Underbarrel,AK4D,20
+Slim Angled,Underbarrel,AK4D,25
+Stippled Stubby,Underbarrel,AK4D,35
+FMJ,Ammunition,B36A4,5
+Tungsten Core,Ammunition,B36A4,5
+Polymer Case,Ammunition,B36A4,10
+Hollow Point,Ammunition,B36A4,20
+Frangible,Ammunition,B36A4,20
+Synthetic Tip,Ammunition,B36A4,30
+480MM Factory,Barrel,B36A4,10
+480MM MG,Barrel,B36A4,10
+510MM Fluted,Barrel,B36A4,15
+510MM DMR,Barrel,B36A4,10
+391MM CQB,Barrel,B36A4,15
+480MM Fluted,Barrel,B36A4,20
+Match Trigger,Ergonomics,B36A4,15
+20RND Fast Mag,Magazine,B36A4,5
+20RND Magazine,Magazine,B36A4,5
+30RND Fast Mag,Magazine,B36A4,10
+30RND Magazine,Magazine,B36A4,5
+36RND Magazine,Magazine,B36A4,15
+40RND Fast Mag,Magazine,B36A4,30
+40RND Magazine,Magazine,B36A4,25
+45RND Fast Mag,Magazine,B36A4,40
+45RND Magazine,Magazine,B36A4,35
+Compensated Brake,Muzzle,B36A4,20
+CQB Suppressor,Muzzle,B36A4,30
+Double-Port Brake,Muzzle,B36A4,10
+Flash Hider,Muzzle,B36A4,10
+Lightened Suppressor,Muzzle,B36A4,30
+Linear Comp,Muzzle,B36A4,10
+Long Suppressor,Muzzle,B36A4,25
+Standard Suppressor,Muzzle,B36A4,20
+Canted Iron Sights,Optic Accessory,B36A4,5
+Canted Reflex,Optic Accessory,B36A4,10
+Flashlight,Right Accessory,B36A4,10
+Iron Sights,Scope,B36A4,5
+MINI FLEX 1.00X,Scope,B36A4,10
+R-MR 1.00X,Scope,B36A4,10
+OSA-7 1.00x,Scope,B36A4,10
+CQ RDS 1.25X,Scope,B36A4,10
+RO-S 1.25X,Scope,B36A4,10
+2PRO 1.25X,Scope,B36A4,10
+ROX 1.50X,Scope,B36A4,10
+SU-123 1.50X,Scope,B36A4,10
+1P87 1.50X,Scope,B36A4,10
+A-P2 1.75X,Scope,B36A4,10
+RO-M 1.75x,Scope,B36A4,10
+3VZR 1.75X,Scope,B36A4,10
+CCO 2.00x,Scope,B36A4,10
+R4T 2.00X,Scope,B36A4,10
+BF-2M 2.50x,Scope,B36A4,10
+BAKER 3.00X,Scope,B36A4,10
+SDO 3.50X,Scope,B36A4,10
+PVQ-31 4.00x,Scope,B36A4,10
+LDS 4.50X,Scope,B36A4,10
+ST PRISIM 5.00X,Scope,B36A4,10
+SF-G2 5.00X,Scope,B36A4,10
+MARS-F LPVO,Scope,B36A4,25
+MC-CO LPVO,Scope,B36A4,25
+DVO LPVO,Scope,B36A4,25
+GRIM 1.50X,Scope,B36A4,25
+PAS-35 3.00X,Scope,B36A4,25
+5 MW Red,Top Accessory,B36A4,10
+5 MW Green,Top Accessory,B36A4,10
+50 MW Green,Top Accessory,B36A4,20
+50 MW Blue,Top Accessory,B36A4,20
+120 MW Blue,Top Accessory,B36A4,30
+6H64 Vertical,Underbarrel,B36A4,25
+Adjustable Angled,Underbarrel,B36A4,15
+Alloy Vertical,Underbarrel,B36A4,20
+Bipod,Underbarrel,B36A4,10
+Canted Stubby,Underbarrel,B36A4,30
+Classic Grip Pod,Underbarrel,B36A4,30
+Classic Vertical,Underbarrel,B36A4,35
+Folding Stubby,Underbarrel,B36A4,20
+Folding Vertical,Underbarrel,B36A4,10
+Full Angled,Underbarrel,B36A4,25
+Low-Profile Stubby,Underbarrel,B36A4,45
+PTT Grip Pod,Underbarrel,B36A4,20
+QD Grip Pod,Underbarrel,B36A4,30
+Ribbed Stubby,Underbarrel,B36A4,30
+Ribbed Vertical,Underbarrel,B36A4,20
+Slim Angled,Underbarrel,B36A4,25
+Stippled Stubby,Underbarrel,B36A4,35
+Underslung Mount,Underbarrel,B36A4,10
+FMJ,Ammunition,DRS-IAR,5
+Tungsten Core,Ammunition,DRS-IAR,5
+Polymer Case,Ammunition,DRS-IAR,10
+Hollow Point,Ammunition,DRS-IAR,20
+Frangible,Ammunition,DRS-IAR,20
+Synthetic Tip,Ammunition,DRS-IAR,30
+"16.5"" Basic",Barrel,DRS-IAR,10
+"16.5"" LSW",Barrel,DRS-IAR,10
+"20"" LE",Barrel,DRS-IAR,15
+"20"" SDM-R",Barrel,DRS-IAR,10
+"14.5"" Carbine",Barrel,DRS-IAR,15
+"16.5"" Fluted",Barrel,DRS-IAR,20
+Magwell Flare,Ergonomics,DRS-IAR,10
+Match Trigger,Ergonomics,DRS-IAR,15
+30RND Fast Mag,Magazine,DRS-IAR,10
+30RND Magazine,Magazine,DRS-IAR,5
+36RND Magazine,Magazine,DRS-IAR,15
+40RND Fast Mag,Magazine,DRS-IAR,30
+40RND Magazine,Magazine,DRS-IAR,25
+45RND Fast Mag,Magazine,DRS-IAR,40
+45RND Magazine,Magazine,DRS-IAR,35
+50RND Magazine,Magazine,DRS-IAR,45
+60RND Magazine,Magazine,DRS-IAR,55
+Compensated Brake,Muzzle,DRS-IAR,20
+CQB Suppressor,Muzzle,DRS-IAR,30
+Double-Port Brake,Muzzle,DRS-IAR,10
+Flash Hider,Muzzle,DRS-IAR,10
+Lightened Suppressor,Muzzle,DRS-IAR,30
+Linear Comp,Muzzle,DRS-IAR,10
+Long Suppressor,Muzzle,DRS-IAR,25
+Single-Port Brake,Muzzle,DRS-IAR,5
+Standard Suppressor,Muzzle,DRS-IAR,20
+Canted Iron Sights,Optic Accessory,DRS-IAR,5
+Canted Reflex,Optic Accessory,DRS-IAR,10
+Piggyback Reflex,Optic Accessory,DRS-IAR,10
+Flashlight,Right Accessory,DRS-IAR,10
+Iron Sights,Scope,DRS-IAR,5
+MINI FLEX 1.00X,Scope,DRS-IAR,10
+R-MR 1.00X,Scope,DRS-IAR,10
+OSA-7 1.00x,Scope,DRS-IAR,10
+CQ RDS 1.25X,Scope,DRS-IAR,10
+RO-S 1.25X,Scope,DRS-IAR,10
+2PRO 1.25X,Scope,DRS-IAR,10
+ROX 1.50X,Scope,DRS-IAR,10
+SU-123 1.50X,Scope,DRS-IAR,10
+1P87 1.50X,Scope,DRS-IAR,10
+A-P2 1.75X,Scope,DRS-IAR,10
+RO-M 1.75x,Scope,DRS-IAR,10
+3VZR 1.75X,Scope,DRS-IAR,10
+CCO 2.00x,Scope,DRS-IAR,10
+R4T 2.00X,Scope,DRS-IAR,10
+BF-2M 2.50x,Scope,DRS-IAR,10
+BAKER 3.00X,Scope,DRS-IAR,10
+SDO 3.50X,Scope,DRS-IAR,10
+PVQ-31 4.00x,Scope,DRS-IAR,10
+LDS 4.50X,Scope,DRS-IAR,10
+ST PRISIM 5.00X,Scope,DRS-IAR,10
+SF-G2 5.00X,Scope,DRS-IAR,10
+MARS-F LPVO,Scope,DRS-IAR,25
+MC-CO LPVO,Scope,DRS-IAR,25
+DVO LPVO,Scope,DRS-IAR,25
+GRIM 1.50X,Scope,DRS-IAR,25
+PAS-35 3.00X,Scope,DRS-IAR,25
+5 MW Red,Top Accessory,DRS-IAR,10
+5 MW Green,Top Accessory,DRS-IAR,20
+50 MW Green,Top Accessory,DRS-IAR,20
+50 MW Blue,Top Accessory,DRS-IAR,20
+120 MW Blue,Top Accessory,DRS-IAR,30
+6H64 Vertical,Underbarrel,DRS-IAR,25
+Adjustable Angled,Underbarrel,DRS-IAR,15
+Alloy Vertical,Underbarrel,DRS-IAR,20
+Bipod,Underbarrel,DRS-IAR,10
+Canted Stubby,Underbarrel,DRS-IAR,30
+Classic Grip Pod,Underbarrel,DRS-IAR,30
+Classic Vertical,Underbarrel,DRS-IAR,35
+Folding Stubby,Underbarrel,DRS-IAR,20
+Folding Vertical,Underbarrel,DRS-IAR,10
+Full Angled,Underbarrel,DRS-IAR,25
+Low-Profile Stubby,Underbarrel,DRS-IAR,45
+PTT Grip Pod,Underbarrel,DRS-IAR,20
+QD Grip Pod,Underbarrel,DRS-IAR,30
+Ribbed Stubby,Underbarrel,DRS-IAR,30
+Ribbed Vertical,Underbarrel,DRS-IAR,20
+Slim Angled,Underbarrel,DRS-IAR,25
+Stippled Stubby,Underbarrel,DRS-IAR,35
+FMJ,Ammunition,ES 5.7,5
+Tungsten Core,Ammunition,ES 5.7,5
+Hollow Point,Ammunition,ES 5.7,20
+Frangible,Ammunition,ES 5.7,20
+122MM Factory,Barrel,ES 5.7,10
+122MM Pencil,Barrel,ES 5.7,20
+Improved Mag Catch,Ergonomics,ES 5.7,5
+20RND Magazine,Magazine,ES 5.7,5
+30RND Magazine,Magazine,ES 5.7,40
+CQB Suppressor,Muzzle,ES 5.7,30
+Flash Hider,Muzzle,ES 5.7,10
+Single-Port Brake,Muzzle,ES 5.7,10
+Standard Suppressor,Muzzle,ES 5.7,20
+Iron Sights,Scope,ES 5.7,5
+MINI FLEX 1.00X,Scope,ES 5.7,10
+R-MR 1.00X,Scope,ES 5.7,10
+CQ RDS 1.25X,Scope,ES 5.7,10
+RO-S 1.25X,Scope,ES 5.7,10
+ROX 1.50X,Scope,ES 5.7,10
+A-P2 1.75X,Scope,ES 5.7,10
+5 MW Green,Underbarrel,ES 5.7,10
+5 MW Red,Underbarrel,ES 5.7,10
+50 MW Green,Underbarrel,ES 5.7,20
+Flashlight,Underbarrel,ES 5.7,10
+Laser/Light Combo Green,Underbarrel,ES 5.7,20
+Laser/Light Combo Red,Underbarrel,ES 5.7,20
+FMJ,Ammunition,GRT-BC,5
+Tungsten Core,Ammunition,GRT-BC,5
+Polymer Case,Ammunition,GRT-BC,10
+Hollow Point,Ammunition,GRT-BC,20
+Frangible,Ammunition,GRT-BC,20
+"10"" Full",Barrel,GRT-BC,10
+"14.5"" Alt",Barrel,GRT-BC,15
+"10"" Factory",Barrel,GRT-BC,20
+Improved Mag Catch,Ergonomics,GRT-BC,5
+Match Trigger,Ergonomics,GRT-BC,15
+30RND Fast Mag,Magazine,GRT-BC,10
+30RND Magazine,Magazine,GRT-BC,5
+36RND Magazine,Magazine,GRT-BC,15
+45RND Fast Mag,Magazine,GRT-BC,40
+45RND Magazine,Magazine,GRT-BC,35
+Compensated Brake,Muzzle,GRT-BC,20
+CQB Suppressor,Muzzle,GRT-BC,30
+Double-Port Brake,Muzzle,GRT-BC,10
+Flash Hider,Muzzle,GRT-BC,10
+Lightened Suppressor,Muzzle,GRT-BC,30
+Linear Comp,Muzzle,GRT-BC,10
+Long Suppressor,Muzzle,GRT-BC,25
+Single-Port Brake,Muzzle,GRT-BC,5
+Standard Suppressor,Muzzle,GRT-BC,20
+Canted Iron Sights,Optic Accessory,GRT-BC,5
+Canted Reflex,Optic Accessory,GRT-BC,10
+Flashlight,Right Accessory,GRT-BC,10
+5 MW Red,Right Accessory,GRT-BC,10
+5 MW Green,Right Accessory,GRT-BC,10
+50 MW Green,Right Accessory,GRT-BC,20
+50 MW Blue,Right Accessory,GRT-BC,20
+120 MW Blue,Right Accessory,GRT-BC,30
+Laser/Light Combo Red,Right Accessory,GRT-BC,20
+Laser/Light Combo Green,Right Accessory,GRT-BC,20
+Iron Sights,Scope,GRT-BC,5
+MINI FLEX 1.00X,Scope,GRT-BC,10
+R-MR 1.00X,Scope,GRT-BC,10
+OSA-7 1.00x,Scope,GRT-BC,10
+CQ RDS 1.25X,Scope,GRT-BC,10
+RO-S 1.25X,Scope,GRT-BC,10
+2PRO 1.25X,Scope,GRT-BC,10
+ROX 1.50X,Scope,GRT-BC,10
+SU-123 1.50X,Scope,GRT-BC,10
+1P87 1.50X,Scope,GRT-BC,10
+A-P2 1.75X,Scope,GRT-BC,10
+RO-M 1.75x,Scope,GRT-BC,10
+3VZR 1.75X,Scope,GRT-BC,10
+CCO 2.00x,Scope,GRT-BC,10
+R4T 2.00X,Scope,GRT-BC,10
+BF-2M 2.50x,Scope,GRT-BC,10
+BAKER 3.00X,Scope,GRT-BC,10
+SDO 3.50X,Scope,GRT-BC,10
+PVQ-31 4.00x,Scope,GRT-BC,10
+LDS 4.50X,Scope,GRT-BC,10
+ST PRISIM 5.00X,Scope,GRT-BC,10
+SF-G2 5.00X,Scope,GRT-BC,10
+MARS-F LPVO,Scope,GRT-BC,25
+GRIM 1.50X,Scope,GRT-BC,25
+PAS-35 3.00X,Scope,GRT-BC,25
+6H64 Vertical,Underbarrel,GRT-BC,25
+Alloy Vertical,Underbarrel,GRT-BC,20
+Canted Stubby,Underbarrel,GRT-BC,30
+Classic Vertical,Underbarrel,GRT-BC,35
+Compact Handstop,Underbarrel,GRT-BC,10
+Folding Stubby,Underbarrel,GRT-BC,20
+Folding Vertical,Underbarrel,GRT-BC,10
+Low-Profile Stubby,Underbarrel,GRT-BC,45
+Ribbed Stubby,Underbarrel,GRT-BC,30
+Ribbed Vertical,Underbarrel,GRT-BC,20
+Stippled Stubby,Underbarrel,GRT-BC,35
+FMJ,Ammunition,KORD 6P67,5
+Tungsten Core,Ammunition,KORD 6P67,5
+Polymer Case,Ammunition,KORD 6P67,10
+Hollow Point,Ammunition,KORD 6P67,20
+Frangible,Ammunition,KORD 6P67,20
+415MM Factory,Barrel,KORD 6P67,10
+415MM Prototype,Barrel,KORD 6P67,10
+415MM Fluted,Barrel,KORD 6P67,20
+Match Trigger,Ergonomics,KORD 6P67,15
+30RND Fast Mag,Magazine,KORD 6P67,10
+30RND Magazine,Magazine,KORD 6P67,5
+36RND Magazine,Magazine,KORD 6P67,15
+40RND Fast Mag,Magazine,KORD 6P67,30
+40RND Magazine,Magazine,KORD 6P67,25
+45RND Fast Mag,Magazine,KORD 6P67,40
+45RND Magazine,Magazine,KORD 6P67,35
+Compensated Brake,Muzzle,KORD 6P67,20
+CQB Suppressor,Muzzle,KORD 6P67,30
+Double-Port Brake,Muzzle,KORD 6P67,10
+Flash Hider,Muzzle,KORD 6P67,10
+Lightened Suppressor,Muzzle,KORD 6P67,30
+Linear Comp,Muzzle,KORD 6P67,10
+Long Suppressor,Muzzle,KORD 6P67,25
+Single-Port Brake,Muzzle,KORD 6P67,5
+Standard Suppressor,Muzzle,KORD 6P67,20
+Canted Iron Sights,Optic Accessory,KORD 6P67,5
+Canted Reflex,Optic Accessory,KORD 6P67,10
+Flashlight,Right Accessory,KORD 6P67,10
+5 MW Red,Right Accessory,KORD 6P67,10
+5 MW Green,Right Accessory,KORD 6P67,10
+50 MW Green,Right Accessory,KORD 6P67,20
+50 MW Blue,Right Accessory,KORD 6P67,20
+120 MW Blue,Right Accessory,KORD 6P67,30
+Laser/Light Combo Green,Right Accessory,KORD 6P67,20
+Iron Sights,Scope,KORD 6P67,5
+MINI FLEX 1.00X,Scope,KORD 6P67,10
+R-MR 1.00X,Scope,KORD 6P67,10
+OSA-7 1.00x,Scope,KORD 6P67,10
+CQ RDS 1.25X,Scope,KORD 6P67,10
+RO-S 1.25X,Scope,KORD 6P67,10
+2PRO 1.25X,Scope,KORD 6P67,10
+ROX 1.50X,Scope,KORD 6P67,10
+SU-123 1.50X,Scope,KORD 6P67,10
+1P87 1.50X,Scope,KORD 6P67,10
+A-P2 1.75X,Scope,KORD 6P67,10
+RO-M 1.75x,Scope,KORD 6P67,10
+3VZR 1.75X,Scope,KORD 6P67,10
+CCO 2.00x,Scope,KORD 6P67,10
+R4T 2.00X,Scope,KORD 6P67,10
+BF-2M 2.50x,Scope,KORD 6P67,10
+BAKER 3.00X,Scope,KORD 6P67,10
+SDO 3.50X,Scope,KORD 6P67,10
+PVQ-31 4.00x,Scope,KORD 6P67,10
+LDS 4.50X,Scope,KORD 6P67,10
+ST PRISIM 5.00X,Scope,KORD 6P67,10
+SF-G2 5.00X,Scope,KORD 6P67,10
+MARS-F LPVO,Scope,KORD 6P67,25
+MC-CO LPVO,Scope,KORD 6P67,25
+DVO LPVO,Scope,KORD 6P67,25
+GRIM 1.50X,Scope,KORD 6P67,25
+PAS-35 3.00X,Scope,KORD 6P67,25
+6H64 Vertical,Underbarrel,KORD 6P67,25
+Alloy Vertical,Underbarrel,KORD 6P67,20
+Bipod,Underbarrel,KORD 6P67,10
+Canted Stubby,Underbarrel,KORD 6P67,30
+Classic Grip Pod,Underbarrel,KORD 6P67,30
+Classic Vertical,Underbarrel,KORD 6P67,35
+Folding Stubby,Underbarrel,KORD 6P67,20
+Folding Vertical,Underbarrel,KORD 6P67,10
+Full Angled,Underbarrel,KORD 6P67,25
+Low-Profile Stubby,Underbarrel,KORD 6P67,45
+PTT Grip Pod,Underbarrel,KORD 6P67,20
+QD Grip Pod,Underbarrel,KORD 6P67,30
+Ribbed Stubby,Underbarrel,KORD 6P67,30
+Ribbed Vertical,Underbarrel,KORD 6P67,20
+Slim Angled,Underbarrel,KORD 6P67,25
+Stippled Stubby,Underbarrel,KORD 6P67,35
+FMJ,Ammunition,KTS100 MK8,5
+Tungsten Core,Ammunition,KTS100 MK8,5
+Polymer Case,Ammunition,KTS100 MK8,10
+Hollow Point,Ammunition,KTS100 MK8,20
+Frangible,Ammunition,KTS100 MK8,20
+Synthetic Tip,Ammunition,KTS100 MK8,30
+457MM MK9,Barrel,KTS100 MK8,10
+508MM MK8,Barrel,KTS100 MK8,10
+330MM MK3,Barrel,KTS100 MK8,15
+Match Trigger,Ergonomics,KTS100 MK8,15
+100RND Drum Mag,Magazine,KTS100 MK8,45
+45RND Fast Mag,Magazine,KTS100 MK8,10
+45RND Magazine,Magazine,KTS100 MK8,5
+50RND Magazine,Magazine,KTS100 MK8,5
+60RND Drum Mag,Magazine,KTS100 MK8,5
+60RND Fast Mag,Magazine,KTS100 MK8,10
+Compensated Brake,Muzzle,KTS100 MK8,20
+CQB Suppressor,Muzzle,KTS100 MK8,30
+Double-Port Brake,Muzzle,KTS100 MK8,10
+Flash Hider,Muzzle,KTS100 MK8,10
+Lightened Suppressor,Muzzle,KTS100 MK8,30
+Linear Comp,Muzzle,KTS100 MK8,10
+Long Suppressor,Muzzle,KTS100 MK8,25
+Single-Port Brake,Muzzle,KTS100 MK8,5
+Standard Suppressor,Muzzle,KTS100 MK8,20
+Canted Iron Sights,Optic Accessory,KTS100 MK8,5
+Canted Reflex,Optic Accessory,KTS100 MK8,10
+Flashlight,Right Accessory,KTS100 MK8,10
+5 MW Red,Right Accessory,KTS100 MK8,10
+5 MW Green,Right Accessory,KTS100 MK8,10
+50 MW Green,Right Accessory,KTS100 MK8,20
+50 MW Blue,Right Accessory,KTS100 MK8,20
+120 MW Blue,Right Accessory,KTS100 MK8,30
+Laser/Light Combo Red,Right Accessory,KTS100 MK8,20
+Laser/Light Combo Green,Right Accessory,KTS100 MK8,20
+Iron Sights,Scope,KTS100 MK8,5
+MINI FLEX 1.00X,Scope,KTS100 MK8,10
+R-MR 1.00X,Scope,KTS100 MK8,10
+OSA-7 1.00x,Scope,KTS100 MK8,10
+CQ RDS 1.25X,Scope,KTS100 MK8,10
+RO-S 1.25X,Scope,KTS100 MK8,10
+2PRO 1.25X,Scope,KTS100 MK8,10
+ROX 1.50X,Scope,KTS100 MK8,10
+SU-123 1.50X,Scope,KTS100 MK8,10
+1P87 1.50X,Scope,KTS100 MK8,10
+A-P2 1.75X,Scope,KTS100 MK8,10
+RO-M 1.75x,Scope,KTS100 MK8,10
+3VZR 1.75X,Scope,KTS100 MK8,10
+CCO 2.00x,Scope,KTS100 MK8,10
+R4T 2.00X,Scope,KTS100 MK8,10
+BF-2M 2.50x,Scope,KTS100 MK8,10
+BAKER 3.00X,Scope,KTS100 MK8,10
+SDO 3.50X,Scope,KTS100 MK8,10
+PVQ-31 4.00x,Scope,KTS100 MK8,10
+LDS 4.50X,Scope,KTS100 MK8,10
+ST PRISIM 5.00X,Scope,KTS100 MK8,10
+SF-G2 5.00X,Scope,KTS100 MK8,10
+MARS-F LPVO,Scope,KTS100 MK8,25
+MC-CO LPVO,Scope,KTS100 MK8,25
+DVO LPVO,Scope,KTS100 MK8,25
+GRIM 1.50X,Scope,KTS100 MK8,25
+PAS-35 3.00X,Scope,KTS100 MK8,25
+6H64 Vertical,Underbarrel,KTS100 MK8,25
+Alloy Vertical,Underbarrel,KTS100 MK8,20
+Bipod,Underbarrel,KTS100 MK8,10
+Canted Stubby,Underbarrel,KTS100 MK8,30
+Classic Grip Pod,Underbarrel,KTS100 MK8,30
+Classic Vertical,Underbarrel,KTS100 MK8,35
+Folding Stubby,Underbarrel,KTS100 MK8,20
+Folding Vertical,Underbarrel,KTS100 MK8,10
+Full Angled,Underbarrel,KTS100 MK8,25
+Low-Profile Stubby,Underbarrel,KTS100 MK8,45
+PTT Grip Pod,Underbarrel,KTS100 MK8,20
+QD Grip Pod,Underbarrel,KTS100 MK8,30
+Ribbed Stubby,Underbarrel,KTS100 MK8,30
+Ribbed Vertical,Underbarrel,KTS100 MK8,20
+Slim Angled,Underbarrel,KTS100 MK8,25
+Stippled Stubby,Underbarrel,KTS100 MK8,35
+FMJ,Ammunition,KV9,5
+Tungsten Core,Ammunition,KV9,5
+Hollow Point,Ammunition,KV9,20
+Frangible,Ammunition,KV9,20
+"5.5"" Factory",Barrel,KV9,10
+"6.5"" Extended",Barrel,KV9,15
+"5.5"" Fluted",Barrel,KV9,20
+17RND Fast Mag,Magazine,KV9,10
+17RND Magazine,Magazine,KV9,5
+23RND Magazine,Magazine,KV9,25
+27RND Magazine,Magazine,KV9,45
+Compensated Brake,Muzzle,KV9,20
+CQB Suppressor,Muzzle,KV9,30
+Double-Port Brake,Muzzle,KV9,10
+Flash Hider,Muzzle,KV9,10
+Lightened Suppressor,Muzzle,KV9,30
+Linear Comp,Muzzle,KV9,10
+Long Suppressor,Muzzle,KV9,25
+Single-Port Brake,Muzzle,KV9,5
+Standard Suppressor,Muzzle,KV9,20
+Canted Iron Sights,Optic Accessory,KV9,5
+Canted Reflex,Optic Accessory,KV9,10
+Flashlight,Right Accessory,KV9,10
+Iron Sights,Scope,KV9,5
+MINI FLEX 1.00X,Scope,KV9,10
+R-MR 1.00X,Scope,KV9,10
+OSA-7 1.00x,Scope,KV9,10
+CQ RDS 1.25X,Scope,KV9,10
+RO-S 1.25X,Scope,KV9,10
+2PRO 1.25X,Scope,KV9,10
+ROX 1.50X,Scope,KV9,10
+SU-123 1.50X,Scope,KV9,10
+1P87 1.50X,Scope,KV9,10
+A-P2 1.75X,Scope,KV9,10
+RO-M 1.75x,Scope,KV9,10
+3VZR 1.75X,Scope,KV9,10
+CCO 2.00x,Scope,KV9,10
+R4T 2.00X,Scope,KV9,10
+BF-2M 2.50x,Scope,KV9,10
+BAKER 3.00X,Scope,KV9,10
+SDO 3.50X,Scope,KV9,10
+PVQ-31 4.00x,Scope,KV9,10
+LDS 4.50X,Scope,KV9,10
+ST PRISIM 5.00X,Scope,KV9,10
+SF-G2 5.00X,Scope,KV9,10
+MARS-F LPVO,Scope,KV9,25
+GRIM 1.50X,Scope,KV9,25
+PAS-35 3.00X,Scope,KV9,25
+5 MW Red,Top Accessory,KV9,10
+5 MW Green,Top Accessory,KV9,10
+50 MW Green,Top Accessory,KV9,20
+50 MW Blue,Top Accessory,KV9,20
+120 MW Blue,Top Accessory,KV9,30
+6H64 Vertical,Underbarrel,KV9,25
+Alloy Vertical,Underbarrel,KV9,20
+Canted Stubby,Underbarrel,KV9,30
+Classic Vertical,Underbarrel,KV9,35
+Compact Handstop,Underbarrel,KV9,10
+Folding Stubby,Underbarrel,KV9,20
+Folding Vertical,Underbarrel,KV9,10
+Low-Profile Stubby,Underbarrel,KV9,45
+Ribbed Stubby,Underbarrel,KV9,30
+Ribbed Vertical,Underbarrel,KV9,20
+Slim Angled,Underbarrel,KV9,20
+Stippled Stubby,Underbarrel,KV9,35
+FMJ,Ammunition,L110,5
+Tungsten Core,Ammunition,L110,5
+Hollow Point,Ammunition,L110,20
+Frangible,Ammunition,L110,20
+349MM SB,Barrel,L110,10
+465MM LB,Barrel,L110,10
+349MM Fluted,Barrel,L110,20
+Flashlight,Left Accessory,L110,10
+100RND Belt Pouch,Magazine,L110,5
+200RND Belt Box,Magazine,L110,55
+Compensated Brake,Muzzle,L110,20
+CQB Suppressor,Muzzle,L110,30
+Double-Port Brake,Muzzle,L110,10
+Flash Hider,Muzzle,L110,10
+Lightened Suppressor,Muzzle,L110,30
+Linear Comp,Muzzle,L110,10
+Long Suppressor,Muzzle,L110,25
+Single-Port Brake,Muzzle,L110,5
+Standard Suppressor,Muzzle,L110,20
+Canted Iron Sights,Optic Accessory,L110,5
+Canted Reflex,Optic Accessory,L110,10
+5 MW Green,Right Accessory,L110,10
+5 MW Red,Right Accessory,L110,10
+50 MW Green,Right Accessory,L110,20
+50 MW Blue,Right Accessory,L110,20
+120 MW Blue,Right Accessory,L110,30
+Iron Sights,Scope,L110,5
+R4T 2.00X,Scope,L110,10
+MINI FLEX 1.00X,Scope,L110,10
+R-MR 1.00X,Scope,L110,10
+OSA-7 1.00x,Scope,L110,10
+CQ RDS 1.25X,Scope,L110,10
+RO-S 1.25X,Scope,L110,10
+2PRO 1.25X,Scope,L110,10
+ROX 1.50X,Scope,L110,10
+CCO 2.00x,Scope,L110,10
+MC-CO LPVO,Scope,L110,25
+A-P2 1.75X,Scope,L110,10
+RO-M 1.75x,Scope,L110,10
+1P87 1.50X,Scope,L110,10
+3VZR 1.75X,Scope,L110,10
+BF-2M 2.50x,Scope,L110,10
+BAKER 3.00X,Scope,L110,10
+SDO 3.50X,Scope,L110,10
+PVQ-31 4.00x,Scope,L110,10
+LDS 4.50X,Scope,L110,10
+ST PRISIM 5.00X,Scope,L110,10
+SF-G2 5.00X,Scope,L110,10
+MARS-F LPVO,Scope,L110,25
+SU-123 1.50X,Scope,L110,10
+DVO LPVO,Scope,L110,25
+GRIM 1.50X,Scope,L110,25
+PAS-35 3.00X,Scope,L110,25
+6H64 Vertical,Underbarrel,L110,25
+Alloy Vertical,Underbarrel,L110,20
+Bipod,Underbarrel,L110,10
+Canted Stubby,Underbarrel,L110,30
+Classic Grip Pod,Underbarrel,L110,30
+Classic Vertical,Underbarrel,L110,35
+Folding Stubby,Underbarrel,L110,20
+Folding Vertical,Underbarrel,L110,10
+Full Angled,Underbarrel,L110,25
+Low-Profile Stubby,Underbarrel,L110,45
+PTT Grip Pod,Underbarrel,L110,20
+QD Grip Pod,Underbarrel,L110,30
+Ribbed Stubby,Underbarrel,L110,30
+Ribbed Vertical,Underbarrel,L110,20
+Slim Angled,Underbarrel,L110,25
+Stippled Stubby,Underbarrel,L110,35
+FMJ,Ammunition,L85A3,5
+Tungsten Core,Ammunition,L85A3,5
+Polymer Case,Ammunition,L85A3,10
+Hollow Point,Ammunition,L85A3,20
+Frangible,Ammunition,L85A3,20
+Synthetic Tip,Ammunition,L85A3,30
+518MM Factory,Barrel,L85A3,10
+646MM Cut,Barrel,L85A3,10
+646MM Fluted,Barrel,L85A3,15
+646MM LSW,Barrel,L85A3,10
+442 MM CQB,Barrel,L85A3,15
+518MM Fluted,Barrel,L85A3,20
+Match Trigger,Ergonomics,L85A3,15
+20RND Fast Mag,Magazine,L85A3,5
+20RND Magazine,Magazine,L85A3,5
+30RND Fast Mag,Magazine,L85A3,10
+30RND Magazine,Magazine,L85A3,5
+36RND Magazine,Magazine,L85A3,15
+40RND Fast Mag,Magazine,L85A3,30
+40RND Magazine,Magazine,L85A3,25
+45RND Fast Mag,Magazine,L85A3,40
+45RND Magazine,Magazine,L85A3,35
+Compensated Brake,Muzzle,L85A3,20
+CQB Suppressor,Muzzle,L85A3,30
+Double-Port Brake,Muzzle,L85A3,10
+Flash Hider,Muzzle,L85A3,10
+Lightened Suppressor,Muzzle,L85A3,30
+Linear Comp,Muzzle,L85A3,10
+Long Suppressor,Muzzle,L85A3,25
+Single-Port Brake,Muzzle,L85A3,5
+Standard Suppressor,Muzzle,L85A3,20
+Canted Iron Sights,Optic Accessory,L85A3,5
+Canted Reflex,Optic Accessory,L85A3,10
+Piggyback Reflex,Optic Accessory,L85A3,10
+Flashlight,Right Accessory,L85A3,10
+Iron Sights,Scope,L85A3,5
+MINI FLEX 1.00X,Scope,L85A3,10
+R-MR 1.00X,Scope,L85A3,10
+OSA-7 1.00x,Scope,L85A3,10
+CQ RDS 1.25X,Scope,L85A3,10
+RO-S 1.25X,Scope,L85A3,10
+2PRO 1.25X,Scope,L85A3,10
+ROX 1.50X,Scope,L85A3,10
+SU-123 1.50X,Scope,L85A3,10
+1P87 1.50X,Scope,L85A3,10
+A-P2 1.75X,Scope,L85A3,10
+RO-M 1.75x,Scope,L85A3,10
+3VZR 1.75X,Scope,L85A3,10
+CCO 2.00x,Scope,L85A3,10
+R4T 2.00X,Scope,L85A3,10
+BF-2M 2.50x,Scope,L85A3,10
+BAKER 3.00X,Scope,L85A3,10
+SDO 3.50X,Scope,L85A3,10
+PVQ-31 4.00x,Scope,L85A3,10
+LDS 4.50X,Scope,L85A3,10
+ST PRISIM 5.00X,Scope,L85A3,10
+SF-G2 5.00X,Scope,L85A3,10
+MARS-F LPVO,Scope,L85A3,25
+MC-CO LPVO,Scope,L85A3,25
+DVO LPVO,Scope,L85A3,25
+GRIM 1.50X,Scope,L85A3,25
+PAS-35 3.00X,Scope,L85A3,25
+5 MW Red,Top Accessory,L85A3,10
+5 MW Green,Top Accessory,L85A3,10
+50 MW Green,Top Accessory,L85A3,20
+50 MW Blue,Top Accessory,L85A3,20
+120 MW Blue,Top Accessory,L85A3,30
+6H64 Vertical,Underbarrel,L85A3,25
+Adjustable Angled,Underbarrel,L85A3,15
+Alloy Vertical,Underbarrel,L85A3,20
+Bipod,Underbarrel,L85A3,10
+Canted Stubby,Underbarrel,L85A3,30
+Classic Grip Pod,Underbarrel,L85A3,30
+Classic Vertical,Underbarrel,L85A3,35
+Folding Stubby,Underbarrel,L85A3,20
+Folding Vertical,Underbarrel,L85A3,10
+Full Angled,Underbarrel,L85A3,25
+Low-Profile Stubby,Underbarrel,L85A3,45
+PTT Grip Pod,Underbarrel,L85A3,20
+QD Grip Pod,Underbarrel,L85A3,30
+Ribbed Stubby,Underbarrel,L85A3,30
+Ribbed Vertical,Underbarrel,L85A3,20
+Slim Angled,Underbarrel,L85A3,25
+Stippled Stubby,Underbarrel,L85A3,35
+Underslung Mount,Underbarrel,L85A3,10
+FMJ,Ammunition,LMR27,5
+Tungsten Core,Ammunition,LMR27,5
+Hollow Point,Ammunition,LMR27,20
+Frangible,Ammunition,LMR27,20
+Synthetic Tip,Ammunition,LMR27,30
+"21.5"" Factory",Barrel,LMR27,10
+"24"" Extended",Barrel,LMR27,15
+"21.5"" Fluted",Barrel,LMR27,20
+Flashlight,Left Accessory,LMR27,10
+Range Finder,Left Accessory,LMR27,15
+10RND Fast Mag,Magazine,LMR27,10
+10RND Magazine,Magazine,LMR27,5
+15RND Fast Mag,Magazine,LMR27,25
+15RND Magazine,Magazine,LMR27,20
+20RND Fast Mag,Magazine,LMR27,50
+20RND Magazine,Magazine,LMR27,45
+Compensated Brake,Muzzle,LMR27,20
+CQB Suppressor,Muzzle,LMR27,30
+Double-Port Brake,Muzzle,LMR27,10
+Flash Hider,Muzzle,LMR27,10
+Lightened Suppressor,Muzzle,LMR27,30
+Linear Comp,Muzzle,LMR27,10
+Long Suppressor,Muzzle,LMR27,25
+Single-Port Brake,Muzzle,LMR27,5
+Standard Suppressor,Muzzle,LMR27,20
+Canted Iron Sights,Optic Accessory,LMR27,5
+Canted Reflex,Optic Accessory,LMR27,10
+Piggyback Reflex,Optic Accessory,LMR27,10
+5 MW Red,Right Accessory,LMR27,10
+5 MW Green,Right Accessory,LMR27,10
+50 MW Green,Right Accessory,LMR27,20
+50 MW Blue,Right Accessory,LMR27,20
+120 MW Blue,Right Accessory,LMR27,30
+Iron Sights,Scope,LMR27,5
+MINI FLEX 1.00X,Scope,LMR27,10
+R-MR 1.00X,Scope,LMR27,10
+OSA-7 1.00x,Scope,LMR27,10
+CQ RDS 1.25X,Scope,LMR27,10
+RO-S 1.25X,Scope,LMR27,10
+2PRO 1.25X,Scope,LMR27,10
+ROX 1.50X,Scope,LMR27,10
+SU-123 1.50X,Scope,LMR27,10
+1P87 1.50X,Scope,LMR27,10
+A-P2 1.75X,Scope,LMR27,10
+RO-M 1.75x,Scope,LMR27,10
+3VZR 1.75X,Scope,LMR27,10
+CCO 2.00x,Scope,LMR27,10
+R4T 2.00X,Scope,LMR27,10
+BF-2M 2.50x,Scope,LMR27,10
+BAKER 3.00X,Scope,LMR27,10
+SDO 3.50X,Scope,LMR27,10
+PVQ-31 4.00x,Scope,LMR27,10
+LDS 4.50X,Scope,LMR27,10
+ST PRISIM 5.00X,Scope,LMR27,10
+S-VPS 6.00X,Scope,LMR27,10
+SF-G2 5.00X,Scope,LMR27,10
+SSDS 6.00X,Scope,LMR27,10
+NFX 8.00X,Scope,LMR27,10
+LERT 8.00X,Scope,LMR27,10
+R-VPS 10.00X,Scope,LMR27,10
+MARS-F LPVO,Scope,LMR27,25
+MC-CO LPVO,Scope,LMR27,25
+DVO LPVO,Scope,LMR27,25
+SM RIFLE VARIABLE,Scope,LMR27,25
+1P88 VARIABLE,Scope,LMR27,25
+GRIM 1.50X,Scope,LMR27,25
+PAS-35 3.00X,Scope,LMR27,25
+TS-HD 6.00X,Scope,LMR27,25
+6H64 Vertical,Underbarrel,LMR27,25
+Adjustable Angled,Underbarrel,LMR27,15
+Alloy Vertical,Underbarrel,LMR27,20
+Bipod,Underbarrel,LMR27,10
+Canted Stubby,Underbarrel,LMR27,30
+Classic Grip Pod,Underbarrel,LMR27,30
+Classic Vertical,Underbarrel,LMR27,35
+Factory Angled,Underbarrel,LMR27,25
+Folding Stubby,Underbarrel,LMR27,20
+Folding Vertical,Underbarrel,LMR27,10
+Full Angled,Underbarrel,LMR27,25
+Low-Profile Stubby,Underbarrel,LMR27,45
+PTT Grip Pod,Underbarrel,LMR27,20
+QD Grip Pod,Underbarrel,LMR27,30
+Ribbed Stubby,Underbarrel,LMR27,30
+Ribbed Vertical,Underbarrel,LMR27,20
+Stippled Stubby,Underbarrel,LMR27,35
+FMJ,Ammunition,M/60,5
+Tungsten Core,Ammunition,M/60,5
+Hollow Point,Ammunition,M/60,20
+Frangible,Ammunition,M/60,20
+"17"" Factory",Barrel,M/60,10
+"22"" E3 Long",Barrel,M/60,10
+"17"" Fluted",Barrel,M/60,20
+Flashlight,Left Accessory,M/60,10
+100RND Belt Pouch,Magazine,M/60,5
+50RND Loose Belt,Magazine,M/60,5
+Compensated Brake,Muzzle,M/60,20
+CQB Suppressor,Muzzle,M/60,30
+Double-Port Brake,Muzzle,M/60,10
+Flash Hider,Muzzle,M/60,10
+Lightened Suppressor,Muzzle,M/60,30
+Linear Comp,Muzzle,M/60,10
+Long Suppressor,Muzzle,M/60,25
+Single-Port Brake,Muzzle,M/60,10
+Standard Suppressor,Muzzle,M/60,20
+Canted Iron Sights,Optic Accessory,M/60,5
+Canted Reflex,Optic Accessory,M/60,10
+Piggyback Reflex,Optic Accessory,M/60,10
+5 MW Red,Right Accessory,M/60,10
+5 MW Green,Right Accessory,M/60,10
+50 MW Green,Right Accessory,M/60,20
+50 MW Blue,Right Accessory,M/60,20
+120 MW Blue,Right Accessory,M/60,30
+Iron Sights,Scope,M/60,5
+MINI FLEX 1.00X,Scope,M/60,10
+R-MR 1.00X,Scope,M/60,10
+OSA-7 1.00x,Scope,M/60,10
+CQ RDS 1.25X,Scope,M/60,10
+RO-S 1.25X,Scope,M/60,10
+2PRO 1.25X,Scope,M/60,10
+ROX 1.50X,Scope,M/60,10
+SU-123 1.50X,Scope,M/60,10
+1P87 1.50X,Scope,M/60,10
+A-P2 1.75X,Scope,M/60,10
+RO-M 1.75x,Scope,M/60,10
+3VZR 1.75X,Scope,M/60,10
+CCO 2.00x,Scope,M/60,10
+R4T 2.00X,Scope,M/60,10
+BF-2M 2.50x,Scope,M/60,10
+BAKER 3.00X,Scope,M/60,10
+SDO 3.50X,Scope,M/60,10
+PVQ-31 4.00x,Scope,M/60,10
+LDS 4.50X,Scope,M/60,10
+ST PRISIM 5.00X,Scope,M/60,10
+SF-G2 5.00X,Scope,M/60,10
+MC-CO LPVO,Scope,M/60,25
+DVO LPVO,Scope,M/60,25
+GRIM 1.50X,Scope,M/60,25
+PAS-35 3.00X,Scope,M/60,25
+MARS-F LPVO,Scope,M/60,25
+6H64 Vertical,Underbarrel,M/60,25
+Adjustable Angled,Underbarrel,M/60,15
+Alloy Vertical,Underbarrel,M/60,20
+Bipod,Underbarrel,M/60,10
+Canted Stubby,Underbarrel,M/60,30
+Classic Grip Pod,Underbarrel,M/60,30
+Classic Vertical,Underbarrel,M/60,35
+Folding Stubby,Underbarrel,M/60,20
+Folding Vertical,Underbarrel,M/60,10
+Full Angled,Underbarrel,M/60,25
+Low-Profile Stubby,Underbarrel,M/60,45
+PTT Grip Pod,Underbarrel,M/60,20
+QD Grip Pod,Underbarrel,M/60,30
+Ribbed Stubby,Underbarrel,M/60,30
+Ribbed Vertical,Underbarrel,M/60,20
+Slim Angled,Underbarrel,M/60,25
+Stippled Stubby,Underbarrel,M/60,35
+Buckshot,Ammunition,M1014,10
+Flechette,Ammunition,M1014,30
+Slugs,Ammunition,M1014,40
+"18.5"" Factory",Barrel,M1014,10
+Flashlight,Left Accessory,M1014,10
+4 Shell Tube,Magazine,M1014,5
+6 Shell Tube,Magazine,M1014,5
+CQB Suppressor,Muzzle,M1014,30
+Lightened Suppressor,Muzzle,M1014,30
+5 MW Red,Right Accessory,M1014,10
+5 MW Green,Right Accessory,M1014,10
+50 MW Green,Right Accessory,M1014,20
+50 MW Blue,Right Accessory,M1014,20
+120 MW Blue,Right Accessory,M1014,30
+Iron Sights,Scope,M1014,5
+MINI FLEX 1.00X,Scope,M1014,10
+R-MR 1.00X,Scope,M1014,10
+OSA-7 1.00x,Scope,M1014,10
+CQ RDS 1.25X,Scope,M1014,10
+RO-S 1.25X,Scope,M1014,10
+2PRO 1.25X,Scope,M1014,10
+ROX 1.50X,Scope,M1014,10
+SU-123 1.50X,Scope,M1014,10
+1P87 1.50X,Scope,M1014,10
+A-P2 1.75X,Scope,M1014,10
+RO-M 1.75x,Scope,M1014,10
+3VZR 1.75X,Scope,M1014,10
+CCO 2.00x,Scope,M1014,10
+R4T 2.00X,Scope,M1014,10
+BF-2M 2.50x,Scope,M1014,10
+BAKER 3.00X,Scope,M1014,10
+SDO 3.50X,Scope,M1014,10
+PVQ-31 4.00x,Scope,M1014,10
+LDS 4.50X,Scope,M1014,10
+ST PRISIM 5.00X,Scope,M1014,10
+SF-G2 5.00X,Scope,M1014,10
+MARS-F LPVO,Scope,M1014,25
+GRIM 1.50X,Scope,M1014,25
+PAS-35 3.00X,Scope,M1014,25
+6H64 Vertical,Underbarrel,M1014,25
+Adjustable Angled,Underbarrel,M1014,15
+Alloy Vertical,Underbarrel,M1014,20
+Canted Stubby,Underbarrel,M1014,30
+Classic Vertical,Underbarrel,M1014,35
+Folding Stubby,Underbarrel,M1014,20
+Folding Vertical,Underbarrel,M1014,10
+Full Angled,Underbarrel,M1014,25
+Low-Profile Stubby,Underbarrel,M1014,45
+Ribbed Stubby,Underbarrel,M1014,30
+Ribbed Vertical,Underbarrel,M1014,20
+Slim Angled,Underbarrel,M1014,25
+Stippled Stubby,Underbarrel,M1014,35
+FMJ,Ammunition,M123K,5
+Tungsten Core,Ammunition,M123K,5
+Hollow Point,Ammunition,M123K,20
+Frangible,Ammunition,M123K,20
+450MM Standard,Barrel,M123K,10
+612MM VMW,Barrel,M123K,10
+370MM Compact,Barrel,M123K,15
+Flashlight,Left Accessory,M123K,10
+100RND Belt Pouch,Magazine,M123K,5
+200RND Belt Box,Magazine,M123K,55
+Compensated Brake,Muzzle,M123K,20
+CQB Suppressor,Muzzle,M123K,30
+Double-Port Brake,Muzzle,M123K,10
+Flash Hider,Muzzle,M123K,10
+Lightened Suppressor,Muzzle,M123K,30
+Linear Comp,Muzzle,M123K,10
+Long Suppressor,Muzzle,M123K,25
+Standard Suppressor,Muzzle,M123K,20
+Canted Iron Sights,Optic Accessory,M123K,5
+Canted Reflex,Optic Accessory,M123K,10
+5 MW Red,Right Accessory,M123K,10
+5 MW Green,Right Accessory,M123K,10
+50 MW Green,Right Accessory,M123K,20
+50 MW Blue,Right Accessory,M123K,20
+120 MW Blue,Right Accessory,M123K,30
+Iron Sights,Scope,M123K,5
+MINI FLEX 1.00X,Scope,M123K,10
+R-MR 1.00X,Scope,M123K,10
+OSA-7 1.00x,Scope,M123K,10
+CQ RDS 1.25X,Scope,M123K,10
+RO-S 1.25X,Scope,M123K,10
+2PRO 1.25X,Scope,M123K,10
+ROX 1.50X,Scope,M123K,10
+SU-123 1.50X,Scope,M123K,10
+1P87 1.50X,Scope,M123K,10
+A-P2 1.75X,Scope,M123K,10
+RO-M 1.75x,Scope,M123K,10
+3VZR 1.75X,Scope,M123K,10
+CCO 2.00x,Scope,M123K,10
+R4T 2.00X,Scope,M123K,10
+BF-2M 2.50x,Scope,M123K,10
+BAKER 3.00X,Scope,M123K,10
+SDO 3.50X,Scope,M123K,10
+PVQ-31 4.00x,Scope,M123K,10
+LDS 4.50X,Scope,M123K,10
+ST PRISIM 5.00X,Scope,M123K,10
+SF-G2 5.00X,Scope,M123K,10
+MARS-F LPVO,Scope,M123K,25
+MC-CO LPVO,Scope,M123K,25
+DVO LPVO,Scope,M123K,25
+GRIM 1.50X,Scope,M123K,25
+PAS-35 3.00X,Scope,M123K,25
+6H64 Vertical,Underbarrel,M123K,25
+Alloy Vertical,Underbarrel,M123K,20
+Bipod,Underbarrel,M123K,10
+Canted Stubby,Underbarrel,M123K,30
+Classic Grip Pod,Underbarrel,M123K,30
+Classic Vertical,Underbarrel,M123K,35
+Folding Stubby,Underbarrel,M123K,20
+Folding Vertical,Underbarrel,M123K,10
+Full Angled,Underbarrel,M123K,25
+Low-Profile Stubby,Underbarrel,M123K,45
+PTT Grip Pod,Underbarrel,M123K,20
+QD Grip Pod,Underbarrel,M123K,30
+Ribbed Stubby,Underbarrel,M123K,30
+Ribbed Vertical,Underbarrel,M123K,20
+Stippled Stubby,Underbarrel,M123K,35
+FMJ,Ammunition,M2010 ESR,5
+Tungsten Core,Ammunition,M2010 ESR,5
+Match Grade,Ammunition,M2010 ESR,10
+Frangible,Ammunition,M2010 ESR,20
+"24"" Fluted",Barrel,M2010 ESR,20
+"24"" Full",Barrel,M2010 ESR,10
+"26"" Carbon",Barrel,M2010 ESR,15
+DLC Bolt,Ergonomics,M2010 ESR,30
+Range Finder,Left Accessory,M2010 ESR,15
+Flashlight,Left Accessory,M2010 ESR,10
+5RND Fast Mag,Magazine,M2010 ESR,10
+5RND Magazine,Magazine,M2010 ESR,5
+8RND Magazine,Magazine,M2010 ESR,25
+Compensated Brake,Muzzle,M2010 ESR,20
+CQB Suppressor,Muzzle,M2010 ESR,30
+Double-Port Brake,Muzzle,M2010 ESR,10
+Flash Hider,Muzzle,M2010 ESR,10
+Lightened Suppressor,Muzzle,M2010 ESR,30
+Long Suppressor,Muzzle,M2010 ESR,25
+Single-Port Brake,Muzzle,M2010 ESR,5
+Standard Suppressor,Muzzle,M2010 ESR,20
+Canted Reflex,Optic Accessory,M2010 ESR,10
+Canted Iron Sights,Optic Accessory,M2010 ESR,5
+Adjustable Magnification 2.00X,Optic Accessory,M2010 ESR,10
+Adjustable Magnification 3.00X,Optic Accessory,M2010 ESR,10
+Adjustable Magnification 4.00X,Optic Accessory,M2010 ESR,10
+Anti-Glare Coating,Optic Accessory,M2010 ESR,10
+Iron Sights,Scope,M2010 ESR,15
+S-VPS 6.00X,Scope,M2010 ESR,10
+MINI FLEX 1.00X,Scope,M2010 ESR,10
+R-MR 1.00X,Scope,M2010 ESR,10
+OSA-7 1.00x,Scope,M2010 ESR,10
+CQ RDS 1.25X,Scope,M2010 ESR,10
+RO-S 1.25X,Scope,M2010 ESR,10
+2PRO 1.25X,Scope,M2010 ESR,10
+ROX 1.50X,Scope,M2010 ESR,10
+SU-123 1.50X,Scope,M2010 ESR,10
+1P87 1.50X,Scope,M2010 ESR,10
+A-P2 1.75X,Scope,M2010 ESR,10
+RO-M 1.75x,Scope,M2010 ESR,10
+3VZR 1.75X,Scope,M2010 ESR,10
+CCO 2.00x,Scope,M2010 ESR,10
+R4T 2.00X,Scope,M2010 ESR,10
+BF-2M 2.50x,Scope,M2010 ESR,10
+BAKER 3.00X,Scope,M2010 ESR,10
+SDO 3.50X,Scope,M2010 ESR,10
+PVQ-31 4.00x,Scope,M2010 ESR,10
+LDS 4.50X,Scope,M2010 ESR,10
+ST PRISIM 5.00X,Scope,M2010 ESR,10
+SF-G2 5.00X,Scope,M2010 ESR,10
+SSDS 6.00X,Scope,M2010 ESR,10
+NFX 8.00X,Scope,M2010 ESR,10
+LERT 8.00X,Scope,M2010 ESR,10
+R-VPS 10.00X,Scope,M2010 ESR,10
+NGFC LPVO,Scope,M2010 ESR,25
+MC-CO LPVO,Scope,M2010 ESR,25
+DVO LPVO,Scope,M2010 ESR,25
+SM RIFLE VARIABLE,Scope,M2010 ESR,25
+1P88 VARIABLE,Scope,M2010 ESR,25
+GRIM 1.50X,Scope,M2010 ESR,25
+PAS-35 3.00X,Scope,M2010 ESR,25
+TS-HD 6.00X,Scope,M2010 ESR,25
+5 MW Red,Top Accessory,M2010 ESR,10
+5 MW Green,Top Accessory,M2010 ESR,10
+50 MW Green,Top Accessory,M2010 ESR,20
+50 MW Blue,Top Accessory,M2010 ESR,20
+120 MW Blue,Top Accessory,M2010 ESR,30
+Bipod,Underbarrel,M2010 ESR,10
+Classic Grip Pod,Underbarrel,M2010 ESR,20
+Full Angled,Underbarrel,M2010 ESR,5
+Low-Profile Stubby,Underbarrel,M2010 ESR,10
+QD Grip Pod,Underbarrel,M2010 ESR,10
+Slim Angled,Underbarrel,M2010 ESR,15
+FMJ,Ammunition,M240L,5
+Tungsten Core,Ammunition,M240L,5
+Hollow Point,Ammunition,M240L,20
+Frangible,Ammunition,M240L,20
+"20"" Lima",Barrel,M240L,10
+"24"" Bravo",Barrel,M240L,10
+"20"" Oh",Barrel,M240L,20
+Flashlight,Left Accessory,M240L,10
+100RND Belt Box,Magazine,M240L,25
+50RND Loose Belt,Magazine,M240L,5
+75RND Belt Box,Magazine,M240L,10
+Compensated Brake,Muzzle,M240L,20
+CQB Suppressor,Muzzle,M240L,30
+Double-Port Brake,Muzzle,M240L,10
+Flash Hider,Muzzle,M240L,10
+Lightened Suppressor,Muzzle,M240L,30
+Linear Comp,Muzzle,M240L,10
+Long Suppressor,Muzzle,M240L,25
+Standard Suppressor,Muzzle,M240L,20
+Canted Iron Sights,Optic Accessory,M240L,5
+Canted Reflex,Optic Accessory,M240L,10
+5 MW Red,Right Accessory,M240L,10
+5 MW Green,Right Accessory,M240L,10
+50 MW Green,Right Accessory,M240L,20
+50 MW Blue,Right Accessory,M240L,20
+120 MW Blue,Right Accessory,M240L,30
+Iron Sights,Scope,M240L,5
+MINI FLEX 1.00X,Scope,M240L,10
+R-MR 1.00X,Scope,M240L,10
+OSA-7 1.00x,Scope,M240L,10
+CQ RDS 1.25X,Scope,M240L,10
+RO-S 1.25X,Scope,M240L,10
+2PRO 1.25X,Scope,M240L,10
+ROX 1.50X,Scope,M240L,10
+SU-123 1.50X,Scope,M240L,10
+1P87 1.50X,Scope,M240L,10
+A-P2 1.75X,Scope,M240L,10
+RO-M 1.75x,Scope,M240L,10
+3VZR 1.75X,Scope,M240L,10
+CCO 2.00x,Scope,M240L,10
+R4T 2.00X,Scope,M240L,10
+BF-2M 2.50x,Scope,M240L,10
+BAKER 3.00X,Scope,M240L,10
+SDO 3.50X,Scope,M240L,10
+PVQ-31 4.00x,Scope,M240L,10
+LDS 4.50X,Scope,M240L,10
+ST PRISIM 5.00X,Scope,M240L,10
+SF-G2 5.00X,Scope,M240L,10
+NGFC LPVO,Scope,M240L,25
+MC-CO LPVO,Scope,M240L,25
+DVO LPVO,Scope,M240L,25
+GRIM 1.50X,Scope,M240L,25
+PAS-35 3.00X,Scope,M240L,25
+6H64 Vertical,Underbarrel,M240L,25
+Alloy Vertical,Underbarrel,M240L,20
+Bipod,Underbarrel,M240L,10
+Canted Stubby,Underbarrel,M240L,30
+Classic Grip Pod,Underbarrel,M240L,30
+Classic Vertical,Underbarrel,M240L,35
+Folding Stubby,Underbarrel,M240L,20
+Folding Vertical,Underbarrel,M240L,10
+Full Angled,Underbarrel,M240L,25
+Low-Profile Stubby,Underbarrel,M240L,45
+PTT Grip Pod,Underbarrel,M240L,2-
+QD Grip Pod,Underbarrel,M240L,30
+Ribbed Stubby,Underbarrel,M240L,30
+Ribbed Vertical,Underbarrel,M240L,20
+Slim Angled,Underbarrel,M240L,25
+Stippled Stubby,Underbarrel,M240L,35
+FMJ,Ammunition,M250,5
+Tungsten Core,Ammunition,M250,5
+Hollow Point,Ammunition,M250,20
+Frangible,Ammunition,M250,20
+406MM Standard,Barrel,M250,10
+556MM Prototype,Barrel,M250,10
+100RND Belt Pouch,Magazine,M250,55
+50RND Belt Pouch,Magazine,M250,5
+Compensated Brake,Muzzle,M250,20
+CQB Suppressor,Muzzle,M250,30
+Double-Port Brake,Muzzle,M250,10
+Flash Hider,Muzzle,M250,10
+Lightened Suppressor,Muzzle,M250,30
+Linear Comp,Muzzle,M250,10
+Long Suppressor,Muzzle,M250,25
+Single-Port Brake,Muzzle,M250,10
+Standard Suppressor,Muzzle,M250,20
+Flashlight,Right Accessory,M250,10
+Iron Sights,Scope,M250,5
+MINI FLEX 1.00X,Scope,M250,10
+R-MR 1.00X,Scope,M250,10
+OSA-7 1.00x,Scope,M250,10
+CQ RDS 1.25X,Scope,M250,10
+RO-S 1.25X,Scope,M250,10
+2PRO 1.25X,Scope,M250,10
+ROX 1.50X,Scope,M250,10
+SU-123 1.50X,Scope,M250,10
+1P87 1.50X,Scope,M250,10
+A-P2 1.75X,Scope,M250,10
+RO-M 1.75x,Scope,M250,10
+3VZR 1.75X,Scope,M250,10
+CCO 2.00x,Scope,M250,10
+R4T 2.00X,Scope,M250,10
+BF-2M 2.50x,Scope,M250,10
+BAKER 3.00X,Scope,M250,10
+SDO 3.50X,Scope,M250,10
+PVQ-31 4.00x,Scope,M250,10
+LDS 4.50X,Scope,M250,10
+ST PRISIM 5.00X,Scope,M250,10
+SF-G2 5.00X,Scope,M250,10
+NGFC LPVO,Scope,M250,25
+MC-CO LPVO,Scope,M250,25
+DVO LPVO,Scope,M250,25
+GRIM 1.50X,Scope,M250,25
+PAS-35 3.00X,Scope,M250,25
+5 MW Red,Top Accessory,M250,10
+5 MW Green,Top Accessory,M250,10
+50 MW Green,Top Accessory,M250,20
+50 MW Blue,Top Accessory,M250,20
+120 MW Blue,Top Accessory,M250,30
+6H64 Vertical,Underbarrel,M250,25
+Adjustable Angled,Underbarrel,M250,15
+Alloy Vertical,Underbarrel,M250,20
+Bipod,Underbarrel,M250,10
+Canted Stubby,Underbarrel,M250,30
+Classic Grip Pod,Underbarrel,M250,30
+Classic Vertical,Underbarrel,M250,35
+Folding Stubby,Underbarrel,M250,20
+Folding Vertical,Underbarrel,M250,10
+Full Angled,Underbarrel,M250,25
+Low-Profile Stubby,Underbarrel,M250,45
+PTT Grip Pod,Underbarrel,M250,20
+QD Grip Pod,Underbarrel,M250,30
+Ribbed Stubby,Underbarrel,M250,30
+Ribbed Vertical,Underbarrel,M250,20
+Slim Angled,Underbarrel,M250,25
+Stippled Stubby,Underbarrel,M250,35
+FMJ,Ammunition,M277,5
+Tungsten Core,Ammunition,M277,5
+Hollow Point,Ammunition,M277,20
+Frangible,Ammunition,M277,20
+"13"" Factory",Barrel,M277,10
+"13"" Prototype",Barrel,M277,10
+"16"" Rifle",Barrel,M277,15
+"16"" Custom",Barrel,M277,10
+"13"" Fluted",Barrel,M277,20
+Improved Mag Catch,Ergonomics,M277,5
+Magwell Flare,Ergonomics,M277,10
+Match Trigger,Ergonomics,M277,15
+15RND Magazine,Magazine,M277,5
+20RND Fast Mag,Magazine,M277,10
+20RND Magazine,Magazine,M277,5
+25RND Fast Mag,Magazine,M277,25
+25RND Magazine,Magazine,M277,20
+30RND Magazine,Magazine,M277,40
+Compensated Brake,Muzzle,M277,20
+CQB Suppressor,Muzzle,M277,30
+Double-Port Brake,Muzzle,M277,10
+Flash Hider,Muzzle,M277,10
+Lightened Suppressor,Muzzle,M277,30
+Linear Comp,Muzzle,M277,10
+Long Suppressor,Muzzle,M277,25
+Single-Port Brake,Muzzle,M277,10
+Standard Suppressor,Muzzle,M277,20
+Flashlight,Right Accessory,M277,10
+Iron Sights,Scope,M277,5
+MINI FLEX 1.00X,Scope,M277,10
+R-MR 1.00X,Scope,M277,10
+OSA-7 1.00x,Scope,M277,10
+CQ RDS 1.25X,Scope,M277,10
+RO-S 1.25X,Scope,M277,10
+2PRO 1.25X,Scope,M277,10
+ROX 1.50X,Scope,M277,10
+SU-123 1.50X,Scope,M277,10
+1P87 1.50X,Scope,M277,10
+A-P2 1.75X,Scope,M277,10
+RO-M 1.75x,Scope,M277,10
+3VZR 1.75X,Scope,M277,10
+CCO 2.00x,Scope,M277,10
+R4T 2.00X,Scope,M277,10
+BF-2M 2.50x,Scope,M277,10
+BAKER 3.00X,Scope,M277,10
+SDO 3.50X,Scope,M277,10
+PVQ-31 4.00x,Scope,M277,10
+LDS 4.50X,Scope,M277,10
+ST PRISIM 5.00X,Scope,M277,10
+SF-G2 5.00X,Scope,M277,10
+NGFC LPVO,Scope,M277,25
+GRIM 1.50X,Scope,M277,25
+PAS-35 3.00X,Scope,M277,25
+5 MW Red,Top Accessory,M277,10
+5 MW Green,Top Accessory,M277,10
+50 MW Green,Top Accessory,M277,20
+50 MW Blue,Top Accessory,M277,20
+120 MW Blue,Top Accessory,M277,30
+6H64 Vertical,Underbarrel,M277,25
+Adjustable Angled,Underbarrel,M277,15
+Alloy Vertical,Underbarrel,M277,20
+Bipod,Underbarrel,M277,10
+Canted Stubby,Underbarrel,M277,30
+Classic Grip Pod,Underbarrel,M277,30
+Classic Vertical,Underbarrel,M277,35
+Folding Stubby,Underbarrel,M277,20
+Folding Vertical,Underbarrel,M277,10
+Full Angled,Underbarrel,M277,25
+Low-Profile Stubby,Underbarrel,M277,45
+PTT Grip Pod,Underbarrel,M277,20
+QD Grip Pod,Underbarrel,M277,30
+Ribbed Stubby,Underbarrel,M277,30
+Ribbed Vertical,Underbarrel,M277,20
+Slim Angled,Underbarrel,M277,25
+Stippled Stubby,Underbarrel,M277,35
+Underslung Mount,Underbarrel,M277,10
+FMJ,Ammunition,M39 EMR,5
+Tungsten Core,Ammunition,M39 EMR,5
+Polymer Case,Ammunition,M39 EMR,10
+Match Grade,Ammunition,M39 EMR,10
+Hollow Point,Ammunition,M39 EMR,20
+Frangible,Ammunition,M39 EMR,20
+"22"" Factory",Barrel,M39 EMR,15
+"18"" EBR",Barrel,M39 EMR,10
+"16"" Short",Barrel,M39 EMR,15
+Improved Mag Catch,Ergonomics,M39 EMR,5
+Flashlight,Left Accessory,M39 EMR,10
+Range Finder,Left Accessory,M39 EMR,15
+15RND Fast Mag,Magazine,M39 EMR,10
+15RND Magazine,Magazine,M39 EMR,5
+20RND Fast Mag,Magazine,M39 EMR,10
+20RND Magazine,Magazine,M39 EMR,5
+25RND Magazine,Magazine,M39 EMR,20
+Compensated Brake,Muzzle,M39 EMR,20
+CQB Suppressor,Muzzle,M39 EMR,30
+Double-Port Brake,Muzzle,M39 EMR,10
+Flash Hider,Muzzle,M39 EMR,10
+Lightened Suppressor,Muzzle,M39 EMR,30
+Linear Comp,Muzzle,M39 EMR,10
+Long Suppressor,Muzzle,M39 EMR,25
+Single-Port Brake,Muzzle,M39 EMR,5
+Standard Suppressor,Muzzle,M39 EMR,20
+Canted Iron Sights,Optic Accessory,M39 EMR,5
+Canted Reflex,Optic Accessory,M39 EMR,10
+5 MW Red,Right Accessory,M39 EMR,10
+5 MW Green,Right Accessory,M39 EMR,10
+50 MW Green,Right Accessory,M39 EMR,20
+50 MW Blue,Right Accessory,M39 EMR,20
+120 MW Blue,Right Accessory,M39 EMR,30
+Iron Sights,Scope,M39 EMR,5
+MINI FLEX 1.00X,Scope,M39 EMR,10
+R-MR 1.00X,Scope,M39 EMR,10
+OSA-7 1.00x,Scope,M39 EMR,10
+CQ RDS 1.25X,Scope,M39 EMR,10
+RO-S 1.25X,Scope,M39 EMR,10
+2PRO 1.25X,Scope,M39 EMR,10
+ROX 1.50X,Scope,M39 EMR,10
+SU-123 1.50X,Scope,M39 EMR,10
+1P87 1.50X,Scope,M39 EMR,10
+A-P2 1.75X,Scope,M39 EMR,10
+RO-M 1.75x,Scope,M39 EMR,10
+3VZR 1.75X,Scope,M39 EMR,10
+CCO 2.00x,Scope,M39 EMR,10
+R4T 2.00X,Scope,M39 EMR,10
+BF-2M 2.50x,Scope,M39 EMR,10
+BAKER 3.00X,Scope,M39 EMR,10
+SDO 3.50X,Scope,M39 EMR,10
+PVQ-31 4.00x,Scope,M39 EMR,10
+LDS 4.50X,Scope,M39 EMR,10
+ST PRISIM 5.00X,Scope,M39 EMR,10
+SF-G2 5.00X,Scope,M39 EMR,10
+S-VPS 6.00X,Scope,M39 EMR,10
+GRIM 1.50X,Scope,M39 EMR,25
+NFX 8.00X,Scope,M39 EMR,10
+SSDS 6.00X,Scope,M39 EMR,10
+LERT 8.00X,Scope,M39 EMR,10
+R-VPS 10.00X,Scope,M39 EMR,10
+MARS-F LPVO,Scope,M39 EMR,25
+MC-CO LPVO,Scope,M39 EMR,25
+DVO LPVO,Scope,M39 EMR,25
+SM RIFLE VARIABLE,Scope,M39 EMR,25
+1P88 VARIABLE,Scope,M39 EMR,25
+PAS-35 3.00X,Scope,M39 EMR,25
+TS-HD 6.00X,Scope,M39 EMR,25
+6H64 Vertical,Underbarrel,M39 EMR,25
+Adjustable Angled,Underbarrel,M39 EMR,15
+Alloy Vertical,Underbarrel,M39 EMR,20
+Bipod,Underbarrel,M39 EMR,10
+Canted Stubby,Underbarrel,M39 EMR,30
+Classic Grip Pod,Underbarrel,M39 EMR,30
+Classic Vertical,Underbarrel,M39 EMR,35
+Folding Stubby,Underbarrel,M39 EMR,20
+Folding Vertical,Underbarrel,M39 EMR,10
+Full Angled,Underbarrel,M39 EMR,25
+Low-Profile Stubby,Underbarrel,M39 EMR,45
+PTT Grip Pod,Underbarrel,M39 EMR,20
+QD Grip Pod,Underbarrel,M39 EMR,30
+Ribbed Stubby,Underbarrel,M39 EMR,30
+Ribbed Vertical,Underbarrel,M39 EMR,20
+Slim Angled,Underbarrel,M39 EMR,25
+Stippled Stubby,Underbarrel,M39 EMR,35
+FMJ,Ammunition,M417 A2,5
+Tungsten Core,Ammunition,M417 A2,5
+Polymer Case,Ammunition,M417 A2,10
+Hollow Point,Ammunition,M417 A2,20
+Frangible,Ammunition,M417 A2,20
+"13"" Standard",Barrel,M417 A2,10
+"16.5"" Rifle",Barrel,M417 A2,15
+"12"" Assaulter",Barrel,M417 A2,15
+Magwell Flare,Ergonomics,M417 A2,10
+Match Trigger,Ergonomics,M417 A2,15
+10RND Magazine,Magazine,M417 A2,5
+20RND Fast Mag,Magazine,M417 A2,10
+20RND Magazine,Magazine,M417 A2,5
+25RND Magazine,Magazine,M417 A2,15
+Compensated Brake,Muzzle,M417 A2,20
+CQB Suppressor,Muzzle,M417 A2,30
+Double-Port Brake,Muzzle,M417 A2,10
+Flash Hider,Muzzle,M417 A2,10
+Lightened Suppressor,Muzzle,M417 A2,30
+Linear Comp,Muzzle,M417 A2,10
+Long Suppressor,Muzzle,M417 A2,25
+Standard Suppressor,Muzzle,M417 A2,20
+Canted Iron Sights,Optic Accessory,M417 A2,5
+Canted Reflex,Optic Accessory,M417 A2,10
+Flashlight,Right Accessory,M417 A2,10
+Iron Sights,Scope,M417 A2,5
+MINI FLEX 1.00X,Scope,M417 A2,10
+R-MR 1.00X,Scope,M417 A2,10
+OSA-7 1.00x,Scope,M417 A2,10
+CQ RDS 1.25X,Scope,M417 A2,10
+RO-S 1.25X,Scope,M417 A2,10
+2PRO 1.25X,Scope,M417 A2,10
+ROX 1.50X,Scope,M417 A2,10
+CCO 2.00x,Scope,M417 A2,10
+3VZR 1.75X,Scope,M417 A2,10
+A-P2 1.75X,Scope,M417 A2,10
+RO-M 1.75x,Scope,M417 A2,10
+1P87 1.50X,Scope,M417 A2,10
+R4T 2.00X,Scope,M417 A2,10
+BF-2M 2.50x,Scope,M417 A2,10
+BAKER 3.00X,Scope,M417 A2,10
+SDO 3.50X,Scope,M417 A2,10
+PVQ-31 4.00x,Scope,M417 A2,10
+LDS 4.50X,Scope,M417 A2,10
+ST PRISIM 5.00X,Scope,M417 A2,10
+SF-G2 5.00X,Scope,M417 A2,10
+NGFC LPVO,Scope,M417 A2,25
+SU-123 1.50X,Scope,M417 A2,10
+GRIM 1.50X,Scope,M417 A2,25
+PAS-35 3.00X,Scope,M417 A2,25
+5 MW Red,Top Accessory,M417 A2,10
+5 MW Green,Top Accessory,M417 A2,10
+50 MW Green,Top Accessory,M417 A2,20
+50 MW Blue,Top Accessory,M417 A2,20
+120 MW Blue,Top Accessory,M417 A2,30
+6H64 Vertical,Underbarrel,M417 A2,25
+Adjustable Angled,Underbarrel,M417 A2,15
+Alloy Vertical,Underbarrel,M417 A2,20
+Bipod,Underbarrel,M417 A2,10
+Canted Stubby,Underbarrel,M417 A2,30
+Classic Grip Pod,Underbarrel,M417 A2,30
+Classic Vertical,Underbarrel,M417 A2,35
+Folding Stubby,Underbarrel,M417 A2,20
+Folding Vertical,Underbarrel,M417 A2,10
+Full Angled,Underbarrel,M417 A2,25
+Low-Profile Stubby,Underbarrel,M417 A2,45
+PTT Grip Pod,Underbarrel,M417 A2,20
+QD Grip Pod,Underbarrel,M417 A2,30
+Ribbed Stubby,Underbarrel,M417 A2,30
+Ribbed Vertical,Underbarrel,M417 A2,20
+Slim Angled,Underbarrel,M417 A2,25
+Stippled Stubby,Underbarrel,M417 A2,35
+Underslung Mount,Underbarrel,M417 A2,10
+FMJ,Ammunition,M433,5
+Tungsten Core,Ammunition,M433,5
+Polymer Case,Ammunition,M433,10
+Hollow Point,Ammunition,M433,20
+Frangible,Ammunition,M433,20
+"14.5"" Standard",Barrel,M433,15
+"16.5"" Rifle",Barrel,M433,10
+"16.5"" Fluted",Barrel,M433,20
+"18.9"" Prototype",Barrel,M433,15
+Match Trigger,Ergonomics,M433,15
+Magwell Flare,Ergonomics,M433,10
+20RND Fast Mag,Magazine,M433,5
+20RND Magazine,Magazine,M433,5
+30RND Fast Mag,Magazine,M433,10
+30RND Magazine,Magazine,M433,5
+36RND Magazine,Magazine,M433,15
+40RND Fast Mag,Magazine,M433,30
+40RND Magazine,Magazine,M433,25
+Compensated Brake,Muzzle,M433,20
+CQB Suppressor,Muzzle,M433,30
+Double-Port Brake,Muzzle,M433,10
+Flash Hider,Muzzle,M433,10
+Lightened Suppressor,Muzzle,M433,30
+Linear Comp,Muzzle,M433,10
+Long Suppressor,Muzzle,M433,25
+Standard Suppressor,Muzzle,M433,20
+Canted Reflex,Optic Accessory,M433,10
+Canted Iron Sights,Optic Accessory,M433,5
+Flashlight,Right Accessory,M433,10
+SU-123 1.5x,Scope,M433,10
+Iron Sights,Scope,M433,5
+OSA-7 1.00x,Scope,M433,10
+RO-M 1.75x,Scope,M433,10
+CCO 2.00x,Scope,M433,10
+DVO LPVO,Scope,M433,25
+ST PRISIM 5.00X,Scope,M433,10
+PVQ-31 4.00x,Scope,M433,10
+BF-2M 2.50x,Scope,M433,10
+MINI FLEX 1.00X,Scope,M433,10
+R-MR 1.00X,Scope,M433,10
+CQ RDS 1.25X,Scope,M433,10
+RO-S 1.25X,Scope,M433,10
+2PRO 1.25X,Scope,M433,10
+ROX 1.50X,Scope,M433,10
+1P87 1.50X,Scope,M433,10
+A-P2 1.75X,Scope,M433,10
+3VZR 1.75X,Scope,M433,10
+R4T 2.00X,Scope,M433,10
+BAKER 3.00X,Scope,M433,10
+SDO 3.50X,Scope,M433,10
+LDS 4.50X,Scope,M433,10
+SF-G2 5.00X,Scope,M433,10
+MARS-F LPVO,Scope,M433,25
+MC-CO LPVO,Scope,M433,25
+GRIM 1.50X,Scope,M433,25
+PAS-35 3.00X,Scope,M433,25
+50 MW Green,Top Accessory,M433,20
+120 MW Blue,Top Accessory,M433,30
+5 MW Red,Top Accessory,M433,10
+5 MW Green,Top Accessory,M433,10
+50 MW Blue,Top Accessory,M433,20
+6H64 Vertical,Underbarrel,M433,25
+Adjustable Angled,Underbarrel,M433,15
+Alloy Vertical,Underbarrel,M433,20
+Bipod,Underbarrel,M433,10
+Canted Stubby,Underbarrel,M433,30
+Classic Grip Pod,Underbarrel,M433,30
+Classic Vertical,Underbarrel,M433,35
+Folding Stubby,Underbarrel,M433,20
+Folding Vertical,Underbarrel,M433,10
+Full Angled,Underbarrel,M433,25
+Low-Profile Stubby,Underbarrel,M433,45
+PTT Grip Pod,Underbarrel,M433,20
+QD Grip Pod,Underbarrel,M433,30
+Ribbed Stubby,Underbarrel,M433,30
+Ribbed Vertical,Underbarrel,M433,20
+Slim Angled,Underbarrel,M433,25
+Stippled Stubby,Underbarrel,M433,35
+Underslung Mount,Underbarrel,M433,10
+FMJ,Ammunition,M44,5
+Tungsten Core,Ammunition,M44,5
+Hollow Point,Ammunition,M44,20
+Frangible,Ammunition,M44,20
+"6.75"" Factory",Barrel,M44,10
+"8.37"" Long",Barrel,M44,15
+"5.12"" Compact",Barrel,M44,15
+6RND Speedloader,Magazine,M44,5
+Iron Sights,Scope,M44,5
+MINI FLEX 1.00X,Scope,M44,10
+R-MR 1.00X,Scope,M44,10
+OSA-7 1.00x,Scope,M44,10
+CQ RDS 1.25X,Scope,M44,10
+RO-S 1.25X,Scope,M44,10
+2PRO 1.25X,Scope,M44,10
+ROX 1.50X,Scope,M44,10
+SU-123 1.50X,Scope,M44,10
+1P87 1.50X,Scope,M44,10
+A-P2 1.75X,Scope,M44,10
+RO-M 1.75x,Scope,M44,10
+3VZR 1.75X,Scope,M44,10
+CCO 2.00x,Scope,M44,10
+R4T 2.00X,Scope,M44,10
+BF-2M 2.50x,Scope,M44,10
+BAKER 3.00X,Scope,M44,10
+SDO 3.50X,Scope,M44,10
+PVQ-31 4.00x,Scope,M44,10
+LDS 4.50X,Scope,M44,10
+ST PRISIM 5.00X,Scope,M44,10
+SF-G2 5.00X,Scope,M44,10
+FMJ,Ammunition,M45A1,5
+Tungsten Core,Ammunition,M45A1,5
+Hollow Point,Ammunition,M45A1,20
+Frangible,Ammunition,M45A1,20
+"5"" Factory",Barrel,M45A1,10
+"5"" Pencil",Barrel,M45A1,20
+Improved Mag Catch,Ergonomics,M45A1,5
+11RND Magazine,Magazine,M45A1,25
+7RND Magazine,Magazine,M45A1,5
+CQB Suppressor,Muzzle,M45A1,30
+Flash Hider,Muzzle,M45A1,10
+Single-Port Brake,Muzzle,M45A1,10
+Standard Suppressor,Muzzle,M45A1,20
+Iron Sights,Scope,M45A1,5
+MINI FLEX 1.00X,Scope,M45A1,10
+R-MR 1.00X,Scope,M45A1,10
+CQ RDS 1.25X,Scope,M45A1,10
+RO-S 1.25X,Scope,M45A1,10
+ROX 1.50X,Scope,M45A1,10
+A-P2 1.75X,Scope,M45A1,10
+5 MW Green,Underbarrel,M45A1,10
+5 MW Red,Underbarrel,M45A1,10
+50 MW Green,Underbarrel,M45A1,20
+Flashlight,Underbarrel,M45A1,10
+Laser/Light Combo Green,Underbarrel,M45A1,20
+Laser/Light Combo Red,Underbarrel,M45A1,20
+FMJ,Ammunition,M4A1,5
+Tungsten Core,Ammunition,M4A1,5
+Polymer Case,Ammunition,M4A1,10
+Hollow Point,Ammunition,M4A1,20
+Frangible,Ammunition,M4A1,20
+"11.5"" Commando",Barrel,M4A1,15
+"12.5"" Mid",Barrel,M4A1,10
+"14.5"" Carbine",Barrel,M4A1,15
+"12.5"" Fluted",Barrel,M4A1,20
+Magwell Flare,Ergonomics,M4A1,10
+Improved Mag Catch,Ergonomics,M4A1,5
+Match Trigger,Ergonomics,M4A1,15
+20RND Fast Mag,Magazine,M4A1,5
+20RND Magazine,Magazine,M4A1,5
+30RND Fast Mag,Magazine,M4A1,10
+30RND Magazine,Magazine,M4A1,5
+36RND Magazine,Magazine,M4A1,15
+40RND Fast Mag,Magazine,M4A1,30
+40RND Magazine,Magazine,M4A1,25
+Compensated Brake,Muzzle,M4A1,20
+CQB Suppressor,Muzzle,M4A1,30
+Double-Port Brake,Muzzle,M4A1,10
+Flash Hider,Muzzle,M4A1,10
+Lightened Suppressor,Muzzle,M4A1,30
+Linear Comp,Muzzle,M4A1,10
+Long Suppressor,Muzzle,M4A1,25
+Single-Port Brake,Muzzle,M4A1,5
+Standard Suppressor,Muzzle,M4A1,20
+Canted Iron Sights,Optic Accessory,M4A1,5
+Canted Reflex,Optic Accessory,M4A1,10
+Flashlight,Right Accessory,M4A1,10
+Iron Sights,Scope,M4A1,5
+MINI FLEX 1.00X,Scope,M4A1,10
+R-MR 1.00X,Scope,M4A1,10
+OSA-7 1.00x,Scope,M4A1,10
+CQ RDS 1.25X,Scope,M4A1,10
+RO-S 1.25X,Scope,M4A1,10
+2PRO 1.25X,Scope,M4A1,10
+ROX 1.50X,Scope,M4A1,10
+SU-123 1.50X,Scope,M4A1,10
+1P87 1.50X,Scope,M4A1,10
+A-P2 1.75X,Scope,M4A1,10
+RO-M 1.75x,Scope,M4A1,10
+3VZR 1.75X,Scope,M4A1,10
+CCO 2.00x,Scope,M4A1,10
+R4T 2.00X,Scope,M4A1,10
+BF-2M 2.50x,Scope,M4A1,10
+BAKER 3.00X,Scope,M4A1,10
+SDO 3.50X,Scope,M4A1,10
+PVQ-31 4.00x,Scope,M4A1,10
+LDS 4.50X,Scope,M4A1,10
+ST PRISIM 5.00X,Scope,M4A1,10
+SF-G2 5.00X,Scope,M4A1,10
+NGFC LPVO,Scope,M4A1,25
+GRIM 1.50X,Scope,M4A1,25
+PAS-35 3.00X,Scope,M4A1,25
+5 MW Green,Top Accessory,M4A1,10
+50 MW Green,Top Accessory,M4A1,20
+50 MW Blue,Top Accessory,M4A1,20
+120 MW Blue,Top Accessory,M4A1,30
+5 MW Red,Top Accessory,M4A1,10
+6H64 Vertical,Underbarrel,M4A1,25
+Adjustable Angled,Underbarrel,M4A1,15
+Alloy Vertical,Underbarrel,M4A1,20
+Bipod,Underbarrel,M4A1,10
+Canted Stubby,Underbarrel,M4A1,30
+Classic Grip Pod,Underbarrel,M4A1,30
+Classic Vertical,Underbarrel,M4A1,35
+Folding Stubby,Underbarrel,M4A1,20
+Folding Vertical,Underbarrel,M4A1,10
+Full Angled,Underbarrel,M4A1,25
+Low-Profile Stubby,Underbarrel,M4A1,45
+PTT Grip Pod,Underbarrel,M4A1,20
+QD Grip Pod,Underbarrel,M4A1,30
+Ribbed Stubby,Underbarrel,M4A1,30
+Ribbed Vertical,Underbarrel,M4A1,20
+Slim Angled,Underbarrel,M4A1,25
+Stippled Stubby,Underbarrel,M4A1,35
+Underslung Mount,Underbarrel,M4A1,10
+Buckshot,Ammunition,M87A1,10
+Flechette,Ammunition,M87A1,30
+Slugs,Ammunition,M87A1,40
+"20"" Factory",Barrel,M87A1,10
+Flashlight,Left Accessory,M87A1,10
+5 Shell Tube,Magazine,M87A1,5
+6 Shell Tube,Magazine,M87A1,5
+7 Shell Tube,Magazine,M87A1,5
+CQB Suppressor,Muzzle,M87A1,30
+Lightened Suppressor,Muzzle,M87A1,30
+5 MW Red,Right Accessory,M87A1,10
+5 MW Green,Right Accessory,M87A1,10
+50 MW Green,Right Accessory,M87A1,20
+50 MW Blue,Right Accessory,M87A1,20
+120 MW Blue,Right Accessory,M87A1,30
+Iron Sights,Scope,M87A1,5
+MINI FLEX 1.00X,Scope,M87A1,10
+R-MR 1.00X,Scope,M87A1,10
+OSA-7 1.00x,Scope,M87A1,10
+CQ RDS 1.25X,Scope,M87A1,10
+RO-S 1.25X,Scope,M87A1,10
+2PRO 1.25X,Scope,M87A1,10
+ROX 1.50X,Scope,M87A1,10
+SU-123 1.50X,Scope,M87A1,10
+1P87 1.50X,Scope,M87A1,10
+A-P2 1.75X,Scope,M87A1,10
+RO-M 1.75x,Scope,M87A1,10
+3VZR 1.75X,Scope,M87A1,10
+CCO 2.00x,Scope,M87A1,10
+R4T 2.00X,Scope,M87A1,10
+BF-2M 2.50x,Scope,M87A1,10
+BAKER 3.00X,Scope,M87A1,10
+SDO 3.50X,Scope,M87A1,10
+PVQ-31 4.00x,Scope,M87A1,10
+LDS 4.50X,Scope,M87A1,10
+ST PRISIM 5.00X,Scope,M87A1,10
+SF-G2 5.00X,Scope,M87A1,10
+MARS-F LPVO,Scope,M87A1,25
+GRIM 1.50X,Scope,M87A1,25
+PAS-35 3.00X,Scope,M87A1,25
+6H64 Vertical,Underbarrel,M87A1,25
+Adjustable Angled,Underbarrel,M87A1,15
+Alloy Vertical,Underbarrel,M87A1,20
+Canted Stubby,Underbarrel,M87A1,30
+Classic Vertical,Underbarrel,M87A1,35
+Folding Stubby,Underbarrel,M87A1,20
+Folding Vertical,Underbarrel,M87A1,10
+Full Angled,Underbarrel,M87A1,25
+Low-Profile Stubby,Underbarrel,M87A1,45
+Ribbed Stubby,Underbarrel,M87A1,30
+Ribbed Vertical,Underbarrel,M87A1,20
+Slim Angled,Underbarrel,M87A1,25
+Stippled Stubby,Underbarrel,M87A1,35
+FMJ,Ammunition,NVO-228E,5
+Tungsten Core,Ammunition,NVO-228E,5
+Polymer Case,Ammunition,NVO-228E,10
+Hollow Point,Ammunition,NVO-228E,20
+Frangible,Ammunition,NVO-228E,20
+409MM Factory,Barrel,NVO-228E,10
+458MM Custom,Barrel,NVO-228E,15
+409MM Cut,Barrel,NVO-228E,15
+409MM Fluted,Barrel,NVO-228E,20
+Match Trigger,Ergonomics,NVO-228E,15
+Flashlight,Left Accessory,NVO-228E,10
+20RND Fast Mag,Magazine,NVO-228E,5
+20RND Magazine,Magazine,NVO-228E,5
+30RND Fast Mag,Magazine,NVO-228E,10
+30RND Magazine,Magazine,NVO-228E,5
+36RND Magazine,Magazine,NVO-228E,15
+40RND Fast Mag,Magazine,NVO-228E,30
+40RND Magazine,Magazine,NVO-228E,25
+Compensated Brake,Muzzle,NVO-228E,20
+CQB Suppressor,Muzzle,NVO-228E,30
+Double-Port Brake,Muzzle,NVO-228E,10
+Flash Hider,Muzzle,NVO-228E,10
+Lightened Suppressor,Muzzle,NVO-228E,30
+Linear Comp,Muzzle,NVO-228E,10
+Long Suppressor,Muzzle,NVO-228E,25
+Single-Port Brake,Muzzle,NVO-228E,5
+Standard Suppressor,Muzzle,NVO-228E,20
+Canted Iron Sights,Optic Accessory,NVO-228E,5
+Canted Reflex,Optic Accessory,NVO-228E,10
+5 MW Red,Right Accessory,NVO-228E,10
+5 MW Green,Right Accessory,NVO-228E,10
+50 MW Green,Right Accessory,NVO-228E,20
+50 MW Blue,Right Accessory,NVO-228E,20
+120 MW Blue,Right Accessory,NVO-228E,30
+Iron Sights,Scope,NVO-228E,5
+MINI FLEX 1.00X,Scope,NVO-228E,10
+R-MR 1.00X,Scope,NVO-228E,10
+OSA-7 1.00x,Scope,NVO-228E,10
+CQ RDS 1.25X,Scope,NVO-228E,10
+RO-S 1.25X,Scope,NVO-228E,10
+2PRO 1.25X,Scope,NVO-228E,10
+ROX 1.50X,Scope,NVO-228E,10
+SU-123 1.50X,Scope,NVO-228E,10
+1P87 1.50X,Scope,NVO-228E,10
+A-P2 1.75X,Scope,NVO-228E,10
+RO-M 1.75x,Scope,NVO-228E,10
+3VZR 1.75X,Scope,NVO-228E,10
+CCO 2.00x,Scope,NVO-228E,10
+R4T 2.00X,Scope,NVO-228E,10
+BF-2M 2.50x,Scope,NVO-228E,10
+BAKER 3.00X,Scope,NVO-228E,10
+SDO 3.50X,Scope,NVO-228E,10
+PVQ-31 4.00x,Scope,NVO-228E,10
+LDS 4.50X,Scope,NVO-228E,10
+ST PRISIM 5.00X,Scope,NVO-228E,10
+SF-G2 5.00X,Scope,NVO-228E,10
+MARS-F LPVO,Scope,NVO-228E,25
+MC-CO LPVO,Scope,NVO-228E,25
+DVO LPVO,Scope,NVO-228E,25
+GRIM 1.50X,Scope,NVO-228E,25
+PAS-35 3.00X,Scope,NVO-228E,25
+6H64 Vertical,Underbarrel,NVO-228E,25
+Alloy Vertical,Underbarrel,NVO-228E,20
+Bipod,Underbarrel,NVO-228E,10
+Canted Stubby,Underbarrel,NVO-228E,30
+Classic Grip Pod,Underbarrel,NVO-228E,30
+Classic Vertical,Underbarrel,NVO-228E,35
+Folding Stubby,Underbarrel,NVO-228E,20
+Folding Vertical,Underbarrel,NVO-228E,10
+Full Angled,Underbarrel,NVO-228E,25
+Low-Profile Stubby,Underbarrel,NVO-228E,45
+PTT Grip Pod,Underbarrel,NVO-228E,20
+QD Grip Pod,Underbarrel,NVO-228E,30
+Ribbed Stubby,Underbarrel,NVO-228E,30
+Ribbed Vertical,Underbarrel,NVO-228E,20
+Slim Angled,Underbarrel,NVO-228E,25
+Stippled Stubby,Underbarrel,NVO-228E,35
+FMJ,Ammunition,P18,5
+Tungsten Core,Ammunition,P18,5
+Hollow Point,Ammunition,P18,20
+Frangible,Ammunition,P18,20
+"3.9"" Factory",Barrel,P18,10
+"3.9"" Pencil",Barrel,P18,20
+Improved Mag Catch,Ergonomics,P18,5
+17RND Magazine,Magazine,P18,5
+21RND Magazine,Magazine,P18,15
+CQB Suppressor,Muzzle,P18,30
+Flash Hider,Muzzle,P18,10
+Single-Port Brake,Muzzle,P18,10
+Standard Suppressor,Muzzle,P18,20
+Iron Sights,Scope,P18,5
+R-MR 1.00X,Scope,P18,10
+MINI FLEX 1.00X,Scope,P18,10
+CQ RDS 1.25X,Scope,P18,10
+RO-S 1.25X,Scope,P18,10
+ROX 1.50X,Scope,P18,10
+A-P2 1.75X,Scope,P18,10
+5 MW Green,Underbarrel,P18,10
+5 MW Red,Underbarrel,P18,10
+50 MW Green,Underbarrel,P18,20
+Flashlight,Underbarrel,P18,10
+Laser/Light Combo Green,Underbarrel,P18,20
+Laser/Light Combo Red,Underbarrel,P18,20
+FMJ,Ammunition,PSR,5
+Tungsten Core,Ammunition,PSR,5
+Match Grade,Ammunition,PSR,10
+Frangible,Ammunition,PSR,20
+"26"" Factory",Barrel,PSR,10
+"27"" MK22",Barrel,PSR,15
+Improved Mag Catch,Ergonomics,PSR,5
+DLC Bolt,Ergonomics,PSR,30
+Flashlight,Left Accessory,PSR,10
+Range Finder,Left Accessory,PSR,15
+10RND Magazine,Magazine,PSR,5
+7RND Magazine,Magazine,PSR,5
+Compensated Brake,Muzzle,PSR,20
+CQB Suppressor,Muzzle,PSR,30
+Double-Port Brake,Muzzle,PSR,10
+Flash Hider,Muzzle,PSR,10
+Lightened Suppressor,Muzzle,PSR,30
+Long Suppressor,Muzzle,PSR,25
+Single-Port Brake,Muzzle,PSR,5
+Standard Suppressor,Muzzle,PSR,20
+Canted Iron Sights,Optic Accessory,PSR,5
+Adjustable Magnification 2.00X,Optic Accessory,PSR,10
+Adjustable Magnification 3.00X,Optic Accessory,PSR,10
+Adjustable Magnification 4.00X,Optic Accessory,PSR,10
+Anti-Glare Coating,Optic Accessory,PSR,10
+Iron Sights,Scope,PSR,15
+MINI FLEX 1.00X,Scope,PSR,10
+R-MR 1.00X,Scope,PSR,10
+OSA-7 1.00x,Scope,PSR,10
+CQ RDS 1.25X,Scope,PSR,10
+RO-S 1.25X,Scope,PSR,10
+2PRO 1.25X,Scope,PSR,10
+ROX 1.50X,Scope,PSR,10
+SU-123 1.50X,Scope,PSR,10
+1P87 1.50X,Scope,PSR,10
+A-P2 1.75X,Scope,PSR,10
+RO-M 1.75x,Scope,PSR,10
+3VZR 1.75X,Scope,PSR,10
+CCO 2.00x,Scope,PSR,10
+R4T 2.00X,Scope,PSR,10
+BF-2M 2.50x,Scope,PSR,10
+BAKER 3.00X,Scope,PSR,10
+SDO 3.50X,Scope,PSR,10
+PVQ-31 4.00x,Scope,PSR,10
+LDS 4.50X,Scope,PSR,10
+ST PRISIM 5.00X,Scope,PSR,10
+SF-G2 5.00X,Scope,PSR,10
+S-VPS 6.00X,Scope,PSR,10
+SSDS 6.00X,Scope,PSR,10
+NFX 8.00X,Scope,PSR,10
+LERT 8.00X,Scope,PSR,10
+R-VPS 10.00X,Scope,PSR,10
+NGFC LPVO,Scope,PSR,25
+MC-CO LPVO,Scope,PSR,25
+DVO LPVO,Scope,PSR,25
+SM RIFLE VARIABLE,Scope,PSR,25
+1P88 VARIABLE,Scope,PSR,25
+GRIM 1.50X,Scope,PSR,25
+PAS-35 3.00X,Scope,PSR,25
+TS-HD 6.00X,Scope,PSR,25
+5 MW Red,Top Accessory,PSR,10
+5 MW Green,Top Accessory,PSR,10
+50 MW Green,Top Accessory,PSR,20
+50 MW Blue,Top Accessory,PSR,20
+120 MW Blue,Top Accessory,PSR,30
+Bipod,Underbarrel,PSR,10
+Classic Grip Pod,Underbarrel,PSR,20
+Full Angled,Underbarrel,PSR,5
+Low-Profile Stubby,Underbarrel,PSR,10
+QD Grip Pod,Underbarrel,PSR,10
+Slim Angled,Underbarrel,PSR,15
+FMJ,Ammunition,PW5A3,5
+Tungsten Core,Ammunition,PW5A3,5
+Hollow Point,Ammunition,PW5A3,20
+Frangible,Ammunition,PW5A3,20
+Synthetic Tip,Ammunition,PW5A3,30
+225MM Factory,Barrel,PW5A3,10
+245MM Custom,Barrel,PW5A3,15
+Improved Mag Catch,Ergonomics,PW5A3,5
+Flashlight,Left Accessory,PW5A3,10
+20RND Magazine,Magazine,PW5A3,5
+30RND Fast Mag,Magazine,PW5A3,10
+30RND Magazine,Magazine,PW5A3,5
+40RND Magazine,Magazine,PW5A3,25
+Compensated Brake,Muzzle,PW5A3,20
+CQB Suppressor,Muzzle,PW5A3,30
+Double-Port Brake,Muzzle,PW5A3,10
+Flash Hider,Muzzle,PW5A3,10
+Lightened Suppressor,Muzzle,PW5A3,30
+Linear Comp,Muzzle,PW5A3,10
+Long Suppressor,Muzzle,PW5A3,25
+Standard Suppressor,Muzzle,PW5A3,20
+Canted Iron Sights,Optic Accessory,PW5A3,5
+Canted Reflex,Optic Accessory,PW5A3,10
+5 MW Red,Right Accessory,PW5A3,10
+5 MW Green,Right Accessory,PW5A3,10
+50 MW Green,Right Accessory,PW5A3,20
+50 MW Blue,Right Accessory,PW5A3,20
+120 MW Blue,Right Accessory,PW5A3,30
+Iron Sights,Scope,PW5A3,5
+MINI FLEX 1.00X,Scope,PW5A3,10
+R-MR 1.00X,Scope,PW5A3,10
+OSA-7 1.00x,Scope,PW5A3,10
+CQ RDS 1.25X,Scope,PW5A3,10
+RO-S 1.25X,Scope,PW5A3,10
+2PRO 1.25X,Scope,PW5A3,10
+ROX 1.50X,Scope,PW5A3,10
+SU-123 1.50X,Scope,PW5A3,10
+1P87 1.50X,Scope,PW5A3,10
+A-P2 1.75X,Scope,PW5A3,10
+RO-M 1.75x,Scope,PW5A3,10
+3VZR 1.75X,Scope,PW5A3,10
+CCO 2.00x,Scope,PW5A3,10
+R4T 2.00X,Scope,PW5A3,10
+BF-2M 2.50x,Scope,PW5A3,10
+BAKER 3.00X,Scope,PW5A3,10
+SDO 3.50X,Scope,PW5A3,10
+PVQ-31 4.00x,Scope,PW5A3,10
+LDS 4.50X,Scope,PW5A3,10
+ST PRISIM 5.00X,Scope,PW5A3,10
+SF-G2 5.00X,Scope,PW5A3,10
+MARS-F LPVO,Scope,PW5A3,25
+GRIM 1.50X,Scope,PW5A3,25
+PAS-35 3.00X,Scope,PW5A3,25
+6H64 Vertical,Underbarrel,PW5A3,25
+Alloy Vertical,Underbarrel,PW5A3,20
+Canted Stubby,Underbarrel,PW5A3,30
+Classic Vertical,Underbarrel,PW5A3,35
+Compact Handstop,Underbarrel,PW5A3,10
+Folding Stubby,Underbarrel,PW5A3,20
+Folding Vertical,Underbarrel,PW5A3,10
+Low-Profile Stubby,Underbarrel,PW5A3,45
+Ribbed Stubby,Underbarrel,PW5A3,30
+Ribbed Vertical,Underbarrel,PW5A3,20
+Slim Angled,Underbarrel,PW5A3,20
+Stippled Stubby,Underbarrel,PW5A3,35
+FMJ,Ammunition,PW7A2,5
+Tungsten Core,Ammunition,PW7A2,5
+Hollow Point,Ammunition,PW7A2,20
+Frangible,Ammunition,PW7A2,20
+Synthetic Tip,Ammunition,PW7A2,30
+180MM Standard,Barrel,PW7A2,10
+180MM Prototype,Barrel,PW7A2,10
+Improved Mag Catch,Ergonomics,PW7A2,5
+Flashlight,Left Accessory,PW7A2,10
+20RND Magazine,Magazine,PW7A2,5
+30RND Fast Mag,Magazine,PW7A2,10
+30RND Magazine,Magazine,PW7A2,5
+40RND Magazine,Magazine,PW7A2,25
+Compensated Brake,Muzzle,PW7A2,20
+CQB Suppressor,Muzzle,PW7A2,30
+Double-Port Brake,Muzzle,PW7A2,10
+Flash Hider,Muzzle,PW7A2,10
+Lightened Suppressor,Muzzle,PW7A2,30
+Linear Comp,Muzzle,PW7A2,10
+Long Suppressor,Muzzle,PW7A2,25
+Single-Port Brake,Muzzle,PW7A2,5
+Standard Suppressor,Muzzle,PW7A2,20
+Canted Iron Sights,Optic Accessory,PW7A2,5
+Canted Reflex,Optic Accessory,PW7A2,10
+5 MW Red,Right Accessory,PW7A2,10
+5 MW Green,Right Accessory,PW7A2,10
+50 MW Green,Right Accessory,PW7A2,20
+50 MW Blue,Right Accessory,PW7A2,20
+120 MW Blue,Right Accessory,PW7A2,30
+Iron Sights,Scope,PW7A2,5
+MINI FLEX 1.00X,Scope,PW7A2,10
+R-MR 1.00X,Scope,PW7A2,10
+OSA-7 1.00x,Scope,PW7A2,10
+CQ RDS 1.25X,Scope,PW7A2,10
+RO-S 1.25X,Scope,PW7A2,10
+2PRO 1.25X,Scope,PW7A2,10
+ROX 1.50X,Scope,PW7A2,10
+SU-123 1.50X,Scope,PW7A2,10
+1P87 1.50X,Scope,PW7A2,10
+A-P2 1.75X,Scope,PW7A2,10
+RO-M 1.75x,Scope,PW7A2,10
+3VZR 1.75X,Scope,PW7A2,10
+CCO 2.00x,Scope,PW7A2,10
+R4T 2.00X,Scope,PW7A2,10
+BF-2M 2.50x,Scope,PW7A2,10
+BAKER 3.00X,Scope,PW7A2,10
+SDO 3.50X,Scope,PW7A2,10
+PVQ-31 4.00x,Scope,PW7A2,10
+LDS 4.50X,Scope,PW7A2,10
+ST PRISIM 5.00X,Scope,PW7A2,10
+SF-G2 5.00X,Scope,PW7A2,10
+MARS-F LPVO,Scope,PW7A2,25
+GRIM 1.50X,Scope,PW7A2,25
+PAS-35 3.00X,Scope,PW7A2,25
+6H64 Vertical,Underbarrel,PW7A2,25
+Alloy Vertical,Underbarrel,PW7A2,20
+Canted Stubby,Underbarrel,PW7A2,30
+Classic Vertical,Underbarrel,PW7A2,35
+Compact Handstop,Underbarrel,PW7A2,10
+Folding Stubby,Underbarrel,PW7A2,20
+Folding Vertical,Underbarrel,PW7A2,10
+Low-Profile Stubby,Underbarrel,PW7A2,45
+Ribbed Stubby,Underbarrel,PW7A2,30
+Ribbed Vertical,Underbarrel,PW7A2,20
+Slim Angled,Underbarrel,PW7A2,20
+Stippled Stubby,Underbarrel,PW7A2,35
+FMJ,Ammunition,QBZ-192,5
+Tungsten Core,Ammunition,QBZ-192,5
+Polymer Case,Ammunition,QBZ-192,10
+Hollow Point,Ammunition,QBZ-192,20
+Frangible,Ammunition,QBZ-192,20
+Synthetic Tip,Ammunition,QBZ-192,30
+"10.5"" Factory",Barrel,QBZ-192,10
+"14.5"" Common",Barrel,QBZ-192,15
+Match Trigger,Ergonomics,QBZ-192,15
+30RND Fast Mag,Magazine,QBZ-192,10
+30RND Magazine,Magazine,QBZ-192,5
+36RND Magazine,Magazine,QBZ-192,15
+40RND Magazine,Magazine,QBZ-192,25
+Flash Hider,Muzzle,QBZ-192,10
+Linear Comp,Muzzle,QBZ-192,10
+Standard Suppressor,Muzzle,QBZ-192,20
+Canted Iron Sights,Optic Accessory,QBZ-192,5
+Canted Reflex,Optic Accessory,QBZ-192,10
+Flashlight,Right Accessory,QBZ-192,10
+Iron Sights,Scope,QBZ-192,5
+MINI FLEX 1.00X,Scope,QBZ-192,10
+R-MR 1.00X,Scope,QBZ-192,10
+OSA-7 1.00x,Scope,QBZ-192,10
+CQ RDS 1.25X,Scope,QBZ-192,10
+RO-S 1.25X,Scope,QBZ-192,10
+2PRO 1.25X,Scope,QBZ-192,10
+ROX 1.50X,Scope,QBZ-192,10
+SU-123 1.50X,Scope,QBZ-192,10
+1P87 1.50X,Scope,QBZ-192,10
+A-P2 1.75X,Scope,QBZ-192,10
+RO-M 1.75x,Scope,QBZ-192,10
+3VZR 1.75X,Scope,QBZ-192,10
+CCO 2.00x,Scope,QBZ-192,10
+R4T 2.00X,Scope,QBZ-192,10
+BF-2M 2.50x,Scope,QBZ-192,10
+BAKER 3.00X,Scope,QBZ-192,10
+SDO 3.50X,Scope,QBZ-192,10
+PVQ-31 4.00x,Scope,QBZ-192,10
+LDS 4.50X,Scope,QBZ-192,10
+ST PRISIM 5.00X,Scope,QBZ-192,10
+SF-G2 5.00X,Scope,QBZ-192,10
+GRIM 1.50X,Scope,QBZ-192,25
+PAS-35 3.00X,Scope,QBZ-192,25
+MARS-F LPVO,Scope,QBZ-192,25
+5 MW Red,Top Accessory,QBZ-192,10
+5 MW Green,Top Accessory,QBZ-192,10
+50 MW Green,Top Accessory,QBZ-192,20
+50 MW Blue,Top Accessory,QBZ-192,20
+120 MW Blue,Top Accessory,QBZ-192,30
+6H64 Vertical,Underbarrel,QBZ-192,25
+Adjustable Angled,Underbarrel,QBZ-192,15
+Alloy Vertical,Underbarrel,QBZ-192,20
+Canted Stubby,Underbarrel,QBZ-192,30
+Classic Grip Pod,Underbarrel,QBZ-192,30
+Classic Vertical,Underbarrel,QBZ-192,35
+Folding Stubby,Underbarrel,QBZ-192,20
+Folding Vertical,Underbarrel,QBZ-192,10
+Full Angled,Underbarrel,QBZ-192,25
+Low-Profile Stubby,Underbarrel,QBZ-192,45
+PTT Grip Pod,Underbarrel,QBZ-192,20
+QD Grip Pod,Underbarrel,QBZ-192,30
+Ribbed Stubby,Underbarrel,QBZ-192,30
+Ribbed Vertical,Underbarrel,QBZ-192,20
+Slim Angled,Underbarrel,QBZ-192,25
+Stippled Stubby,Underbarrel,QBZ-192,35
+FMJ,Ammunition,RPKM,5
+Tungsten Core,Ammunition,RPKM,5
+Polymer Case,Ammunition,RPKM,10
+Hollow Point,Ammunition,RPKM,20
+Frangible,Ammunition,RPKM,20
+Synthetic Tip,Ammunition,RPKM,30
+521MM Boar-F,Barrel,RPKM,10
+521MM Boar,Barrel,RPKM,10
+590MM Factory,Barrel,RPKM,10
+600MM Tabuk,Barrel,RPKM,15
+419MM Boar-F,Barrel,RPKM,15
+Magwell Flare,Ergonomics,RPKM,10
+Match Trigger,Ergonomics,RPKM,15
+Flashlight,Left Accessory,RPKM,10
+30RND Fast Mag,Magazine,RPKM,10
+30RND Magazine,Magazine,RPKM,5
+36RND Magazine,Magazine,RPKM,5
+40RND Fast Mag,Magazine,RPKM,10
+40RND Magazine,Magazine,RPKM,5
+60RND Magazine,Magazine,RPKM,30
+75RND Drum,Magazine,RPKM,50
+Compensated Brake,Muzzle,RPKM,20
+CQB Suppressor,Muzzle,RPKM,30
+Double-Port Brake,Muzzle,RPKM,10
+Flash Hider,Muzzle,RPKM,10
+Lightened Suppressor,Muzzle,RPKM,30
+Linear Comp,Muzzle,RPKM,10
+Long Suppressor,Muzzle,RPKM,25
+Slant Brake,Muzzle,RPKM,5
+Standard Suppressor,Muzzle,RPKM,20
+Canted Iron Sights,Optic Accessory,RPKM,5
+Canted Reflex,Optic Accessory,RPKM,10
+Piggyback Reflex,Optic Accessory,RPKM,10
+5 MW Red,Right Accessory,RPKM,10
+5 MW Green,Right Accessory,RPKM,10
+50 MW Green,Right Accessory,RPKM,20
+50 MW Blue,Right Accessory,RPKM,20
+120 MW Blue,Right Accessory,RPKM,30
+Iron Sights,Scope,RPKM,5
+MINI FLEX 1.00X,Scope,RPKM,10
+R-MR 1.00X,Scope,RPKM,10
+OSA-7 1.00x,Scope,RPKM,10
+CQ RDS 1.25X,Scope,RPKM,10
+RO-S 1.25X,Scope,RPKM,10
+2PRO 1.25X,Scope,RPKM,10
+ROX 1.50X,Scope,RPKM,10
+SU-123 1.50X,Scope,RPKM,10
+1P87 1.50X,Scope,RPKM,10
+A-P2 1.75X,Scope,RPKM,10
+RO-M 1.75x,Scope,RPKM,10
+3VZR 1.75X,Scope,RPKM,10
+CCO 2.00x,Scope,RPKM,10
+R4T 2.00X,Scope,RPKM,10
+BF-2M 2.50x,Scope,RPKM,10
+BAKER 3.00X,Scope,RPKM,10
+SDO 3.50X,Scope,RPKM,10
+PVQ-31 4.00x,Scope,RPKM,10
+LDS 4.50X,Scope,RPKM,10
+ST PRISIM 5.00X,Scope,RPKM,10
+SF-G2 5.00X,Scope,RPKM,10
+MARS-F LPVO,Scope,RPKM,25
+MC-CO LPVO,Scope,RPKM,25
+DVO LPVO,Scope,RPKM,25
+GRIM 1.50X,Scope,RPKM,25
+PAS-35 3.00X,Scope,RPKM,25
+6H64 Vertical,Underbarrel,RPKM,25
+Adjustable Angled,Underbarrel,RPKM,15
+Alloy Vertical,Underbarrel,RPKM,20
+Bipod,Underbarrel,RPKM,10
+Canted Stubby,Underbarrel,RPKM,30
+Classic Grip Pod,Underbarrel,RPKM,30
+Classic Vertical,Underbarrel,RPKM,35
+Folding Stubby,Underbarrel,RPKM,20
+Folding Vertical,Underbarrel,RPKM,10
+Full Angled,Underbarrel,RPKM,25
+Low-Profile Stubby,Underbarrel,RPKM,45
+PTT Grip Pod,Underbarrel,RPKM,20
+QD Grip Pod,Underbarrel,RPKM,30
+Ribbed Stubby,Underbarrel,RPKM,30
+Ribbed Vertical,Underbarrel,RPKM,20
+Slim Angled,Underbarrel,RPKM,25
+Stippled Stubby,Underbarrel,RPKM,35
+FMJ,Ammunition,SCW-10,5
+Tungsten Core,Ammunition,SCW-10,5
+Hollow Point,Ammunition,SCW-10,20
+Frangible,Ammunition,SCW-10,20
+"6.8"" Factory",Barrel,SCW-10,10
+Extended Barrel,Barrel,SCW-10,15
+"6.8"" Fluted",Barrel,SCW-10,20
+Improved Mag Catch,Ergonomics,SCW-10,5
+15RND Fast Mag,Magazine,SCW-10,10
+15RND Magazine,Magazine,SCW-10,5
+20RND Magazine,Magazine,SCW-10,20
+25RND Magazine,Magazine,SCW-10,45
+Compensated Brake,Muzzle,SCW-10,20
+CQB Suppressor,Muzzle,SCW-10,30
+Double-Port Brake,Muzzle,SCW-10,10
+Flash Hider,Muzzle,SCW-10,10
+Lightened Suppressor,Muzzle,SCW-10,30
+Linear Comp,Muzzle,SCW-10,10
+Long Suppressor,Muzzle,SCW-10,25
+Standard Suppressor,Muzzle,SCW-10,20
+Canted Iron Sights,Optic Accessory,SCW-10,5
+Canted Reflex,Optic Accessory,SCW-10,10
+Flashlight,Right Accessory,SCW-10,10
+Iron Sights,Scope,SCW-10,5
+MINI FLEX 1.00X,Scope,SCW-10,10
+R-MR 1.00X,Scope,SCW-10,10
+OSA-7 1.00x,Scope,SCW-10,10
+CQ RDS 1.25X,Scope,SCW-10,10
+RO-S 1.25X,Scope,SCW-10,10
+2PRO 1.25X,Scope,SCW-10,10
+ROX 1.50X,Scope,SCW-10,10
+SU-123 1.50X,Scope,SCW-10,10
+1P87 1.50X,Scope,SCW-10,10
+A-P2 1.75X,Scope,SCW-10,10
+RO-M 1.75x,Scope,SCW-10,10
+3VZR 1.75X,Scope,SCW-10,10
+CCO 2.00x,Scope,SCW-10,10
+R4T 2.00X,Scope,SCW-10,10
+BF-2M 2.50x,Scope,SCW-10,10
+BAKER 3.00X,Scope,SCW-10,10
+SDO 3.50X,Scope,SCW-10,10
+PVQ-31 4.00x,Scope,SCW-10,10
+LDS 4.50X,Scope,SCW-10,10
+ST PRISIM 5.00X,Scope,SCW-10,10
+SF-G2 5.00X,Scope,SCW-10,10
+MARS-F LPVO,Scope,SCW-10,25
+GRIM 1.50X,Scope,SCW-10,25
+PAS-35 3.00X,Scope,SCW-10,25
+5 MW Red,Top Accessory,SCW-10,10
+5 MW Green,Top Accessory,SCW-10,10
+50 MW Green,Top Accessory,SCW-10,20
+50 MW Blue,Top Accessory,SCW-10,20
+120 MW Blue,Top Accessory,SCW-10,30
+6H64 Vertical,Underbarrel,SCW-10,25
+Alloy Vertical,Underbarrel,SCW-10,20
+Canted Stubby,Underbarrel,SCW-10,30
+Classic Vertical,Underbarrel,SCW-10,35
+Compact Handstop,Underbarrel,SCW-10,10
+Folding Stubby,Underbarrel,SCW-10,20
+Folding Vertical,Underbarrel,SCW-10,10
+Low-Profile Stubby,Underbarrel,SCW-10,45
+Ribbed Stubby,Underbarrel,SCW-10,30
+Ribbed Vertical,Underbarrel,SCW-10,20
+Slim Angled,Underbarrel,SCW-10,20
+Stippled Stubby,Underbarrel,SCW-10,35
+FMJ,Ammunition,SG 553R,5
+Tungsten Core,Ammunition,SG 553R,5
+Polymer Case,Ammunition,SG 553R,10
+Hollow Point,Ammunition,SG 553R,20
+Frangible,Ammunition,SG 553R,20
+240MM SB,Barrel,SG 553R,10
+303MM LB,Barrel,SG 553R,15
+240MM Fluted,Barrel,SG 553R,20
+Improved Mag Catch,Ergonomics,SG 553R,5
+Match Trigger,Ergonomics,SG 553R,15
+Flashlight,Left Accessory,SG 553R,10
+20RND Fast Mag,Magazine,SG 553R,5
+20RND Magazine,Magazine,SG 553R,5
+30RND Fast Mag,Magazine,SG 553R,10
+30RND Magazine,Magazine,SG 553R,5
+36RND Magazine,Magazine,SG 553R,15
+40RND Fast Mag,Magazine,SG 553R,30
+40RND Magazine,Magazine,SG 553R,25
+Compensated Brake,Muzzle,SG 553R,20
+CQB Suppressor,Muzzle,SG 553R,30
+Double-Port Brake,Muzzle,SG 553R,10
+Flash Hider,Muzzle,SG 553R,10
+Lightened Suppressor,Muzzle,SG 553R,30
+Linear Comp,Muzzle,SG 553R,10
+Long Suppressor,Muzzle,SG 553R,25
+Single-Port Brake,Muzzle,SG 553R,5
+Standard Suppressor,Muzzle,SG 553R,20
+Canted Iron Sights,Optic Accessory,SG 553R,5
+Canted Reflex,Optic Accessory,SG 553R,10
+5 MW Red,Right Accessory,SG 553R,10
+5 MW Green,Right Accessory,SG 553R,10
+50 MW Green,Right Accessory,SG 553R,20
+50 MW Blue,Right Accessory,SG 553R,20
+120 MW Blue,Right Accessory,SG 553R,30
+Iron Sights,Scope,SG 553R,5
+MINI FLEX 1.00X,Scope,SG 553R,10
+R-MR 1.00X,Scope,SG 553R,10
+OSA-7 1.00x,Scope,SG 553R,10
+CQ RDS 1.25X,Scope,SG 553R,10
+RO-S 1.25X,Scope,SG 553R,10
+2PRO 1.25X,Scope,SG 553R,10
+ROX 1.50X,Scope,SG 553R,10
+SU-123 1.50X,Scope,SG 553R,10
+1P87 1.50X,Scope,SG 553R,10
+A-P2 1.75X,Scope,SG 553R,10
+RO-M 1.75x,Scope,SG 553R,10
+3VZR 1.75X,Scope,SG 553R,10
+CCO 2.00x,Scope,SG 553R,10
+R4T 2.00X,Scope,SG 553R,10
+BF-2M 2.50x,Scope,SG 553R,10
+BAKER 3.00X,Scope,SG 553R,10
+SDO 3.50X,Scope,SG 553R,10
+PVQ-31 4.00x,Scope,SG 553R,10
+LDS 4.50X,Scope,SG 553R,10
+ST PRISIM 5.00X,Scope,SG 553R,10
+SF-G2 5.00X,Scope,SG 553R,10
+MARS-F LPVO,Scope,SG 553R,25
+GRIM 1.50X,Scope,SG 553R,25
+PAS-35 3.00X,Scope,SG 553R,25
+6H64 Vertical,Underbarrel,SG 553R,25
+Alloy Vertical,Underbarrel,SG 553R,20
+Canted Stubby,Underbarrel,SG 553R,30
+Classic Vertical,Underbarrel,SG 553R,35
+Folding Stubby,Underbarrel,SG 553R,20
+Folding Vertical,Underbarrel,SG 553R,10
+Full Angled,Underbarrel,SG 553R,25
+Low-Profile Stubby,Underbarrel,SG 553R,45
+Ribbed Stubby,Underbarrel,SG 553R,30
+Ribbed Vertical,Underbarrel,SG 553R,20
+Slim Angled,Underbarrel,SG 553R,25
+Stippled Stubby,Underbarrel,SG 553R,35
+FMJ,Ammunition,SGX,5
+Tungsten Core,Ammunition,SGX,5
+Hollow Point,Ammunition,SGX,20
+Frangible,Ammunition,SGX,20
+"6"" Standard",Barrel,SGX,10
+"8"" Extended",Barrel,SGX,15
+"4.5"" Compact",Barrel,SGX,15
+"6"" Fluted",Barrel,SGX,20
+30RND Fast Mag,Magazine,SGX,10
+30RND Magazine,Magazine,SGX,5
+36RND Magazine,Magazine,SGX,15
+41RND Magazine,Magazine,SGX,25
+Compensated Brake,Muzzle,SGX,20
+CQB Suppressor,Muzzle,SGX,30
+Double-Port Brake,Muzzle,SGX,10
+Flash Hider,Muzzle,SGX,10
+Lightened Suppressor,Muzzle,SGX,30
+Linear Comp,Muzzle,SGX,10
+Long Suppressor,Muzzle,SGX,25
+Single-Port Brake,Muzzle,SGX,5
+Standard Suppressor,Muzzle,SGX,20
+Canted Iron Sights,Optic Accessory,SGX,5
+Flashlight,Right Accessory,SGX,10
+Iron Sights,Scope,SGX,5
+ROX 1.50X,Scope,SGX,10
+SU-123 1.50X,Scope,SGX,10
+MINI FLEX 1.00X,Scope,SGX,10
+R-MR 1.00X,Scope,SGX,10
+OSA-7 1.00x,Scope,SGX,10
+CQ RDS 1.25X,Scope,SGX,10
+RO-S 1.25X,Scope,SGX,10
+2PRO 1.25X,Scope,SGX,10
+1P87 1.50X,Scope,SGX,10
+A-P2 1.75X,Scope,SGX,10
+RO-M 1.75x,Scope,SGX,10
+3VZR 1.75X,Scope,SGX,10
+CCO 2.00x,Scope,SGX,10
+R4T 2.00X,Scope,SGX,10
+BF-2M 2.50x,Scope,SGX,10
+BAKER 3.00X,Scope,SGX,10
+SDO 3.50X,Scope,SGX,10
+PVQ-31 4.00x,Scope,SGX,10
+LDS 4.50X,Scope,SGX,10
+ST PRISIM 5.00X,Scope,SGX,10
+SF-G2 5.00X,Scope,SGX,10
+MARS-F LPVO,Scope,SGX,25
+GRIM 1.50X,Scope,SGX,25
+PAS-35 3.00X,Scope,SGX,25
+5 MW Red,Top Accessory,SGX,10
+5 MW Green,Top Accessory,SGX,10
+50 MW Green,Top Accessory,SGX,20
+50 MW Blue,Top Accessory,SGX,20
+120 MW Blue,Top Accessory,SGX,30
+6H64 Vertical,Underbarrel,SGX,25
+Alloy Vertical,Underbarrel,SGX,20
+Canted Stubby,Underbarrel,SGX,30
+Classic Vertical,Underbarrel,SGX,35
+Compact Handstop,Underbarrel,SGX,10
+Folding Stubby,Underbarrel,SGX,20
+Folding Vertical,Underbarrel,SGX,10
+Low-Profile Stubby,Underbarrel,SGX,45
+Ribbed Stubby,Underbarrel,SGX,30
+Ribbed Vertical,Underbarrel,SGX,20
+Slim Angled,Underbarrel,SGX,20
+Stippled Stubby,Underbarrel,SGX,35
+FMJ,Ammunition,SL9,5
+Tungsten Core,Ammunition,SL9,5
+Hollow Point,Ammunition,SL9,20
+Frangible,Ammunition,SL9,20
+Synthetic Tip,Ammunition,SL9,30
+"9"" Factory",Barrel,SL9,10
+"9"" Heavy",Barrel,SL9,10
+"11"" Extended",Barrel,SL9,15
+"11"" Heavy",Barrel,SL9,10
+"9"" Fluted",Barrel,SL9,20
+Improved Mag Catch,Ergonomics,SL9,5
+30RND Magazine,Magazine,SL9,5
+60RND Magazine,Magazine,SL9,55
+Compensated Brake,Muzzle,SL9,20
+CQB Suppressor,Muzzle,SL9,30
+Double-Port Brake,Muzzle,SL9,10
+Flash Hider,Muzzle,SL9,10
+Lightened Suppressor,Muzzle,SL9,30
+Linear Comp,Muzzle,SL9,10
+Long Suppressor,Muzzle,SL9,25
+Single-Port Brake,Muzzle,SL9,5
+Standard Suppressor,Muzzle,SL9,20
+Canted Iron Sights,Optic Accessory,SL9,5
+Canted Reflex,Optic Accessory,SL9,10
+Flashlight,Right Accessory,SL9,10
+5 MW Red,Right Accessory,SL9,10
+5 MW Green,Right Accessory,SL9,10
+50 MW Green,Right Accessory,SL9,20
+50 MW Blue,Right Accessory,SL9,20
+120 MW Blue,Right Accessory,SL9,30
+Laser/Light Combo Red,Right Accessory,SL9,20
+Laser/Light Combo Green,Right Accessory,SL9,20
+Iron Sights,Scope,SL9,5
+MINI FLEX 1.00X,Scope,SL9,10
+R-MR 1.00X,Scope,SL9,10
+OSA-7 1.00x,Scope,SL9,10
+CQ RDS 1.25X,Scope,SL9,10
+RO-S 1.25X,Scope,SL9,10
+2PRO 1.25X,Scope,SL9,10
+ROX 1.50X,Scope,SL9,10
+SU-123 1.50X,Scope,SL9,10
+1P87 1.50X,Scope,SL9,10
+A-P2 1.75X,Scope,SL9,10
+RO-M 1.75x,Scope,SL9,10
+3VZR 1.75X,Scope,SL9,10
+CCO 2.00x,Scope,SL9,10
+R4T 2.00X,Scope,SL9,10
+BF-2M 2.50x,Scope,SL9,10
+BAKER 3.00X,Scope,SL9,10
+SDO 3.50X,Scope,SL9,10
+PVQ-31 4.00x,Scope,SL9,10
+LDS 4.50X,Scope,SL9,10
+ST PRISIM 5.00X,Scope,SL9,10
+SF-G2 5.00X,Scope,SL9,10
+MARS-F LPVO,Scope,SL9,25
+GRIM 1.50X,Scope,SL9,25
+PAS-35 3.00X,Scope,SL9,25
+6H64 Vertical,Underbarrel,SL9,25
+Alloy Vertical,Underbarrel,SL9,20
+Canted Stubby,Underbarrel,SL9,30
+Classic Vertical,Underbarrel,SL9,35
+Compact Handstop,Underbarrel,SL9,10
+Factory Angled,Underbarrel,SL9,20
+Folding Stubby,Underbarrel,SL9,20
+Folding Vertical,Underbarrel,SL9,10
+Low-Profile Stubby,Underbarrel,SL9,45
+Ribbed Stubby,Underbarrel,SL9,30
+Ribbed Vertical,Underbarrel,SL9,20
+Stippled Stubby,Underbarrel,SL9,35
+FMJ,Ammunition,SOR-556 MK2,5
+Tungsten Core,Ammunition,SOR-556 MK2,5
+Polymer Case,Ammunition,SOR-556 MK2,10
+Hollow Point,Ammunition,SOR-556 MK2,20
+Frangible,Ammunition,SOR-556 MK2,20
+Synthetic Tip,Ammunition,SOR-556 MK2,30
+"16"" US",Barrel,SOR-556 MK2,10
+IAR Heavy,Barrel,SOR-556 MK2,10
+"18"" US-LB",Barrel,SOR-556 MK2,15
+"18"" Custom",Barrel,SOR-556 MK2,10
+"14.5"" Factory",Barrel,SOR-556 MK2,15
+Magwell Flare,Ergonomics,SOR-556 MK2,10
+Match Trigger,Ergonomics,SOR-556 MK2,15
+20RND Fast Mag,Magazine,SOR-556 MK2,5
+20RND Magazine,Magazine,SOR-556 MK2,5
+30RND Fast Mag,Magazine,SOR-556 MK2,10
+30RND Magazine,Magazine,SOR-556 MK2,5
+36RND Magazine,Magazine,SOR-556 MK2,15
+40RND Fast Mag,Magazine,SOR-556 MK2,30
+40RND Magazine,Magazine,SOR-556 MK2,25
+45RND Fast Mag,Magazine,SOR-556 MK2,40
+45RND Magazine,Magazine,SOR-556 MK2,35
+Compensated Brake,Muzzle,SOR-556 MK2,20
+CQB Suppressor,Muzzle,SOR-556 MK2,30
+Double-Port Brake,Muzzle,SOR-556 MK2,10
+Flash Hider,Muzzle,SOR-556 MK2,10
+Lightened Suppressor,Muzzle,SOR-556 MK2,30
+Linear Comp,Muzzle,SOR-556 MK2,10
+Long Suppressor,Muzzle,SOR-556 MK2,30
+Single-Port Brake,Muzzle,SOR-556 MK2,5
+Standard Suppressor,Muzzle,SOR-556 MK2,20
+Canted Iron Sights,Optic Accessory,SOR-556 MK2,5
+Canted Reflex,Optic Accessory,SOR-556 MK2,10
+Flashlight,Right Accessory,SOR-556 MK2,10
+Iron Sights,Scope,SOR-556 MK2,5
+MINI FLEX 1.00X,Scope,SOR-556 MK2,10
+R-MR 1.00X,Scope,SOR-556 MK2,10
+OSA-7 1.00x,Scope,SOR-556 MK2,10
+CQ RDS 1.25X,Scope,SOR-556 MK2,10
+RO-S 1.25X,Scope,SOR-556 MK2,10
+2PRO 1.25X,Scope,SOR-556 MK2,10
+ROX 1.50X,Scope,SOR-556 MK2,10
+SU-123 1.50X,Scope,SOR-556 MK2,10
+1P87 1.50X,Scope,SOR-556 MK2,10
+A-P2 1.75X,Scope,SOR-556 MK2,10
+RO-M 1.75x,Scope,SOR-556 MK2,10
+3VZR 1.75X,Scope,SOR-556 MK2,10
+CCO 2.00x,Scope,SOR-556 MK2,10
+R4T 2.00X,Scope,SOR-556 MK2,10
+BF-2M 2.50x,Scope,SOR-556 MK2,10
+BAKER 3.00X,Scope,SOR-556 MK2,10
+SDO 3.50X,Scope,SOR-556 MK2,10
+PVQ-31 4.00x,Scope,SOR-556 MK2,10
+LDS 4.50X,Scope,SOR-556 MK2,10
+ST PRISIM 5.00X,Scope,SOR-556 MK2,10
+SF-G2 5.00X,Scope,SOR-556 MK2,10
+NGFC LPVO,Scope,SOR-556 MK2,25
+MC-CO LPVO,Scope,SOR-556 MK2,25
+DVO LPVO,Scope,SOR-556 MK2,25
+GRIM 1.50X,Scope,SOR-556 MK2,25
+PAS-35 3.00X,Scope,SOR-556 MK2,25
+5 MW Red,Top Accessory,SOR-556 MK2,10
+5 MW Green,Top Accessory,SOR-556 MK2,10
+50 MW Green,Top Accessory,SOR-556 MK2,20
+50 MW Blue,Top Accessory,SOR-556 MK2,20
+120 MW Blue,Top Accessory,SOR-556 MK2,30
+6H64 Vertical,Underbarrel,SOR-556 MK2,25
+Adjustable Angled,Underbarrel,SOR-556 MK2,15
+Alloy Vertical,Underbarrel,SOR-556 MK2,20
+Bipod,Underbarrel,SOR-556 MK2,10
+Canted Stubby,Underbarrel,SOR-556 MK2,30
+Classic Grip Pod,Underbarrel,SOR-556 MK2,30
+Classic Vertical,Underbarrel,SOR-556 MK2,35
+Folding Stubby,Underbarrel,SOR-556 MK2,20
+Folding Vertical,Underbarrel,SOR-556 MK2,10
+Full Angled,Underbarrel,SOR-556 MK2,25
+Low-Profile Stubby,Underbarrel,SOR-556 MK2,45
+PTT Grip Pod,Underbarrel,SOR-556 MK2,20
+QD Grip Pod,Underbarrel,SOR-556 MK2,30
+Ribbed Stubby,Underbarrel,SOR-556 MK2,30
+Ribbed Vertical,Underbarrel,SOR-556 MK2,20
+Slim Angled,Underbarrel,SOR-556 MK2,25
+Stippled Stubby,Underbarrel,SOR-556 MK2,35
+Underslung Mount,Underbarrel,SOR-556 MK2,10
+FMJ,Ammunition,SV-98,5
+Tungsten Core,Ammunition,SV-98,5
+Match Grade,Ammunition,SV-98,10
+Frangible,Ammunition,SV-98,20
+650MM Factory,Barrel,SV-98,10
+730MM 3LR,Barrel,SV-98,15
+514MM Carbine,Barrel,SV-98,15
+650MM Fluted,Barrel,SV-98,20
+Improved Mag Catch,Ergonomics,SV-98,5
+DLC Bolt,Ergonomics,SV-98,30
+Flashlight,Left Accessory,SV-98,10
+Range Finder,Left Accessory,SV-98,15
+10RND Magazine,Magazine,SV-98,5
+Compensated Brake,Muzzle,SV-98,20
+Double-Port Brake,Muzzle,SV-98,10
+Long Suppressor,Muzzle,SV-98,30
+Thread Protector,Muzzle,SV-98,5
+Canted Iron Sights,Optic Accessory,SV-98,5
+Canted Reflex,Optic Accessory,SV-98,10
+Adjustable Magnification 2.00X,Optic Accessory,SV-98,10
+Adjustable Magnification 3.00X,Optic Accessory,SV-98,10
+Adjustable Magnification 4.00X,Optic Accessory,SV-98,10
+Anti-Glare Coating,Optic Accessory,SV-98,10
+5 MW Red,Right Accessory,SV-98,10
+5 MW Green,Right Accessory,SV-98,10
+50 MW Green,Right Accessory,SV-98,20
+50 MW Blue,Right Accessory,SV-98,20
+120 MW Blue,Right Accessory,SV-98,30
+Iron Sights,Scope,SV-98,15
+MINI FLEX 1.00X,Scope,SV-98,10
+R-MR 1.00X,Scope,SV-98,10
+OSA-7 1.00x,Scope,SV-98,10
+CQ RDS 1.25X,Scope,SV-98,10
+RO-S 1.25X,Scope,SV-98,10
+2PRO 1.25X,Scope,SV-98,10
+ROX 1.50X,Scope,SV-98,10
+1P87 1.50X,Scope,SV-98,10
+A-P2 1.75X,Scope,SV-98,10
+RO-M 1.75x,Scope,SV-98,10
+SU-123 1.50X,Scope,SV-98,10
+CCO 2.00x,Scope,SV-98,10
+R4T 2.00X,Scope,SV-98,10
+BF-2M 2.50x,Scope,SV-98,10
+BAKER 3.00X,Scope,SV-98,10
+SDO 3.50X,Scope,SV-98,10
+PVQ-31 4.00x,Scope,SV-98,10
+LDS 4.50X,Scope,SV-98,10
+ST PRISIM 5.00X,Scope,SV-98,10
+SF-G2 5.00X,Scope,SV-98,10
+S-VPS 6.00X,Scope,SV-98,10
+SSDS 6.00X,Scope,SV-98,10
+NFX 8.00X,Scope,SV-98,10
+LERT 8.00X,Scope,SV-98,10
+R-VPS 10.00X,Scope,SV-98,10
+MARS-F LPVO,Scope,SV-98,25
+MC-CO LPVO,Scope,SV-98,25
+DVO LPVO,Scope,SV-98,25
+SM RIFLE VARIABLE,Scope,SV-98,25
+1P88 VARIABLE,Scope,SV-98,25
+3VZR 1.75X,Scope,SV-98,25
+GRIM 1.50X,Scope,SV-98,25
+PAS-35 3.00X,Scope,SV-98,25
+TS-HD 6.00X,Scope,SV-98,25
+Bipod,Underbarrel,SV-98,10
+Classic Grip Pod,Underbarrel,SV-98,20
+Full Angled,Underbarrel,SV-98,5
+Low-Profile Stubby,Underbarrel,SV-98,10
+QD Grip Pod,Underbarrel,SV-98,10
+Slim Angled,Underbarrel,SV-98,15
+FMJ,Ammunition,SVDM,5
+Tungsten Core,Ammunition,SVDM,5
+Match Grade,Ammunition,SVDM,10
+Hollow Point,Ammunition,SVDM,20
+Frangible,Ammunition,SVDM,20
+565MM Para,Barrel,SVDM,10
+620MM Classic,Barrel,SVDM,15
+550MM Factory,Barrel,SVDM,15
+565MM Fluted,Barrel,SVDM,20
+Improved Mag Catch,Ergonomics,SVDM,5
+Flashlight,Left Accessory,SVDM,10
+Range Finder,Left Accessory,SVDM,15
+10RND Fast Mag,Magazine,SVDM,10
+10RND Magazine,Magazine,SVDM,5
+20RND Magazine,Magazine,SVDM,45
+5RND Fast Mag,Magazine,SVDM,5
+Compensated Brake,Muzzle,SVDM,20
+CQB Suppressor,Muzzle,SVDM,30
+Double-Port Brake,Muzzle,SVDM,10
+Flash Hider,Muzzle,SVDM,10
+Lightened Suppressor,Muzzle,SVDM,30
+Linear Comp,Muzzle,SVDM,10
+Long Suppressor,Muzzle,SVDM,25
+Single-Port Brake,Muzzle,SVDM,10
+Standard Suppressor,Muzzle,SVDM,20
+Canted Iron Sights,Optic Accessory,SVDM,5
+Canted Reflex,Optic Accessory,SVDM,10
+Piggyback Reflex,Optic Accessory,SVDM,10
+5 MW Red,Right Accessory,SVDM,10
+5 MW Green,Right Accessory,SVDM,10
+50 MW Green,Right Accessory,SVDM,20
+50 MW Blue,Right Accessory,SVDM,20
+120 MW Blue,Right Accessory,SVDM,30
+Iron Sights,Scope,SVDM,5
+MINI FLEX 1.00X,Scope,SVDM,10
+R-MR 1.00X,Scope,SVDM,10
+OSA-7 1.00x,Scope,SVDM,10
+CQ RDS 1.25X,Scope,SVDM,10
+RO-S 1.25X,Scope,SVDM,10
+2PRO 1.25X,Scope,SVDM,10
+ROX 1.50X,Scope,SVDM,10
+SU-123 1.50X,Scope,SVDM,10
+1P87 1.50X,Scope,SVDM,10
+A-P2 1.75X,Scope,SVDM,10
+RO-M 1.75x,Scope,SVDM,10
+3VZR 1.75X,Scope,SVDM,10
+CCO 2.00x,Scope,SVDM,10
+R4T 2.00X,Scope,SVDM,10
+BF-2M 2.50x,Scope,SVDM,10
+BAKER 3.00X,Scope,SVDM,10
+SDO 3.50X,Scope,SVDM,10
+PVQ-31 4.00x,Scope,SVDM,10
+LDS 4.50X,Scope,SVDM,10
+ST PRISIM 5.00X,Scope,SVDM,10
+SF-G2 5.00X,Scope,SVDM,10
+S-VPS 6.00X,Scope,SVDM,10
+SSDS 6.00X,Scope,SVDM,10
+NFX 8.00X,Scope,SVDM,10
+LERT 8.00X,Scope,SVDM,10
+R-VPS 10.00X,Scope,SVDM,10
+MARS-F LPVO,Scope,SVDM,25
+MC-CO LPVO,Scope,SVDM,25
+DVO LPVO,Scope,SVDM,25
+SM RIFLE VARIABLE,Scope,SVDM,25
+1P88 VARIABLE,Scope,SVDM,25
+GRIM 1.50X,Scope,SVDM,25
+PAS-35 3.00X,Scope,SVDM,25
+TS-HD 6.00X,Scope,SVDM,25
+6H64 Vertical,Underbarrel,SVDM,25
+Adjustable Angled,Underbarrel,SVDM,15
+Alloy Vertical,Underbarrel,SVDM,20
+Bipod,Underbarrel,SVDM,10
+Canted Stubby,Underbarrel,SVDM,30
+Classic Grip Pod,Underbarrel,SVDM,30
+Classic Vertical,Underbarrel,SVDM,35
+Folding Stubby,Underbarrel,SVDM,20
+Folding Vertical,Underbarrel,SVDM,10
+Full Angled,Underbarrel,SVDM,25
+Low-Profile Stubby,Underbarrel,SVDM,45
+PTT Grip Pod,Underbarrel,SVDM,20
+QD Grip Pod,Underbarrel,SVDM,30
+Ribbed Stubby,Underbarrel,SVDM,30
+Ribbed Vertical,Underbarrel,SVDM,20
+Slim Angled,Underbarrel,SVDM,25
+Stippled Stubby,Underbarrel,SVDM,35
+FMJ,Ammunition,SVK-8.6,5
+Tungsten Core,Ammunition,SVK-8.6,5
+Match Grade,Ammunition,SVK-8.6,10
+Hollow Point,Ammunition,SVK-8.6,20
+Frangible,Ammunition,SVK-8.6,20
+560MM Cut,Barrel,SVK-8.6,10
+560MM Factory,Barrel,SVK-8.6,15
+457MM Urban,Barrel,SVK-8.6,15
+Flashlight,Left Accessory,SVK-8.6,10
+Range Finder,Left Accessory,SVK-8.6,15
+10RND Fast Mag,Magazine,SVK-8.6,10
+10RND Magazine,Magazine,SVK-8.6,5
+Compensated Brake,Muzzle,SVK-8.6,20
+CQB Suppressor,Muzzle,SVK-8.6,30
+Flash Hider,Muzzle,SVK-8.6,10
+Lightened Suppressor,Muzzle,SVK-8.6,30
+Linear Comp,Muzzle,SVK-8.6,10
+Long Suppressor,Muzzle,SVK-8.6,25
+Single-Port Brake,Muzzle,SVK-8.6,10
+Standard Suppressor,Muzzle,SVK-8.6,20
+Triple-Port Brake,Muzzle,SVK-8.6,10
+Canted Iron Sights,Optic Accessory,SVK-8.6,5
+Canted Reflex,Optic Accessory,SVK-8.6,10
+Iron Sights,Scope,SVK-8.6,5
+MINI FLEX 1.00X,Scope,SVK-8.6,10
+R-MR 1.00X,Scope,SVK-8.6,10
+OSA-7 1.00x,Scope,SVK-8.6,10
+CQ RDS 1.25X,Scope,SVK-8.6,10
+RO-S 1.25X,Scope,SVK-8.6,10
+2PRO 1.25X,Scope,SVK-8.6,10
+ROX 1.50X,Scope,SVK-8.6,10
+SU-123 1.50X,Scope,SVK-8.6,10
+1P87 1.50X,Scope,SVK-8.6,10
+A-P2 1.75X,Scope,SVK-8.6,10
+RO-M 1.75x,Scope,SVK-8.6,10
+3VZR 1.75X,Scope,SVK-8.6,10
+CCO 2.00x,Scope,SVK-8.6,10
+R4T 2.00X,Scope,SVK-8.6,10
+BF-2M 2.50x,Scope,SVK-8.6,10
+BAKER 3.00X,Scope,SVK-8.6,10
+SDO 3.50X,Scope,SVK-8.6,10
+PVQ-31 4.00x,Scope,SVK-8.6,10
+LDS 4.50X,Scope,SVK-8.6,10
+ST PRISIM 5.00X,Scope,SVK-8.6,10
+SF-G2 5.00X,Scope,SVK-8.6,10
+S-VPS 6.00X,Scope,SVK-8.6,10
+SSDS 6.00X,Scope,SVK-8.6,10
+NFX 8.00X,Scope,SVK-8.6,10
+LERT 8.00X,Scope,SVK-8.6,10
+R-VPS 10.00X,Scope,SVK-8.6,10
+MARS-F LPVO,Scope,SVK-8.6,25
+MC-CO LPVO,Scope,SVK-8.6,25
+DVO LPVO,Scope,SVK-8.6,25
+SM RIFLE VARIABLE,Scope,SVK-8.6,25
+1P88 VARIABLE,Scope,SVK-8.6,25
+GRIM 1.50X,Scope,SVK-8.6,25
+PAS-35 3.00X,Scope,SVK-8.6,25
+TS-HD 6.00X,Scope,SVK-8.6,25
+5 MW Red,Top Accessory,SVK-8.6,10
+5 MW Green,Top Accessory,SVK-8.6,10
+50 MW Green,Top Accessory,SVK-8.6,20
+50 MW Blue,Top Accessory,SVK-8.6,20
+120 MW Blue,Top Accessory,SVK-8.6,30
+6H64 Vertical,Underbarrel,SVK-8.6,25
+Alloy Vertical,Underbarrel,SVK-8.6,20
+Bipod,Underbarrel,SVK-8.6,10
+Canted Stubby,Underbarrel,SVK-8.6,30
+Classic Grip Pod,Underbarrel,SVK-8.6,30
+Classic Vertical,Underbarrel,SVK-8.6,35
+Folding Stubby,Underbarrel,SVK-8.6,20
+Folding Vertical,Underbarrel,SVK-8.6,10
+Full Angled,Underbarrel,SVK-8.6,25
+Low-Profile Stubby,Underbarrel,SVK-8.6,45
+PTT Grip Pod,Underbarrel,SVK-8.6,20
+QD Grip Pod,Underbarrel,SVK-8.6,30
+Ribbed Stubby,Underbarrel,SVK-8.6,30
+Ribbed Vertical,Underbarrel,SVK-8.6,20
+Slim Angled,Underbarrel,SVK-8.6,25
+Stippled Stubby,Underbarrel,SVK-8.6,35
+FMJ,Ammunition,TR-7,5
+Tungsten Core,Ammunition,TR-7,5
+Polymer Case,Ammunition,TR-7,10
+Hollow Point,Ammunition,TR-7,20
+Frangible,Ammunition,TR-7,20
+"17"" Factory",Barrel,TR-7,10
+"20"" Long",Barrel,TR-7,15
+"17"" Cut",Barrel,TR-7,15
+432MM Fluted,Barrel,TR-7,20
+Improved Mag Catch,Ergonomics,TR-7,5
+Match Trigger,Ergonomics,TR-7,15
+10RND Fast Mag,Magazine,TR-7,5
+15RND Magazine,Magazine,TR-7,5
+20RND Fast Mag,Magazine,TR-7,10
+20RND Magazine,Magazine,TR-7,5
+25RND Fast Mag,Magazine,TR-7,25
+25RND Magazine,Magazine,TR-7,20
+30RND Magazine,Magazine,TR-7,40
+Compensated Brake,Muzzle,TR-7,20
+CQB Suppressor,Muzzle,TR-7,30
+Double-Port Brake,Muzzle,TR-7,10
+Flash Hider,Muzzle,TR-7,10
+Lightened Suppressor,Muzzle,TR-7,30
+Linear Comp,Muzzle,TR-7,10
+Long Suppressor,Muzzle,TR-7,25
+Single-Port Brake,Muzzle,TR-7,5
+Standard Suppressor,Muzzle,TR-7,20
+Canted Iron Sights,Optic Accessory,TR-7,5
+Canted Reflex,Optic Accessory,TR-7,10
+Flashlight,Right Accessory,TR-7,10
+Iron Sights,Scope,TR-7,5
+MINI FLEX 1.00X,Scope,TR-7,10
+R-MR 1.00X,Scope,TR-7,10
+OSA-7 1.00x,Scope,TR-7,10
+CQ RDS 1.25X,Scope,TR-7,10
+RO-S 1.25X,Scope,TR-7,10
+2PRO 1.25X,Scope,TR-7,10
+ROX 1.50X,Scope,TR-7,10
+SU-123 1.50X,Scope,TR-7,10
+1P87 1.50X,Scope,TR-7,10
+A-P2 1.75X,Scope,TR-7,10
+RO-M 1.75x,Scope,TR-7,10
+3VZR 1.75X,Scope,TR-7,10
+CCO 2.00x,Scope,TR-7,10
+R4T 2.00X,Scope,TR-7,10
+BF-2M 2.50x,Scope,TR-7,10
+BAKER 3.00X,Scope,TR-7,10
+SDO 3.50X,Scope,TR-7,10
+PVQ-31 4.00x,Scope,TR-7,10
+LDS 4.50X,Scope,TR-7,10
+ST PRISIM 5.00X,Scope,TR-7,10
+SF-G2 5.00X,Scope,TR-7,10
+MARS-F LPVO,Scope,TR-7,25
+MC-CO LPVO,Scope,TR-7,25
+DVO LPVO,Scope,TR-7,25
+GRIM 1.50X,Scope,TR-7,25
+PAS-35 3.00X,Scope,TR-7,25
+5 MW Red,Top Accessory,TR-7,10
+5 MW Green,Top Accessory,TR-7,10
+50 MW Green,Top Accessory,TR-7,20
+50 MW Blue,Top Accessory,TR-7,20
+120 MW Blue,Top Accessory,TR-7,30
+6H64 Vertical,Underbarrel,TR-7,25
+Alloy Vertical,Underbarrel,TR-7,20
+Bipod,Underbarrel,TR-7,10
+Canted Stubby,Underbarrel,TR-7,30
+Classic Grip Pod,Underbarrel,TR-7,30
+Classic Vertical,Underbarrel,TR-7,35
+Folding Stubby,Underbarrel,TR-7,20
+Folding Vertical,Underbarrel,TR-7,10
+Low-Profile Stubby,Underbarrel,TR-7,45
+PTT Grip Pod,Underbarrel,TR-7,20
+QD Grip Pod,Underbarrel,TR-7,30
+Ribbed Stubby,Underbarrel,TR-7,30
+Ribbed Vertical,Underbarrel,TR-7,20
+Stippled Stubby,Underbarrel,TR-7,35
+FMJ,Ammunition,UMG-40,5
+Tungsten Core,Ammunition,UMG-40,5
+Hollow Point,Ammunition,UMG-40,20
+Frangible,Ammunition,UMG-40,20
+Synthetic Tip,Ammunition,UMG-40,30
+200MM Factory,Barrel,UMG-40,10
+200MM Custom-H,Barrel,UMG-40,10
+305MM Custom,Barrel,UMG-40,15
+305MM Custom-H,Barrel,UMG-40,10
+200MM Fluted,Barrel,UMG-40,20
+Flashlight,Left Accessory,UMG-40,10
+25RND Fast Mag,Magazine,UMG-40,10
+25RND Magazine,Magazine,UMG-40,5
+30RND Fast Mag,Magazine,UMG-40,10
+30RND Magazine,Magazine,UMG-40,5
+36RND Magazine,Magazine,UMG-40,15
+Compensated Brake,Muzzle,UMG-40,20
+CQB Suppressor,Muzzle,UMG-40,30
+Double-Port Brake,Muzzle,UMG-40,10
+Flash Hider,Muzzle,UMG-40,10
+Lightened Suppressor,Muzzle,UMG-40,30
+Linear Comp,Muzzle,UMG-40,10
+Long Suppressor,Muzzle,UMG-40,25
+Standard Suppressor,Muzzle,UMG-40,20
+Canted Iron Sights,Optic Accessory,UMG-40,5
+Canted Reflex,Optic Accessory,UMG-40,10
+5 MW Red,Right Accessory,UMG-40,10
+5 MW Green,Right Accessory,UMG-40,10
+50 MW Green,Right Accessory,UMG-40,20
+50 MW Blue,Right Accessory,UMG-40,20
+120 MW Blue,Right Accessory,UMG-40,30
+Aperture Sight,Scope,UMG-40,5
+CQB Sights,Scope,UMG-40,5
+MINI FLEX 1.00X,Scope,UMG-40,10
+R-MR 1.00X,Scope,UMG-40,10
+OSA-7 1.00x,Scope,UMG-40,10
+CQ RDS 1.25X,Scope,UMG-40,10
+RO-S 1.25X,Scope,UMG-40,10
+2PRO 1.25X,Scope,UMG-40,10
+ROX 1.50X,Scope,UMG-40,10
+SU-123 1.50X,Scope,UMG-40,10
+1P87 1.50X,Scope,UMG-40,10
+A-P2 1.75X,Scope,UMG-40,10
+RO-M 1.75x,Scope,UMG-40,10
+3VZR 1.75X,Scope,UMG-40,10
+CCO 2.00x,Scope,UMG-40,10
+R4T 2.00X,Scope,UMG-40,10
+BF-2M 2.50x,Scope,UMG-40,10
+BAKER 3.00X,Scope,UMG-40,10
+SDO 3.50X,Scope,UMG-40,10
+PVQ-31 4.00x,Scope,UMG-40,10
+LDS 4.50X,Scope,UMG-40,10
+ST PRISIM 5.00X,Scope,UMG-40,10
+SF-G2 5.00X,Scope,UMG-40,10
+MARS-F LPVO,Scope,UMG-40,25
+GRIM 1.50X,Scope,UMG-40,25
+PAS-35 3.00X,Scope,UMG-40,25
+6H64 Vertical,Underbarrel,UMG-40,25
+Alloy Vertical,Underbarrel,UMG-40,20
+Canted Stubby,Underbarrel,UMG-40,30
+Classic Vertical,Underbarrel,UMG-40,35
+Compact Handstop,Underbarrel,UMG-40,10
+Folding Stubby,Underbarrel,UMG-40,20
+Folding Vertical,Underbarrel,UMG-40,10
+Low-Profile Stubby,Underbarrel,UMG-40,45
+Ribbed Stubby,Underbarrel,UMG-40,30
+Ribbed Vertical,Underbarrel,UMG-40,20
+Slim Angled,Underbarrel,UMG-40,20
+Stippled Stubby,Underbarrel,UMG-40,35
+FMJ,Ammunition,USG-90,5
+Tungsten Core,Ammunition,USG-90,5
+Polymer Case,Ammunition,USG-90,10
+Hollow Point,Ammunition,USG-90,20
+Frangible,Ammunition,USG-90,20
+264MM Factory,Barrel,USG-90,10
+264MM Prototype,Barrel,USG-90,10
+407MM CIV-S,Barrel,USG-90,10
+264MM Fluted,Barrel,USG-90,20
+Improved Mag Catch,Ergonomics,USG-90,5
+5 MW Red,Left Accessory,USG-90,10
+5 MW Green,Left Accessory,USG-90,10
+50 MW Green,Left Accessory,USG-90,20
+50 MW Blue,Left Accessory,USG-90,20
+120 MW Blue,Left Accessory,USG-90,30
+50RND Magazine,Magazine,USG-90,5
+Compensated Brake,Muzzle,USG-90,20
+CQB Suppressor,Muzzle,USG-90,30
+Double-Port Brake,Muzzle,USG-90,10
+Flash Hider,Muzzle,USG-90,10
+Lightened Suppressor,Muzzle,USG-90,30
+Linear Comp,Muzzle,USG-90,10
+Long Suppressor,Muzzle,USG-90,25
+Single-Port Brake,Muzzle,USG-90,5
+Standard Suppressor,Muzzle,USG-90,20
+Canted Iron Sights,Optic Accessory,USG-90,5
+Canted Reflex,Optic Accessory,USG-90,10
+Flashlight,Right Accessory,USG-90,10
+Iron Sights,Scope,USG-90,5
+MINI FLEX 1.00X,Scope,USG-90,10
+R-MR 1.00X,Scope,USG-90,10
+OSA-7 1.00x,Scope,USG-90,10
+CQ RDS 1.25X,Scope,USG-90,10
+RO-S 1.25X,Scope,USG-90,10
+2PRO 1.25X,Scope,USG-90,10
+ROX 1.50X,Scope,USG-90,10
+SU-123 1.50X,Scope,USG-90,10
+1P87 1.50X,Scope,USG-90,10
+A-P2 1.75X,Scope,USG-90,10
+RO-M 1.75x,Scope,USG-90,10
+3VZR 1.75X,Scope,USG-90,10
+CCO 2.00x,Scope,USG-90,10
+R4T 2.00X,Scope,USG-90,10
+BF-2M 2.50x,Scope,USG-90,10
+BAKER 3.00X,Scope,USG-90,10
+SDO 3.50X,Scope,USG-90,10
+PVQ-31 4.00x,Scope,USG-90,10
+LDS 4.50X,Scope,USG-90,10
+ST PRISIM 5.00X,Scope,USG-90,10
+SF-G2 5.00X,Scope,USG-90,10
+MARS-F LPVO,Scope,USG-90,25
+GRIM 1.50X,Scope,USG-90,25
+PAS-35 3.00X,Scope,USG-90,25
